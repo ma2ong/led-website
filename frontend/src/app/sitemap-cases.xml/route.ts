@@ -1,0 +1,26 @@
+import { NextResponse } from 'next/server'
+import { generateCaseSitemapEntries, generateSitemapXML } from '@/lib/sitemap'
+
+export async function GET() {
+  try {
+    // 生成案例页面站点地图条目
+    const entries = await generateCaseSitemapEntries()
+    
+    // 生成XML站点地图
+    const sitemapXml = generateSitemapXML(entries)
+    
+    // 返回XML响应
+    return new NextResponse(sitemapXml, {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/xml',
+        'Cache-Control': 'public, max-age=86400, s-maxage=86400', // 缓存24小时
+      },
+    })
+  } catch (error) {
+    console.error('Error generating cases sitemap:', error)
+    return new NextResponse('Error generating cases sitemap', { status: 500 })
+  }
+}
+
+export const dynamic = 'force-dynamic'

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="关于我们 - 深圳联锦光电有限公司" data-lang-en="About Us - Shenzhen Lianjin Photoelectricity Co., Ltd.">关于我们 - 深圳联锦光电有限公司</title>
+    <meta name="description"
+          data-lang-zh-content="了解深圳联锦光电有限公司(RGBSHARE联锦)的发展历程、生产实力、企业文化、荣誉认证和团队风采。我们是全球领先的LED显示屏制造商和解决方案提供商。"
+          data-lang-en-content="Learn about the history, production capabilities, corporate culture, honors, certifications, and team of Shenzhen Lianjin Photoelectricity Co., Ltd. (RGBSHARE Lianjin). We are a leading global LED display manufacturer and solution provider.">
+    <meta name="keywords"
+          data-lang-zh-content="关于联锦, 公司简介, LED制造商, 企业文化, 发展历程, 生产实力, RGBSHARE"
+          data-lang-en-content="About Lianjin, Company Profile, LED Manufacturer, Corporate Culture, Development History, Production Strength, RGBSHARE">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; 
+            color: #e5e7eb; 
+        }
+        .section-title {
+            font-size: 2.25rem; 
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #ffffff;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; 
+            color: #9ca3af; 
+            text-align: center;
+            margin-bottom: 3rem; 
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8); 
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316; 
+            font-weight: 700;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #4b5563; 
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-container.left {
+            left: 0;
+        }
+        .timeline-container.right {
+            left: 50%;
+        }
+        .timeline-container::after { /* Timeline dots */
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px; /* Adjusted for dot size */
+            background-color: #f97316; 
+            border: 4px solid #1e40af; 
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-container.right::after {
+            left: -13px; /* Adjusted for dot size */
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: #1f2937; 
+            position: relative;
+            border-radius: 6px;
+            border: 1px solid #374151;
+        }
+        @media screen and (max-width: 768px) { /* Responsive timeline */
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-container.left::after, .timeline-container.right::after {
+                left: 18px; /* Adjusted for dot size */
+            }
+            .timeline-container.right {
+                left: 0%;
+            }
+        }
+        .stat-item {
+            background-color: #1f2937;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            border: 1px solid #374151;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f97316; 
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            margin-top: 0.5rem;
+        }
+        .certificate-item img {
+            transition: transform 0.3s ease;
+        }
+        .certificate-item img:hover {
+            transform: scale(1.05);
+        }
+        .mobile-menu {
+            display: none; 
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label="主要导航 (Main Navigation)">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label="语言切换 (Language Switcher)">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" data-lang-zh-aria-label="切换到中文" data-lang-en-aria-label="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" data-lang-zh-aria-label="切换到英文" data-lang-en-aria-label="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm transition-colors" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label="打开主菜单 (Open Main Menu)" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label="移动设备导航 (Mobile Navigation)">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label="语言切换 (Language Switcher)">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-16 md:py-24 bg-gray-800 text-center" aria-labelledby="page-title-about">
+        <div class="container mx-auto px-6">
+            <h1 id="page-title-about" class="text-4xl md:text-5xl font-bold text-white mb-4" data-lang-zh="关于联锦光电" data-lang-en="About Lianjin Photoelectricity">关于联锦光电</h1>
+            <p class="text-lg text-gray-400" data-lang-zh="全球领先的LED显示应用与解决方案供应商" data-lang-en="A Leading Global Provider of LED Display Applications and Solutions">全球领先的LED显示应用与解决方案供应商</p>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-900" aria-labelledby="company-profile-title">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=联锦光电办公楼" alt-lang-zh="深圳联锦光电公司办公楼或厂房" alt-lang-en="Shenzhen Lianjin Photoelectricity Company Building or Factory" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div>
+                    <h2 id="company-profile-title" class="text-3xl font-semibold text-white mb-6" data-lang-zh="公司简介" data-lang-en="Company Profile">公司简介</h2>
+                    <p class="text-gray-300 mb-4" data-lang-zh="深圳联锦光电有限公司（RGBSHARE联锦）成立于2007年，注册资本2010万元人民币，坐落于深圳市宝安区，是一家集LED显示屏研发、生产、销售、工程服务为一体的国家高新技术企业。" data-lang-en="Shenzhen Lianjin Photoelectricity Co., Ltd. (RGBSHARE Lianjin), established in 2007 with a registered capital of 20.1 million Yuan, is located in Bao'an District, Shenzhen. Lianjin is a national high-tech enterprise integrating LED display R&D, production, sales, and engineering services.">深圳联锦光电有限公司（RGBSHARE联锦）成立于2007年，注册资本2010万元人民币，坐落于深圳市宝安区，是一家集LED显示屏研发、生产、销售、工程服务为一体的国家高新技术企业。</p>
+                    <p class="text-gray-300 mb-4" data-lang-zh="主营产品有室内小间距、室内外租赁屏、固装广告屏、LED海报屏、异形屏、透明屏、会议一体机等，广泛应用于可视化、广告传媒、会议、舞台演艺、体育场馆等领域。" data-lang-en="Major products include LED fine pitch screens, LED rental screens, indoor & outdoor LED advertising billboards, LED poster screens, LED special-shaped screens, transparent screens, all-in-one conference displays, etc., widely used in visualization, advertising media, conferences, stage performances, sports venues, and other fields.">主营产品有室内小间距、室内外租赁屏、固装广告屏、LED海报屏、异形屏、透明屏、会议一体机等，广泛应用于可视化、广告传媒、会议、舞台演艺、体育场馆等领域。</p>
+                    <p class="text-gray-300" data-lang-zh="经过十余年的发展，公司已实现跨越式发展，产品远销全球160多个国家和地区，成功案例遍布世界。" data-lang-en="After more than ten years of development, the company has achieved leapfrog development. Its products are sold to more than 160 countries and regions worldwide, with successful cases all over the world.">经过十余年的发展，公司已实现跨越式发展，产品远销全球160多个国家和地区，成功案例遍布世界。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-gray-800" aria-labelledby="key-figures-title">
+        <div class="container mx-auto px-6">
+             <h2 id="key-figures-title" class="sr-only" data-lang-zh="关键数据" data-lang-en="Key Figures">关键数据</h2> <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2007" aria-live="polite">2007</div>
+                    <div class="stat-label" data-lang-zh="成立于" data-lang-en="Founded In">成立于</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2010" aria-live="polite" data-lang-zh="2010<span class='text-xl align-top'>万</span>" data-lang-en="2010<span class='text-xl align-top'>M</span>">2010<span class='text-xl align-top'>万</span></div>
+                    <div class="stat-label" data-lang-zh="注册资本(元)" data-lang-en="Registered Capital (RMB)">注册资本(元)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50000" aria-live="polite">50000<span class="text-xl align-top">㎡</span></div>
+                    <div class="stat-label" data-lang-zh="总占地面积" data-lang-en="Total Area">总占地面积</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="160" aria-live="polite">160<span class="text-xl align-top">+</span></div>
+                    <div class="stat-label" data-lang-zh="服务国家和地区" data-lang-en="Countries & Regions Served">服务国家和地区</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-900" aria-labelledby="development-history-title">
+        <div class="container mx-auto px-6">
+            <h2 id="development-history-title" class="section-title" data-lang-zh="发展历程" data-lang-en="Our Journey">发展历程</h2>
+            <div class="timeline" role="list">
+                <div class="timeline-container left" role="listitem">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold text-[#f97316] mb-1" data-lang-zh="2007年" data-lang-en="Year 2007">2007年</h3>
+                        <p class="text-gray-300" data-lang-zh="深圳联锦光电有限公司正式成立。" data-lang-en="Shenzhen Lianjin Photoelectricity Co., Ltd. was officially established.">深圳联锦光电有限公司正式成立。</p>
+                    </div>
+                </div>
+                <div class="timeline-container right" role="listitem">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold text-[#f97316] mb-1" data-lang-zh="2010年" data-lang-en="Year 2010">2010年</h3>
+                        <p class="text-gray-300" data-lang-zh="扩大生产规模，引进首批自动化设备。" data-lang-en="Expanded production scale and introduced the first batch of automated equipment.">扩大生产规模，引进首批自动化设备。</p>
+                    </div>
+                </div>
+                <div class="timeline-container left" role="listitem">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold text-[#f97316] mb-1" data-lang-zh="2015年" data-lang-en="Year 2015">2015年</h3>
+                        <p class="text-gray-300" data-lang-zh="产品通过CE、RoHS等国际认证，开始大力拓展海外市场。" data-lang-en="Products passed CE, RoHS and other international certifications, began to vigorously expand overseas markets.">产品通过CE、RoHS等国际认证，开始大力拓展海外市场。</p>
+                    </div>
+                </div>
+                <div class="timeline-container right" role="listitem">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold text-[#f97316] mb-1" data-lang-zh="2018年" data-lang-en="Year 2018">2018年</h3>
+                        <p class="text-gray-300" data-lang-zh="荣获国家高新技术企业认证。" data-lang-en="Awarded National High-tech Enterprise certification.">荣获国家高新技术企业认证。</p>
+                    </div>
+                </div>
+                <div class="timeline-container left" role="listitem">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold text-[#f97316] mb-1" data-lang-zh="2020年" data-lang-en="Year 2020">2020年</h3>
+                        <p class="text-gray-300" data-lang-zh="厂房面积扩展至50000㎡，全面升级智能化生产线，通过ISO45001:2020体系认证。" data-lang-en="Expanded plant area to 50,000㎡, fully upgraded intelligent production lines, and passed ISO45001:2020 system certification.">厂房面积扩展至50000㎡，全面升级智能化生产线，通过ISO45001:2020体系认证。</p>
+                    </div>
+                </div>
+                <div class="timeline-container right" role="listitem">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-semibold text-[#f97316] mb-1" data-lang-zh="至今" data-lang-en="To Present">至今</h3>
+                        <p class="text-gray-300" data-lang-zh="持续创新，产品服务全球160多个国家和地区，致力于成为国际领先的LED显示解决方案提供商。" data-lang-en="Continuous innovation, products serving over 160 countries and regions, committed to becoming a leading international LED display solution provider.">持续创新，产品服务全球160多个国家和地区，致力于成为国际领先的LED显示解决方案提供商。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-800" aria-labelledby="production-rd-title">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 id="production-rd-title" class="text-3xl font-semibold text-white mb-6" data-lang-zh="生产实力与研发创新" data-lang-en="Production Strength & R&D Innovation">生产实力与研发创新</h2>
+                    <p class="text-gray-300 mb-4" data-lang-zh="联锦光电拥有20000㎡的现代化生产车间，配备日本松下贴片机NPMD3A、美国MPM印刷机等世界级尖端设备。全面引进智能化管理模式，全产线实现自动化，生产更智能更高效。" data-lang-en="Lianjin Photoelectricity boasts a 20,000㎡ modern production workshop, equipped with world-class cutting-edge equipment such as Japan's Panasonic NPMD3A mounters and USA's MPM printing machines. We have fully adopted intelligent management modes, achieving automation across the entire production line for smarter and more efficient production.">联锦光电拥有20000㎡的现代化生产车间，配备日本松下贴片机NPMD3A、美国MPM印刷机等世界级尖端设备。全面引进智能化管理模式，全产线实现自动化，生产更智能更高效。</p>
+                    <p class="text-gray-300" data-lang-zh="我们拥有一支专业的研发团队，持续投入技术创新，已获得多项专利和技术奖项，严格执行ISO45001:2020国际标准化质量管理体系，确保每一款产品都达到行业领先水平。" data-lang-en="We have a professional R&D team, continuously investing in technological innovation, and have obtained multiple patents and technical awards. We strictly implement the ISO45001:2020 international standardized quality management system to ensure that every product meets industry-leading standards.">我们拥有一支专业的研发团队，持续投入技术创新，已获得多项专利和技术奖项，严格执行ISO45001:2020国际标准化质量管理体系，确保每一款产品都达到行业领先水平。</p>
+                </div>
+                <div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://placehold.co/300x200/1f2937/ffffff?text=SMT生产设备" alt-lang-zh="SMT生产设备" alt-lang-en="SMT Production Equipment" class="rounded-lg shadow-md w-full">
+                        <img src="https://placehold.co/300x200/1f2937/ffffff?text=自动化组装线" alt-lang-zh="自动化组装线" alt-lang-en="Automated Assembly Line" class="rounded-lg shadow-md w-full">
+                        <img src="https://placehold.co/300x200/1f2937/ffffff?text=精密检测仪器" alt-lang-zh="精密检测仪器" alt-lang-en="Precision Testing Instruments" class="rounded-lg shadow-md w-full">
+                        <img src="https://placehold.co/300x200/1f2937/ffffff?text=研发实验室" alt-lang-zh="研发实验室" alt-lang-en="R&D Laboratory" class="rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-900 text-center" aria-labelledby="corporate-culture-title">
+        <div class="container mx-auto px-6">
+            <h2 id="corporate-culture-title" class="section-title" data-lang-zh="企业文化" data-lang-en="Corporate Culture">企业文化</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <h3 class="text-xl font-semibold text-[#f97316] mb-2" data-lang-zh="企业使命" data-lang-en="Mission">企业使命</h3>
+                    <p class="text-gray-300" data-lang-zh="为社会做贡献，为员工谋福利" data-lang-en="Contribute to society, seek welfare for employees">为社会做贡献，为员工谋福利</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <h3 class="text-xl font-semibold text-[#f97316] mb-2" data-lang-zh="企业目标" data-lang-en="Goal">企业目标</h3>
+                    <p class="text-gray-300" data-lang-zh="创国内一流，国际领先企业" data-lang-en="Create a domestic first-class, internationally leading enterprise">创国内一流，国际领先企业</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <h3 class="text-xl font-semibold text-[#f97316] mb-2" data-lang-zh="企业精神" data-lang-en="Spirit">企业精神</h3>
+                    <p class="text-gray-300" data-lang-zh="务实、匠心、创新" data-lang-en="Pragmatic, Ingenious, Innovative">务实、匠心、创新</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                    <h3 class="text-xl font-semibold text-[#f97316] mb-2" data-lang-zh="企业作风" data-lang-en="Style">企业作风</h3>
+                    <p class="text-gray-300" data-lang-zh="诚实、严谨、细致" data-lang-en="Honest, Rigorous, Meticulous">诚实、严谨、细致</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-800" aria-labelledby="honors-certs-title">
+        <div class="container mx-auto px-6">
+            <h2 id="honors-certs-title" class="section-title" data-lang-zh="企业荣誉与认证" data-lang-en="Honors & Certifications">企业荣誉与认证</h2>
+            <p class="section-subtitle" data-lang-zh="我们获得的认可，是品质与实力的最佳证明。" data-lang-en="The recognition we've received is the best proof of our quality and strength.">我们获得的认可，是品质与实力的最佳证明。</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" role="list">
+                <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center certificate-item" role="listitem">
+                    <img src="https://placehold.co/200x280/ffffff/1f2937?text=高新技术企业" alt-lang-zh="国家高新技术企业证书" alt-lang-en="National High-tech Enterprise Certificate" class="w-full h-auto rounded mx-auto">
+                    <p class="text-sm mt-2 text-white" data-lang-zh="国家高新技术企业" data-lang-en="National High-tech Enterprise">国家高新技术企业</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center certificate-item" role="listitem">
+                    <img src="https://placehold.co/200x280/ffffff/1f2937?text=ISO45001" alt-lang-zh="ISO45001:2020认证证书" alt-lang-en="ISO45001:2020 Certification" class="w-full h-auto rounded mx-auto">
+                    <p class="text-sm mt-2 text-white">ISO45001:2020</p>
+                </div>
+                 <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center certificate-item" role="listitem">
+                    <img src="https://placehold.co/200x280/ffffff/1f2937?text=CE认证" alt-lang-zh="CE认证证书" alt-lang-en="CE Certification" class="w-full h-auto rounded mx-auto">
+                    <p class="text-sm mt-2 text-white">CE</p>
+                </div>
+                 <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center certificate-item" role="listitem">
+                    <img src="https://placehold.co/200x280/ffffff/1f2937?text=RoHS认证" alt-lang-zh="RoHS认证证书" alt-lang-en="RoHS Certification" class="w-full h-auto rounded mx-auto">
+                    <p class="text-sm mt-2 text-white">RoHS</p>
+                </div>
+                 <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center certificate-item" role="listitem">
+                    <img src="https://placehold.co/200x280/ffffff/1f2937?text=FCC认证" alt-lang-zh="FCC认证证书" alt-lang-en="FCC Certification" class="w-full h-auto rounded mx-auto">
+                    <p class="text-sm mt-2 text-white">FCC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-20 bg-gray-900" aria-labelledby="employee-showcase-title">
+        <div class="container mx-auto px-6">
+            <h2 id="employee-showcase-title" class="section-title" data-lang-zh="员工风采" data-lang-en="Employee Showcase">员工风采</h2>
+            <p class="section-subtitle" data-lang-zh="我们拥有一个充满活力、专业敬业的团队。" data-lang-en="We have a vibrant, professional, and dedicated team.">我们拥有一个充满活力、专业敬业的团队。</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                 <img src="https://placehold.co/300x200/1f2937/ffffff?text=团队活动1" alt-lang-zh="联锦光电团队活动照片1" alt-lang-en="Lianjin Team Activity Photo 1" class="rounded-lg shadow-md w-full h-48 object-cover">
+                <img src="https://placehold.co/300x200/1f2937/ffffff?text=团队活动2" alt-lang-zh="联锦光电团队活动照片2" alt-lang-en="Lianjin Team Activity Photo 2" class="rounded-lg shadow-md w-full h-48 object-cover">
+                <img src="https://placehold.co/300x200/1f2937/ffffff?text=展会风采" alt-lang-zh="联锦光电展会团队风采" alt-lang-en="Lianjin Exhibition Team Showcase" class="rounded-lg shadow-md w-full h-48 object-cover">
+                <img src="https://placehold.co/300x200/1f2937/ffffff?text=团队建设" alt-lang-zh="联锦光电团队建设活动" alt-lang-en="Lianjin Team Building Activity" class="rounded-lg shadow-md w-full h-48 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-700" role="contentinfo">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-lang-zh="关于联锦" data-lang-en="About Lianjin">关于联锦</h3>
+                    <p class="text-sm mb-2" data-lang-zh="深圳联锦光电有限公司，成立于2007年，是全球领先的LED显示应用与解决方案供应商。" data-lang-en="Shenzhen Lianjin Photoelectricity Co., Ltd., established in 2007, is a leading global provider of LED display applications and solutions.">深圳联锦光电有限公司，成立于2007年，是全球领先的LED显示应用与解决方案供应商。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                    <ul class="space-y-2 text-sm" role="list">
+                        <li role="listitem"><a href="products.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a></li>
+                        <li role="listitem"><a href="case-studies.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Case Studies">成功案例</a></li>
+                        <li role="listitem"><a href="support.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-lang-zh="联系方式" data-lang-en="Contact Info">联系方式</h3>
+                    <address class="not-italic">
+                        <p class="text-sm mb-2" data-lang-zh="地址：深圳市宝安区石岩街道塘头第一工业区C栋" data-lang-en="Address: Building C, Tang Tou 1st Industrial Park, Shiyan, Shenzhen, China">地址：深圳市宝安区石岩街道塘头第一工业区C栋</p>
+                        <p class="text-sm mb-2"><span data-lang-zh="电话：" data-lang-en="Phone:">电话：</span><a href="tel:0755-82595016" class="hover:text-[#f97316]">0755-8259 5016</a></p>
+                        <p class="text-sm mb-2"><span data-lang-zh="邮箱：" data-lang-en="Email:">邮箱：</span><a href="mailto:bruce@lianjinled.com" class="hover:text-[#f97316]">bruce@lianjinled.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+                <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+                 <p>
+                    <a href="privacy.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="隐私政策" data-lang-en="Privacy Policy">隐私政策</a> | 
+                    <a href="terms.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="服务条款" data-lang-en="Terms of Service">服务条款</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Page-specific JavaScript for about.html
+
+        // Function to animate stat numbers when they become visible
+        function animateStatsOnScroll() {
+            const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const stat = entry.target;
+                        const target = +stat.dataset.count;
+                        if (parseInt(stat.textContent) !== target || stat.textContent === "0" || stat.textContent === "") {
+                            let current = 0;
+                            const increment = Math.max(1, Math.ceil(target / 100)); 
+
+                            function updateNumber() {
+                                current += increment;
+                                if (current < target) {
+                                    stat.textContent = Math.ceil(current);
+                                    requestAnimationFrame(updateNumber);
+                                } else {
+                                    // Use innerHTML to correctly render the span for units like 万 or M
+                                    const originalTextKey = `data-lang-${window.currentLanguage}`;
+                                    let originalText = stat.getAttribute(originalTextKey) || `${target}`;
+                                    // If the data-lang-* attribute itself contains the number, extract suffix
+                                    if (originalText.startsWith(target.toString())) {
+                                        const suffixHTML = originalText.substring(target.toString().length);
+                                        stat.innerHTML = target + suffixHTML;
+                                    } else { // Fallback if data-lang-* is just the unit or not present
+                                         if (stat.innerHTML.includes('万') && window.currentLanguage === 'zh') {
+                                            stat.innerHTML = target + `<span class='text-xl align-top'>万</span>`;
+                                        } else if (stat.innerHTML.includes('M') && window.currentLanguage === 'en') {
+                                            stat.innerHTML = target + `<span class='text-xl align-top'>M</span>`;
+                                        } else if (stat.innerHTML.includes('㎡')) {
+                                            stat.innerHTML = target + `<span class='text-xl align-top'>㎡</span>`;
+                                        } else if (stat.innerHTML.includes('+')) {
+                                            stat.innerHTML = target + `<span class='text-xl align-top'>+</span>`;
+                                        }
+                                        else {
+                                            stat.textContent = target;
+                                        }
+                                    }
+                                }
+                            }
+                            updateNumber();
+                        }
+                        observer.unobserve(stat); 
+                    }
+                });
+            }, { threshold: 0.5 }); 
+
+            statNumbers.forEach(stat => {
+                observer.observe(stat);
+            });
+        }
+        
+        // Update meta tags content based on language
+        function updateMetaTagsContentAbout() {
+            const descriptionTag = document.querySelector('meta[name="description"]');
+            const keywordsTag = document.querySelector('meta[name="keywords"]');
+            const titleTag = document.querySelector('title');
+
+            if (descriptionTag) {
+                const descContent = descriptionTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                if (descContent) descriptionTag.setAttribute('content', descContent);
+            }
+            if (keywordsTag) {
+                const keywordsContent = keywordsTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+            }
+            if(titleTag){
+                const titleText = titleTag.getAttribute(`data-lang-${window.currentLanguage}`);
+                if(titleText) document.title = titleText;
+            }
+            document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                const altText = img.getAttribute(`alt-lang-${window.currentLanguage}`);
+                if (altText) {
+                    img.alt = altText;
+                }
+            });
+            document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                const ariaLabelText = el.getAttribute(`aria-label-${window.currentLanguage}`);
+                if (ariaLabelText) {
+                    el.setAttribute('aria-label', ariaLabelText);
+                }
+            });
+        }
+
+        // Listen to the custom languageChanged event from main.js
+        document.addEventListener('languageChanged', (event) => {
+            updateMetaTagsContentAbout();
+            // Re-initialize stat number text based on new language, animation will re-trigger if they become un-animated
+            document.querySelectorAll('.stat-number[data-count]').forEach(stat => {
+                 const target = +stat.dataset.count;
+                 const originalTextKey = `data-lang-${window.currentLanguage}`;
+                 let originalText = stat.getAttribute(originalTextKey) || `${target}`;
+                
+                // If data-lang-xx attribute is not on stat-number itself, check its children (the span)
+                let suffixSpan = stat.querySelector('span');
+                let suffixText = '';
+                if(suffixSpan){
+                    suffixText = suffixSpan.getAttribute(originalTextKey) || suffixSpan.textContent;
+                }
+                
+                if (originalText.startsWith(target.toString())) {
+                    const suffixHTML = originalText.substring(target.toString().length);
+                    stat.innerHTML = target + suffixHTML;
+                } else if (suffixText) {
+                     stat.innerHTML = target + `<span class='text-xl align-top'>${suffixText}</span>`;
+                }
+                 else { // Fallback for simple numbers or if specific lang attribute for suffix is missing
+                    stat.textContent = target; 
+                 }
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure window.currentLanguage is available from main.js
+            if (typeof window.currentLanguage === 'undefined') {
+                window.currentLanguage = document.documentElement.lang || 'zh';
+            }
+            updateMetaTagsContentAbout(); 
+            animateStatsOnScroll(); 
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${window.currentLanguage || 'zh'}`));
+            }
+        });
+    </script>
+</body>
+</html>

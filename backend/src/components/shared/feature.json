@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_shared_features",
+  "info": {
+    "displayName": "特性",
+    "description": "产品或解决方案特性"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-point"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "performance",
+        "design",
+        "functionality",
+        "reliability",
+        "efficiency",
+        "innovation"
+      ],
+      "default": "functionality"
+    }
+  }
+}

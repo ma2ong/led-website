@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_requirements",
+  "info": {
+    "displayName": "需求",
+    "description": "项目需求项"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "functional",
+        "technical",
+        "performance",
+        "design",
+        "compliance"
+      ],
+      "default": "functional"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "must-have",
+        "should-have",
+        "could-have",
+        "wont-have"
+      ],
+      "default": "must-have"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "in-progress",
+        "completed",
+        "cancelled"
+      ],
+      "default": "pending"
+    }
+  }
+}

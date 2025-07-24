@@ -1,0 +1,33 @@
+` 代码块。例如，对于首页，找到 ``。
+        * 复制该代码块中 ` ```html ... ``` 之间的所有HTML代码。
+        * 在您的主项目文件夹 (`lianjin-led-website`) 中，创建一个新的HTML文件，文件名与代码块的 `title` 或 `id` 中指示的名称一致（例如，`homepage.html`）。
+        * 将复制的HTML代码粘贴到这个新创建的HTML文件中并保存。
+        * 对所有其他HTML页面重复此操作。
+
+**文件清单如下：**
+
+* `assets/js/main.js` (通用JavaScript文件)
+* `index.html` (网站导航页)
+* `homepage.html` (首页)
+* `about.html` (关于我们)
+* `products.html` (产品中心总览页)
+* `product-fine-pitch.html` (小间距产品列表页)
+* `product-rental.html` (租赁产品列表页)
+* `product-outdoor.html` (户外产品列表页)
+* `product-creative.html` (创意产品列表页)
+* `product-transparent.html` (透明屏产品列表页)
+* `product-all-in-one.html` (会议一体机产品列表页)
+* `product-poster.html` (LED广告机产品列表页)
+* `solutions.html` (解决方案页面)
+* `case-studies.html` (成功案例页面)
+* `news.html` (新闻资讯页面)
+* `support.html` (技术支持页面)
+* `contact.html` (联系我们页面)
+
+**重要提示**：
+
+* **图片和视频**：所有HTML文件中引用的图片和视频目前都是占位符 (`https://placehold.co/...` 或注释掉的视频源)。您需要将这些占位符替换为深圳联锦光电实际的媒体文件，并将它们放置在您的项目文件夹中（例如，可以创建一个 `assets/images/` 和 `assets/videos/` 文件夹来存放这些资源），然后更新HTML代码中的 `src` 路径。
+* **产品详情页**：如前所述，我们创建了产品列表页，但并未为每个具体型号的产品创建单独的详情页（例如 `product-detail-xxxx.html`）。这些详情页是产品展示的核心，需要您根据具体产品资料进一步创建。
+* **后端功能**：表单提交（询盘、技术支持）等功能需要后端逻辑支持，目前仅为前端框架。
+
+通过以上步骤，您就可以在本地拥有完整的网站文件结构和代码了。如果您在操作过程中遇到任何问题，请随时告诉我。

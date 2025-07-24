@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_global_certifications",
+  "info": {
+    "displayName": "认证",
+    "description": "公司资质认证"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "issueDate": {
+      "type": "date"
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "document": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "certificateNumber": {
+      "type": "string"
+    }
+  }
+}

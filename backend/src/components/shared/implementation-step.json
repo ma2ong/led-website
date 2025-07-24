@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_implementation_steps",
+  "info": {
+    "displayName": "实施步骤",
+    "description": "项目实施的具体步骤"
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "json"
+    },
+    "deliverables": {
+      "type": "json"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "planned",
+        "in-progress",
+        "completed",
+        "delayed",
+        "cancelled"
+      ],
+      "default": "completed"
+    }
+  }
+}

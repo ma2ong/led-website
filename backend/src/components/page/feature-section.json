@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_page_feature_sections",
+  "info": {
+    "displayName": "特性区块",
+    "description": "展示产品或服务特性的区块"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature",
+      "required": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "grid",
+        "list",
+        "cards",
+        "alternating",
+        "compact"
+      ],
+      "default": "grid"
+    },
+    "columns": {
+      "type": "integer",
+      "min": 1,
+      "max": 4,
+      "default": 3
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "showIcons": {
+      "type": "boolean",
+      "default": true
+    },
+    "iconColor": {
+      "type": "string"
+    },
+    "animation": {
+      "type": "string"
+    }
+  }
+}

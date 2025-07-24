@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_global_social_medias",
+  "info": {
+    "displayName": "社交媒体",
+    "description": "社交媒体平台链接"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "twitter",
+        "instagram",
+        "linkedin",
+        "youtube",
+        "pinterest",
+        "tiktok",
+        "wechat",
+        "weibo",
+        "qq",
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "qrCode": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

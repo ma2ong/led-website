@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_shared_deliverables",
+  "info": {
+    "displayName": "交付物",
+    "description": "项目交付物"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "document",
+        "software",
+        "hardware",
+        "service",
+        "training"
+      ],
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "planned",
+        "in-progress",
+        "completed",
+        "delivered"
+      ],
+      "default": "completed"
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

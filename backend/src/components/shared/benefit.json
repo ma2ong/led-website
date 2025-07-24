@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_shared_benefits",
+  "info": {
+    "displayName": "收益",
+    "description": "项目或产品带来的收益"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "business",
+        "technical",
+        "financial",
+        "operational",
+        "customer",
+        "environmental",
+        "other"
+      ],
+      "default": "business"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    }
+  }
+}

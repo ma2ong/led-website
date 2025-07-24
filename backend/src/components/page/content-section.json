@@ -1,0 +1,73 @@
+{
+  "collectionName": "components_page_content_sections",
+  "info": {
+    "displayName": "内容区块",
+    "description": "页面的文本内容区块"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "top",
+        "bottom",
+        "background"
+      ],
+      "default": "right"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "boxed",
+        "card",
+        "full-width",
+        "split"
+      ],
+      "default": "default"
+    },
+    "padding": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "medium"
+    },
+    "animation": {
+      "type": "string"
+    }
+  }
+}

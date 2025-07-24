@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_global_footer_columns",
+  "info": {
+    "displayName": "页脚栏目",
+    "description": "页脚中的导航栏目"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "narrow",
+        "medium",
+        "wide"
+      ],
+      "default": "auto"
+    }
+  }
+}

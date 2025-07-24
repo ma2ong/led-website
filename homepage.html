@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="深圳联锦光电有限公司 - LED显示屏制造商" data-lang-en="Shenzhen Lianjin Photoelectricity Co., Ltd. - LED Display Manufacturer">深圳联锦光电有限公司 - LED显示屏制造商</title>
+    <meta name="description" 
+          data-lang-zh-content="深圳联锦光电有限公司(RGBSHARE联锦)是全球领先的LED显示屏产品和系统解决方案提供商，专注于LED小间距屏、租赁屏、广告屏、创意屏等。探索我们的创新技术和全球成功案例。"
+          data-lang-en-content="Shenzhen Lianjin Photoelectricity Co., Ltd. (RGBSHARE Lianjin) is a leading global provider of LED display products and system solutions, specializing in fine pitch, rental, advertising, and creative LED screens. Explore our innovative technology and global success stories.">
+    <meta name="keywords" 
+          data-lang-zh-content="LED显示屏, 深圳联锦光电, RGBSHARE, 小间距LED, LED租赁屏, 户外LED广告屏, 创意LED, 透明LED, LED解决方案"
+          data-lang-en-content="LED display, Shenzhen Lianjin, RGBSHARE, Fine Pitch LED, LED rental screen, Outdoor LED advertising, Creative LED, Transparent LED, LED solutions">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; 
+            color: #e5e7eb; 
+        }
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.3; 
+        }
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .section-title {
+            font-size: 2.25rem; 
+            font-weight: 700;
+            margin-bottom: 2rem; 
+            text-align: center;
+            color: #ffffff; 
+        }
+        .section-subtitle {
+            font-size: 1.125rem; 
+            color: #9ca3af; 
+            text-align: center;
+            margin-bottom: 3rem; 
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .primary-button {
+            background-color: #1e40af; 
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            display: inline-block; /* Ensure proper padding and centering */
+            text-align: center;
+        }
+        .primary-button:hover {
+            background-color: #1d4ed8; 
+        }
+        .secondary-button {
+            background-color: #f97316; 
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        .secondary-button:hover {
+            background-color: #fb923c; 
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8); 
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316; 
+            font-weight: 700;
+        }
+        .mobile-menu {
+            display: none; /* Initially hidden, JS will control it */
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label="主要导航 (Main Navigation)">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label="语言切换 (Language Switcher)">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" data-lang-zh-aria-label="切换到中文" data-lang-en-aria-label="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" data-lang-zh-aria-label="切换到英文" data-lang-en-aria-label="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="secondary-button text-sm" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label="打开主菜单 (Open Main Menu)" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label="移动设备导航 (Mobile Navigation)">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label="语言切换 (Language Switcher)">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="secondary-button text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section h-screen flex items-center justify-center text-center bg-gray-900 text-white relative" aria-labelledby="hero-title">
+        <video autoplay muted loop class="hero-video-bg" poster="https://placehold.co/1920x1080/1f2937/e5e7eb?text=品牌视频加载中..." aria-label="背景视频 (Background Video)">
+            Your browser does not support the video tag.
+        </video>
+        <div class="relative z-10 p-6">
+            <h1 id="hero-title" class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <span class="block" data-lang-zh="引领创新科技" data-lang-en="Leading & Innovative Technology">引领创新科技</span>
+                <span class="block text-[#f97316]" data-lang-zh="智慧绚丽显示" data-lang-en="Smart & Brilliant Display">智慧绚丽显示</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto" data-lang-zh="深圳联锦光电，您值得信赖的LED显示屏解决方案提供商。" data-lang-en="Shenzhen Lianjin Photoelectricity, Your Trusted LED Display Solution Provider.">
+                深圳联锦光电，您值得信赖的LED显示屏解决方案提供商。
+            </p>
+            <a href="products.html" class="primary-button text-lg" data-lang-zh="探索产品" data-lang-en="Explore Products">探索产品</a>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-800" aria-labelledby="product-categories-title">
+        <div class="container mx-auto px-6">
+            <h2 id="product-categories-title" class="section-title" data-lang-zh="核心产品系列" data-lang-en="Core Product Series">核心产品系列</h2>
+            <p class="section-subtitle" data-lang-zh="探索我们多样化的LED显示解决方案，满足您的各种需求。" data-lang-en="Discover our diverse range of LED display solutions tailored for every need.">探索我们多样化的LED显示解决方案，满足您的各种需求。</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <article class="bg-gray-700 rounded-lg shadow-xl p-6 text-center card-hover">
+                    <img src="https://placehold.co/300x200/1e40af/ffffff?text=小间距屏" alt-lang-zh="小间距LED显示屏预览" alt-lang-en="Fine Pitch LED Display Preview" class="w-full h-48 object-cover rounded-md mb-4 mx-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="小间距显示屏" data-lang-en="Fine Pitch Display">小间距显示屏</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-lang-zh="高清画质，无缝拼接，适用于控制室、会议等高端场景。" data-lang-en="High definition, seamless splicing, ideal for control rooms, conferences.">高清画质，无缝拼接，适用于控制室、会议等高端场景。</p>
+                    <a href="product-fine-pitch.html" class="text-[#f97316] hover:text-[#fb923c] font-medium" data-lang-zh="查看更多" data-lang-en="Learn More">查看更多 &rarr;</a>
+                </article>
+                <article class="bg-gray-700 rounded-lg shadow-xl p-6 text-center card-hover">
+                    <img src="https://placehold.co/300x200/1e40af/ffffff?text=租赁屏" alt-lang-zh="租赁LED显示屏预览" alt-lang-en="Rental LED Display Preview" class="w-full h-48 object-cover rounded-md mb-4 mx-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="租赁显示屏" data-lang-en="Rental Display">租赁显示屏</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-lang-zh="轻便易装，高刷新率，专为舞台活动、展览展示设计。" data-lang-en="Lightweight, easy setup, high refresh rate for events and exhibitions.">轻便易装，高刷新率，专为舞台活动、展览展示设计。</p>
+                    <a href="product-rental.html" class="text-[#f97316] hover:text-[#fb923c] font-medium" data-lang-zh="查看更多" data-lang-en="Learn More">查看更多 &rarr;</a>
+                </article>
+                <article class="bg-gray-700 rounded-lg shadow-xl p-6 text-center card-hover">
+                    <img src="https://placehold.co/300x200/1e40af/ffffff?text=户外屏" alt-lang-zh="户外LED显示屏预览" alt-lang-en="Outdoor LED Display Preview" class="w-full h-48 object-cover rounded-md mb-4 mx-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="户外显示屏" data-lang-en="Outdoor Display">户外显示屏</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-lang-zh="高亮防水，稳定耐用，适用于户外广告、体育场馆。" data-lang-en="High brightness, waterproof, durable for outdoor advertising, stadiums.">高亮防水，稳定耐用，适用于户外广告、体育场馆。</p>
+                    <a href="product-outdoor.html" class="text-[#f97316] hover:text-[#fb923c] font-medium" data-lang-zh="查看更多" data-lang-en="Learn More">查看更多 &rarr;</a>
+                </article>
+                <article class="bg-gray-700 rounded-lg shadow-xl p-6 text-center card-hover">
+                    <img src="https://placehold.co/300x200/1e40af/ffffff?text=创意屏" alt-lang-zh="创意LED显示屏预览" alt-lang-en="Creative LED Display Preview" class="w-full h-48 object-cover rounded-md mb-4 mx-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="创意显示屏" data-lang-en="Creative Display">创意显示屏</h3>
+                    <p class="text-gray-400 text-sm mb-4" data-lang-zh="透明屏、柔性屏等，打破常规，创造无限视觉可能。" data-lang-en="Transparent, flexible screens, breaking conventions for limitless visual possibilities.">透明屏、柔性屏等，打破常规，创造无限视觉可能。</p>
+                    <a href="product-creative.html" class="text-[#f97316] hover:text-[#fb923c] font-medium" data-lang-zh="查看更多" data-lang-en="Learn More">查看更多 &rarr;</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-900" aria-labelledby="advantages-title">
+        <div class="container mx-auto px-6">
+            <h2 id="advantages-title" class="section-title" data-lang-zh="我们的优势" data-lang-en="Our Advantages">我们的优势</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <svg class="w-16 h-16 mx-auto mb-4 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="50000㎡ 生产基地" data-lang-en="50,000㎡ Production Base">50000㎡ 生产基地</h3>
+                    <p class="text-gray-400" data-lang-zh="先进的自动化生产线，确保卓越品质与高效产能。" data-lang-en="Advanced automated production lines ensure superior quality and high capacity.">先进的自动化生产线，确保卓越品质与高效产能。</p>
+                </div>
+                <div>
+                    <svg class="w-16 h-16 mx-auto mb-4 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="服务160+国家地区" data-lang-en="Serving 160+ Countries">服务160+国家地区</h3>
+                    <p class="text-gray-400" data-lang-zh="全球化的销售与服务网络，为您提供本地化支持。" data-lang-en="Global sales and service network providing localized support.">全球化的销售与服务网络，为您提供本地化支持。</p>
+                </div>
+                <div>
+                     <svg class="w-16 h-16 mx-auto mb-4 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="权威认证 品质保障" data-lang-en="Certified Quality Assurance">权威认证 品质保障</h3>
+                    <p class="text-gray-400" data-lang-zh="通过ISO, CE, RoHS等多项国际认证，品质值得信赖。" data-lang-en="Passed ISO, CE, RoHS and multiple international certifications.">通过ISO, CE, RoHS等多项国际认证，品质值得信赖。</p>
+                </div>
+                <div>
+                    <svg class="w-16 h-16 mx-auto mb-4 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.293 10.293a1 1 0 011.414 0l.001.001c.001.001.002.002.003.002a1 1 0 010 1.414l-2.002 2.002a1 1 0 01-1.414 0l-.001-.001a.996.996 0 01-.002-.003A1 1 0 0112 13V9.5a1 1 0 011-1 1 1 0 100-2V6a1 1 0 00-1-1 1 1 0 100 2v.5a1 1 0 001 1h.5z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="持续创新 引领行业" data-lang-en="Continuous Innovation">持续创新 引领行业</h3>
+                    <p class="text-gray-400" data-lang-zh="专注研发投入，掌握核心技术，提供领先的显示解决方案。" data-lang-en="Focus on R&D, master core technologies, provide leading display solutions.">专注研发投入，掌握核心技术，提供领先的显示解决方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-800" aria-labelledby="case-studies-title">
+        <div class="container mx-auto px-6">
+            <h2 id="case-studies-title" class="section-title" data-lang-zh="成功案例" data-lang-en="Successful Cases">成功案例</h2>
+            <p class="section-subtitle" data-lang-zh="遍布全球的卓越项目，见证联锦光电的专业实力。" data-lang-en="Excellent projects worldwide witness Lianjin's professional strength.">遍布全球的卓越项目，见证联锦光电的专业实力。</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-gray-700 rounded-lg overflow-hidden shadow-xl card-hover">
+                    <img src="https://placehold.co/400x250/1f2937/ffffff?text=案例1" alt-lang-zh="国际会议中心案例" alt-lang-en="International Conference Center Case" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="某国际会议中心" data-lang-en="International Conference Center">某国际会议中心</h3>
+                        <p class="text-sm text-gray-400 mb-3" data-lang-zh="应用产品：X3系列 P1.2 小间距屏" data-lang-en="Product: X3 Series P1.2 Fine Pitch">应用产品：X3系列 P1.2 小间距屏</p>
+                        <a href="case-studies.html#case1" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="了解详情" data-lang-en="View Details">了解详情 &rarr;</a>
+                    </div>
+                </article>
+                <article class="bg-gray-700 rounded-lg overflow-hidden shadow-xl card-hover">
+                    <img src="https://placehold.co/400x250/1f2937/ffffff?text=案例2" alt-lang-zh="户外广告牌案例" alt-lang-en="Outdoor Advertising Billboard Case" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="大型户外广告牌" data-lang-en="Outdoor Advertising Billboard">大型户外广告牌</h3>
+                        <p class="text-sm text-gray-400 mb-3" data-lang-zh="应用产品：ES系列 P6 户外节能屏" data-lang-en="Product: ES Series P6 Outdoor">应用产品：ES系列 P6 户外节能屏</p>
+                        <a href="case-studies.html#case2" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="了解详情" data-lang-en="View Details">了解详情 &rarr;</a>
+                    </div>
+                </article>
+                <article class="bg-gray-700 rounded-lg overflow-hidden shadow-xl card-hover">
+                    <img src="https://placehold.co/400x250/1f2937/ffffff?text=案例3" alt-lang-zh="XR虚拟摄影棚案例" alt-lang-en="XR Virtual Studio Case" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white" data-lang-zh="XR虚拟摄影棚" data-lang-en="XR Virtual Studio">XR虚拟摄影棚</h3>
+                        <p class="text-sm text-gray-400 mb-3" data-lang-zh="应用产品：XR系列 P1.9 租赁屏" data-lang-en="Product: XR Series P1.9 Rental">应用产品：XR系列 P1.9 租赁屏</p>
+                        <a href="case-studies.html#case3" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="了解详情" data-lang-en="View Details">了解详情 &rarr;</a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-12">
+                <a href="case-studies.html" class="primary-button" data-lang-zh="查看所有案例" data-lang-en="View All Cases">查看所有案例</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-900" aria-labelledby="certifications-title">
+        <div class="container mx-auto px-6">
+            <h2 id="certifications-title" class="section-title" data-lang-zh="权威认证" data-lang-en="Certifications">权威认证</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12" role="list">
+                <img src="https://placehold.co/100x50/ffffff/1f2937?text=ISO9001" alt="ISO9001 Certification" class="h-10 md:h-12" role="listitem">
+                <img src="https://placehold.co/100x50/ffffff/1f2937?text=CE" alt="CE Certification" class="h-10 md:h-12" role="listitem">
+                <img src="https://placehold.co/100x50/ffffff/1f2937?text=RoHS" alt="RoHS Certification" class="h-10 md:h-12" role="listitem">
+                <img src="https://placehold.co/100x50/ffffff/1f2937?text=FCC" alt="FCC Certification" class="h-10 md:h-12" role="listitem">
+                <img src="https://placehold.co/100x50/ffffff/1f2937?text=CCC" alt="CCC Certification" class="h-10 md:h-12" role="listitem">
+                <img src="https://placehold.co/100x50/ffffff/1f2937?text=TUV" alt="TUV Certification" class="h-10 md:h-12" role="listitem">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-800" aria-labelledby="news-title">
+        <div class="container mx-auto px-6">
+            <h2 id="news-title" class="section-title" data-lang-zh="新闻与洞察" data-lang-en="News & Insights">新闻与洞察</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-gray-700 rounded-lg shadow-xl overflow-hidden card-hover">
+                    <img src="https://placehold.co/400x220/1f2937/ffffff?text=新闻1" alt-lang-zh="联锦光电发布最新小间距技术新闻" alt-lang-en="Lianjin Unveils Latest Fine Pitch Technology News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-400 mb-1" data-lang-zh="2025年5月15日" data-lang-en="May 15, 2025">2025年5月15日</p>
+                        <h3 class="text-lg font-semibold mb-2 text-white" data-lang-zh="联锦光电发布最新小间距技术" data-lang-en="Lianjin Unveils Latest Fine Pitch Technology">联锦光电发布最新小间距技术</h3>
+                        <p class="text-sm text-gray-400 mb-3 line-clamp-3" data-lang-zh="在今日的技术研讨会上，联锦光电展示了其在小间距LED显示领域的最新突破..." data-lang-en="At today's tech seminar, Lianjin showcased its latest breakthroughs in fine pitch LED displays...">在今日的技术研讨会上，联锦光电展示了其在小间距LED显示领域的最新突破...</p>
+                        <a href="news-detail-template.html?id=news1" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="阅读全文" data-lang-en="Read More">阅读全文 &rarr;</a>
+                    </div>
+                </article>
+                <article class="bg-gray-700 rounded-lg shadow-xl overflow-hidden card-hover">
+                    <img src="https://placehold.co/400x220/1f2937/ffffff?text=新闻2" alt-lang-zh="联锦光电参加ISLE展会新闻" alt-lang-en="Lianjin Participates in ISLE Expo News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-400 mb-1" data-lang-zh="2025年5月10日" data-lang-en="May 10, 2025">2025年5月10日</p>
+                        <h3 class="text-lg font-semibold mb-2 text-white" data-lang-zh="联锦光电参加国际显示技术展ISLE" data-lang-en="Lianjin Participates in ISLE Expo">联锦光电参加国际显示技术展ISLE</h3>
+                        <p class="text-sm text-gray-400 mb-3 line-clamp-3" data-lang-zh="联锦光电携多款创新产品亮相ISLE 2025，展示了其在LED显示技术领域的领先实力..." data-lang-en="Lianjin showcased innovative products at ISLE 2025, demonstrating its leading strength...">联锦光电携多款创新产品亮相ISLE 2025，展示了其在LED显示技术领域的领先实力...</p>
+                        <a href="news-detail-template.html?id=news2" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="阅读全文" data-lang-en="Read More">阅读全文 &rarr;</a>
+                    </div>
+                </article>
+                 <article class="bg-gray-700 rounded-lg shadow-xl overflow-hidden card-hover">
+                    <img src="https://placehold.co/400x220/1f2937/ffffff?text=新闻3" alt-lang-zh="LED显示屏在智慧城市应用新闻" alt-lang-en="LED Display in Smart Cities Application News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-xs text-gray-400 mb-1" data-lang-zh="2025年4月28日" data-lang-en="April 28, 2025">2025年4月28日</p>
+                        <h3 class="text-lg font-semibold mb-2 text-white" data-lang-zh="LED显示屏在智慧城市中的应用趋势" data-lang-en="Trends in LED Display Application in Smart Cities">LED显示屏在智慧城市中的应用趋势</h3>
+                        <p class="text-sm text-gray-400 mb-3 line-clamp-3" data-lang-zh="随着智慧城市建设的推进，LED显示屏凭借其高亮度、高清晰度和智能交互等特性..." data-lang-en="With smart city development, LED displays play a crucial role due to their features...">随着智慧城市建设的推进，LED显示屏凭借其高亮度、高清晰度和智能交互等特性...</p>
+                        <a href="news-detail-template.html?id=news3" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="阅读全文" data-lang-en="Read More">阅读全文 &rarr;</a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-12">
+                <a href="news.html" class="primary-button" data-lang-zh="更多新闻" data-lang-en="More News">更多新闻</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12" role="contentinfo">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-lang-zh="关于联锦" data-lang-en="About Lianjin">关于联锦</h3>
+                    <p class="text-sm mb-2" data-lang-zh="深圳联锦光电有限公司，成立于2007年，是全球领先的LED显示应用与解决方案供应商。" data-lang-en="Shenzhen Lianjin Photoelectricity Co., Ltd., established in 2007, is a leading global provider of LED display applications and solutions.">深圳联锦光电有限公司，成立于2007年，是全球领先的LED显示应用与解决方案供应商。</p>
+                    <p class="text-sm" data-lang-zh="我们致力于为全球客户提供高品质的LED显示产品和专业服务。" data-lang-en="We are committed to providing high-quality LED display products and professional services to customers worldwide.">我们致力于为全球客户提供高品质的LED显示产品和专业服务。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-lang-zh="快速链接" data-lang-en="Quick Links">快速链接</h3>
+                    <ul class="space-y-2 text-sm" role="list">
+                        <li role="listitem"><a href="about.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a></li>
+                        <li role="listitem"><a href="products.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a></li>
+                        <li role="listitem"><a href="solutions.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a></li>
+                        <li role="listitem"><a href="contact.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact Us">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-lang-zh="联系方式" data-lang-en="Contact Info">联系方式</h3>
+                    <address class="not-italic">
+                        <p class="text-sm mb-2" data-lang-zh="地址：深圳市宝安区石岩街道塘头第一工业区C栋" data-lang-en="Address: Building C, Tang Tou 1st Industrial Park, Shiyan, Shenzhen, China">地址：深圳市宝安区石岩街道塘头第一工业区C栋</p>
+                        <p class="text-sm mb-2"><span data-lang-zh="电话：" data-lang-en="Phone:">电话：</span><a href="tel:0755-82595016" class="hover:text-[#f97316]">0755-8259 5016</a></p>
+                        <p class="text-sm mb-2"><span data-lang-zh="邮箱：" data-lang-en="Email:">邮箱：</span><a href="mailto:bruce@lianjinled.com" class="hover:text-[#f97316]">bruce@lianjinled.com</a></p>
+                    </address>
+                    <div class="flex space-x-4 mt-4" aria-label="社交媒体链接 (Social Media Links)">
+                        <a href="#" class="text-gray-400 hover:text-[#f97316]" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-[#f97316]" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-[#f97316]" aria-label="LinkedIn"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+                <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+                <p>
+                    <a href="privacy.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="隐私政策" data-lang-en="Privacy Policy">隐私政策</a> | 
+                    <a href="terms.html" class="hover:text-[#f97316] transition-colors" data-lang-zh="服务条款" data-lang-en="Terms of Service">服务条款</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="contact.html#inquiry" title_zh="快速询盘" title_en="Quick Inquiry" class="fixed bottom-8 right-8 bg-[#f97316] text-white p-4 rounded-full shadow-lg hover:bg-[#fb923c] transition-colors z-50" aria-label_zh="快速询盘" aria-label_en="Quick Inquiry">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Page-specific JavaScript can go here if needed
+        // For homepage.html, most JS is in main.js
+        // Example: Initialize a hero slider if you add one
+        // new Swiper('.hero-slider', { /* options */ });
+
+        // Ensure meta tags for description and keywords are updated by language
+        function updateMetaTagsContent() {
+            const descriptionTag = document.querySelector('meta[name="description"]');
+            const keywordsTag = document.querySelector('meta[name="keywords"]');
+
+            if (descriptionTag) {
+                const descContent = descriptionTag.getAttribute(`data-lang-${currentLanguage}-content`);
+                if (descContent) descriptionTag.setAttribute('content', descContent);
+            }
+            if (keywordsTag) {
+                const keywordsContent = keywordsTag.getAttribute(`data-lang-${currentLanguage}-content`);
+                if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+            }
+            // Update title tag as well
+            const titleTag = document.querySelector('title');
+            if(titleTag){
+                const titleText = titleTag.getAttribute(`data-lang-${currentLanguage}`);
+                if(titleText) document.title = titleText;
+            }
+            // Update alt tags for images with specific language alt attributes
+            document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                const altText = img.getAttribute(`alt-lang-${currentLanguage}`);
+                if (altText) {
+                    img.alt = altText;
+                }
+            });
+            // Update aria-labels for elements with specific language aria-label attributes
+            document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                const ariaLabelText = el.getAttribute(`aria-label-${currentLanguage}`);
+                if (ariaLabelText) {
+                    el.setAttribute('aria-label', ariaLabelText);
+                }
+            });
+        }
+        
+        // Override the global switchLanguage to include meta tag updates for this page
+        const originalSwitchLanguage = window.switchLanguage;
+        window.switchLanguage = function(lang) {
+            originalSwitchLanguage(lang); // Call the original function from main.js
+            updateMetaTagsContent(); // Then update meta tags
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateMetaTagsContent(); // Initial meta tag update on load
+             // Ensure mobile menu button has ARIA attributes set by main.js,
+            // but if specific labels are needed for this page, they can be set here or via data attributes.
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                // Set initial aria-label based on current language
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${currentLanguage}`));
+            }
+        });
+    </script>
+</body>
+</html>

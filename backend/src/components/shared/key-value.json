@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_key_values",
+  "info": {
+    "displayName": "键值对",
+    "description": "通用键值对数据"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

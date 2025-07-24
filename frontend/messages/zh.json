@@ -1,0 +1,33 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "products": "产品中心",
+    "solutions": "解决方案",
+    "cases": "成功案例",
+    "news": "新闻资讯",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "support": "技术支持"
+  },
+  "Common": {
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "contactUs": "联系我们",
+    "getQuote": "获取报价",
+    "loading": "加载中...",
+    "error": "出错了",
+    "retry": "重试"
+  },
+  "HomePage": {
+    "title": "深圳联锦光电有限公司",
+    "subtitle": "专业LED显示屏制造商",
+    "description": "致力于为全球客户提供高品质的LED显示解决方案"
+  },
+  "Footer": {
+    "company": "深圳联锦光电有限公司",
+    "address": "深圳市宝安区",
+    "phone": "电话",
+    "email": "邮箱",
+    "copyright": "版权所有"
+  }
+}

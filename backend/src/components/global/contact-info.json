@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_global_contact_infos",
+  "info": {
+    "displayName": "联系信息",
+    "description": "公司联系方式信息"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "fax": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "googleMapsUrl": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "workingHours": {
+      "type": "text"
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "supportEmail": {
+      "type": "email"
+    },
+    "salesEmail": {
+      "type": "email"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "wechat": {
+      "type": "string"
+    },
+    "skype": {
+      "type": "string"
+    }
+  }
+}

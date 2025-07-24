@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="租赁LED显示屏 - 产品中心 - 深圳联锦光电有限公司" data-lang-en="Rental LED Displays - Product Center - Shenzhen Lianjin Photoelectricity Co., Ltd.">租赁LED显示屏 - 产品中心 - 深圳联锦光电有限公司</title>
+    <meta name="description"
+          data-lang-zh-content="查找深圳联锦光电(RGBSHARE联锦)的租赁LED显示屏，包括R3、R系列、XR虚拟拍摄屏和地砖屏。我们提供轻便易装、稳定可靠的租赁解决方案，适用于各类活动、展览和舞台演出。"
+          data-lang-en-content="Find rental LED displays from Shenzhen Lianjin Photoelectricity (RGBSHARE Lianjin), including R3, R series, XR virtual production screens, and LED dance floor screens. We offer lightweight, easy-to-install, stable, and reliable rental solutions for various events, exhibitions, and stage shows.">
+    <meta name="keywords"
+          data-lang-zh-content="LED租赁屏, 舞台LED, 活动显示屏, R3系列, XR虚拟拍摄, LED地砖屏, P2.6, P2.9, P3.9, P4.8, 联锦光电租赁"
+          data-lang-en-content="LED rental display, stage LED, event display screen, R3 series, XR virtual production, LED dance floor, P2.6, P2.9, P3.9, P4.8, Lianjin Photoelectricity rental">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316;
+            font-weight: 700;
+        }
+        .filter-sidebar {
+            background-color: #1f2937;
+            border-right: 1px solid #374151; 
+            border-radius: 0.5rem; 
+        }
+        .filter-group-title {
+            color: #f97316;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .filter-option label {
+            color: #d1d5db;
+            cursor: pointer;
+            display: flex; 
+            align-items: center;
+        }
+        .filter-option input[type="checkbox"] {
+            accent-color: #f97316;
+            margin-right: 0.5rem; 
+        }
+        .product-item-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 0.5rem; 
+        }
+        .product-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+        }
+        .product-item-card img {
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-top-left-radius: 0.5rem; 
+            border-top-right-radius: 0.5rem;
+        }
+        .compare-button {
+            background-color: #374151;
+            color: #e5e7eb;
+            border: 1px solid #4b5563;
+            padding: 0.25rem 0.75rem; 
+            border-radius: 0.375rem;
+            font-size: 0.75rem; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .compare-button.selected {
+            background-color: #10b981; 
+            color: white;
+            border-color: #10b981;
+        }
+        .comparison-bar {
+            background-color: #1f2937;
+            border-top: 1px solid #374151;
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 40; 
+        }
+        .mobile-menu {
+            display: none; 
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+        @media (max-width: 768px) { 
+            .filter-sidebar {
+                width: 100%;
+                border-right: none;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label="主要导航 (Main Navigation)">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label="语言切换 (Language Switcher)">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" data-lang-zh-aria-label="切换到中文" data-lang-en-aria-label="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" data-lang-zh-aria-label="切换到英文" data-lang-en-aria-label="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm transition-colors" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label-zh="打开主菜单" aria-label-en="Open Main Menu" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label="移动设备导航 (Mobile Navigation)">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label="语言切换 (Language Switcher)">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-12 md:py-16 bg-gray-800 text-center" aria-labelledby="page-title-rental">
+        <div class="container mx-auto px-6">
+            <h1 id="page-title-rental" class="text-3xl md:text-4xl font-bold text-white mb-3" data-lang-zh="租赁LED显示屏" data-lang-en="Rental LED Displays">租赁LED显示屏</h1>
+            <p class="text-md text-gray-400" data-lang-zh="轻便易装，稳定可靠，为各类活动提供卓越视觉效果。" data-lang-en="Lightweight, easy to install, stable and reliable, providing excellent visual effects for various events.">轻便易装，稳定可靠，为各类活动提供卓越视觉效果。</p>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-6 py-8 md:py-12 flex flex-col md:flex-row gap-8">
+        <aside class="w-full md:w-1/4 lg:w-1/5 filter-sidebar p-6 rounded-lg" role="complementary" aria-labelledby="filter-products-title-rental">
+            <h2 id="filter-products-title-rental" class="text-xl font-semibold text-white mb-6" data-lang-zh="筛选产品" data-lang-en="Filter Products">筛选产品</h2>
+            
+            <div class="mb-6" role="group" aria-labelledby="filter-pixelpitch-title-rental">
+                <h3 id="filter-pixelpitch-title-rental" class="filter-group-title text-sm uppercase tracking-wider" data-lang-zh="像素间距" data-lang-en="Pixel Pitch">像素间距</h3>
+                <div class="space-y-2 mt-2">
+                    <div class="filter-option"><label><input type="checkbox" value="p1.9" class="filter-checkbox" data-filter-group="pixelPitch"> P1.9mm</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="p2.6" class="filter-checkbox" data-filter-group="pixelPitch"> P2.6mm</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="p2.9" class="filter-checkbox" data-filter-group="pixelPitch"> P2.9mm</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="p3.9" class="filter-checkbox" data-filter-group="pixelPitch"> P3.9mm</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="p4.8" class="filter-checkbox" data-filter-group="pixelPitch"> P4.8mm</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="p5.9" class="filter-checkbox" data-filter-group="pixelPitch"> P5.9mm</label></div>
+                </div>
+            </div>
+
+            <div class="mb-6" role="group" aria-labelledby="filter-environment-title-rental">
+                <h3 id="filter-environment-title-rental" class="filter-group-title text-sm uppercase tracking-wider" data-lang-zh="使用环境" data-lang-en="Environment">使用环境</h3>
+                <div class="space-y-2 mt-2">
+                    <div class="filter-option"><label><input type="checkbox" value="indoor" class="filter-checkbox" data-filter-group="environment"> <span data-lang-zh="户内" data-lang-en="Indoor">户内</span></label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="outdoor" class="filter-checkbox" data-filter-group="environment"> <span data-lang-zh="户外" data-lang-en="Outdoor">户外</span></label></div>
+                </div>
+            </div>
+
+            <div class="mb-6" role="group" aria-labelledby="filter-series-title-rental">
+                <h3 id="filter-series-title-rental" class="filter-group-title text-sm uppercase tracking-wider" data-lang-zh="产品系列" data-lang-en="Product Series">产品系列</h3>
+                <div class="space-y-2 mt-2">
+                    <div class="filter-option"><label><input type="checkbox" value="r3-series" class="filter-checkbox" data-filter-group="series"> R3 系列</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="r-series" class="filter-checkbox" data-filter-group="series"> R 系列</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="xr-series" class="filter-checkbox" data-filter-group="series"> XR 虚拟拍摄系列</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="dance-floor" class="filter-checkbox" data-filter-group="series"> <span data-lang-zh="地砖屏系列" data-lang-en="Dance Floor Series">地砖屏系列</span></label></div>
+                </div>
+            </div>
+            <button id="reset-filters-button-rental" class="w-full py-2 px-4 rounded-md bg-gray-600 hover:bg-gray-500 text-white transition-colors text-sm" data-lang-zh="重置筛选" data-lang-en="Reset Filters">重置筛选</button>
+        </aside>
+
+        <main class="w-full md:w-3/4 lg:w-4/5" role="main" aria-labelledby="product-list-title-rental">
+             <h2 id="product-list-title-rental" class="sr-only" data-lang-zh="租赁产品列表" data-lang-en="Rental Product List">租赁产品列表</h2>
+            <div id="product-list-rental" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                <article class="product-item-card rounded-lg shadow-lg overflow-hidden" data-pixel-pitch="p2.9" data-environment="indoor" data-series="r3-series">
+                    <a href="product-detail-r3-indoor-p29.html">
+                        <img src="https://placehold.co/350x220/1e40af/ffffff?text=R3+户内+P2.97" alt-lang-zh="R3户内租赁屏 P2.976" alt-lang-en="R3 Indoor Rental P2.976" class="w-full">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-white mb-1">R3 户内 P2.976</h3>
+                        <p class="text-xs text-gray-400 mb-2" data-lang-zh="像素间距: 2.97mm | 弧度锁 | 前后维护" data-lang-en="Pixel Pitch: 2.97mm | Arc Lock | Front/Rear Maintenance">像素间距: 2.97mm | 弧度锁 | 前后维护</p>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-2" data-lang-zh="模块化设计，轻薄易装，适用于各类户内舞台活动和展览。" data-lang-en="Modular design, slim and easy to install, suitable for various indoor stage events and exhibitions.">模块化设计，轻薄易装，适用于各类户内舞台活动和展览。</p>
+                        <div class="flex justify-between items-center mt-3">
+                            <a href="product-detail-r3-indoor-p29.html" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="查看详情" data-lang-en="View Details">查看详情 &rarr;</a>
+                            <button class="compare-button" data-product-id="R3-Indoor-P2.97" data-product-name-zh="R3 户内 P2.976" data-product-name-en="R3 Indoor P2.976"><span data-lang-zh="对比" data-lang-en="Compare">对比</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-item-card rounded-lg shadow-lg overflow-hidden" data-pixel-pitch="p3.9" data-environment="outdoor" data-series="r3-series">
+                     <a href="product-detail-r3-outdoor-p39.html">
+                        <img src="https://placehold.co/350x220/1e40af/ffffff?text=R3+户外+P3.91" alt-lang-zh="R3户外租赁屏 P3.91" alt-lang-en="R3 Outdoor Rental P3.91" class="w-full">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-white mb-1">R3 户外 P3.91</h3>
+                        <p class="text-xs text-gray-400 mb-2" data-lang-zh="像素间距: 3.91mm | IP65防护 | 高亮显示" data-lang-en="Pixel Pitch: 3.91mm | IP65 Protection | High Brightness">像素间距: 3.91mm | IP65防护 | 高亮显示</p>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-2" data-lang-zh="高防护等级，适应户外恶劣环境，广泛用于户外演出、大型活动。" data-lang-en="High protection level, adapts to harsh outdoor environments, widely used for outdoor performances and large events.">高防护等级，适应户外恶劣环境，广泛用于户外演出、大型活动。</p>
+                         <div class="flex justify-between items-center mt-3">
+                            <a href="product-detail-r3-outdoor-p39.html" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="查看详情" data-lang-en="View Details">查看详情 &rarr;</a>
+                            <button class="compare-button" data-product-id="R3-Outdoor-P3.91" data-product-name-zh="R3 户外 P3.91" data-product-name-en="R3 Outdoor P3.91"><span data-lang-zh="对比" data-lang-en="Compare">对比</span></button>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            <div class="mt-12 flex justify-center">
+                <nav class="flex space-x-2" aria-label_zh="分页导航" aria-label_en="Pagination">
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="上一页" aria-label_en="Previous Page">&laquo;</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-[#f97316] text-white" aria-current="page" aria-label_zh="当前页, 第1页" aria-label_en="Current Page, Page 1">1</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="第2页" aria-label_en="Page 2">2</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="下一页" aria-label_en="Next Page">&raquo;</a>
+                </nav>
+            </div>
+        </main>
+    </div>
+
+    <div id="comparison-bar" class="fixed bottom-0 left-0 right-0 comparison-bar p-4 shadow-2xl transform translate-y-full transition-transform duration-300 ease-in-out" role="region" aria-labelledby="comparison-bar-title-rental">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
+            <div class="text-center sm:text-left">
+                <h3 id="comparison-bar-title-rental" class="text-white font-semibold" data-lang-zh="已选对比产品：" data-lang-en="Selected for Comparison:">已选对比产品：</h3>
+                <span id="comparison-items-count-rental" class="text-[#f97316] font-bold">0</span>
+                <span id="comparison-items-names-rental" class="text-gray-300 text-sm ml-0 sm:ml-2 block sm:inline"></span>
+            </div>
+            <div class="flex gap-2 mt-2 sm:mt-0">
+                <button id="clear-comparison-button-rental" class="text-gray-400 hover:text-white text-sm py-2 px-3 rounded-md bg-gray-600 hover:bg-gray-500" data-lang-zh="清空" data-lang-en="Clear">清空</button>
+                <button id="start-comparison-button-rental" class="bg-[#10b981] hover:bg-green-600 text-white py-2 px-4 rounded-md text-sm" data-lang-zh="开始对比" data-lang-en="Compare Now">开始对比</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-700 mt-12" role="contentinfo">
+        <div class="container mx-auto px-6 text-center">
+            <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure window.currentLanguage is available from main.js
+            if (typeof window.currentLanguage === 'undefined') {
+                window.currentLanguage = document.documentElement.lang || 'zh';
+            }
+
+            const productItemsRental = document.querySelectorAll('#product-list-rental .product-item-card');
+            const filterCheckboxesRental = document.querySelectorAll('.filter-checkbox'); // Assuming generic class for all filter checkboxes
+            const resetFiltersButtonRental = document.getElementById('reset-filters-button-rental');
+            
+            const comparisonBarRental = document.getElementById('comparison-bar'); // Re-using the same ID as fine-pitch, ensure it's unique if needed or handled by context
+            const comparisonCountElementRental = document.getElementById('comparison-items-count-rental'); // Unique ID for rental
+            const comparisonNamesElementRental = document.getElementById('comparison-items-names-rental'); // Unique ID for rental
+            const clearComparisonButtonRental = document.getElementById('clear-comparison-button-rental'); // Unique ID
+            const startComparisonButtonRental = document.getElementById('start-comparison-button-rental'); // Unique ID
+            let productsToCompareRental = [];
+
+            // --- Meta Tags and ARIA Labels Update Function ---
+            function updatePageSpecificTextAndAttrsRental() {
+                const descriptionTag = document.querySelector('meta[name="description"]');
+                const keywordsTag = document.querySelector('meta[name="keywords"]');
+                const titleTag = document.querySelector('title');
+
+                if (descriptionTag) {
+                    const descContent = descriptionTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (descContent) descriptionTag.setAttribute('content', descContent);
+                }
+                if (keywordsTag) {
+                    const keywordsContent = keywordsTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+                }
+                if(titleTag){
+                    const titleText = titleTag.getAttribute(`data-lang-${window.currentLanguage}`);
+                    if(titleText) document.title = titleText;
+                }
+                document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                    const altText = img.getAttribute(`alt-lang-${window.currentLanguage}`);
+                    if (altText) img.alt = altText;
+                });
+                document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                    const ariaLabelText = el.getAttribute(`aria-label-${window.currentLanguage}`);
+                    if (ariaLabelText) el.setAttribute('aria-label', ariaLabelText);
+                });
+                document.querySelectorAll('.compare-button').forEach(btn => {
+                    const productNameKey = window.currentLanguage === 'zh' ? btn.dataset.productNameZh : btn.dataset.productNameEn;
+                    if (!productsToCompareRental.some(p => p.id === btn.dataset.productId)) {
+                         const compareText = btn.querySelector('span');
+                        if(compareText) compareText.textContent = window.currentLanguage === 'zh' ? '对比' : 'Compare';
+                    } else {
+                        const selectedText = btn.querySelector('span');
+                        if(selectedText) selectedText.textContent = window.currentLanguage === 'zh' ? '已选' : 'Selected';
+                    }
+                });
+                updateComparisonBarTextRental();
+            }
+            
+            // --- Filtering Logic ---
+            function getActiveFiltersRental() {
+                const filters = {};
+                filterCheckboxesRental.forEach(checkbox => {
+                    const group = checkbox.dataset.filterGroup;
+                    if (!filters[group]) {
+                        filters[group] = [];
+                    }
+                    if (checkbox.checked) {
+                        filters[group].push(checkbox.value);
+                    }
+                });
+                return filters;
+            }
+
+            function applyFiltersRental() {
+                const activeFilters = getActiveFiltersRental();
+                productItemsRental.forEach(item => {
+                    let matchesAllGroups = true;
+                    for (const group in activeFilters) {
+                        if (activeFilters[group].length > 0) {
+                            let matchesThisGroup = false;
+                            const itemValues = (item.dataset[group] || "").toLowerCase().split(" ");
+                            for (const filterValue of activeFilters[group]) {
+                                if (itemValues.includes(filterValue.toLowerCase())) {
+                                    matchesThisGroup = true;
+                                    break;
+                                }
+                            }
+                            if (!matchesThisGroup) {
+                                matchesAllGroups = false;
+                                break;
+                            }
+                        }
+                    }
+                    item.style.display = matchesAllGroups ? '' : 'block';
+                });
+            }
+
+            filterCheckboxesRental.forEach(checkbox => checkbox.addEventListener('change', applyFiltersRental));
+            
+            if(resetFiltersButtonRental) {
+                resetFiltersButtonRental.addEventListener('click', () => {
+                    filterCheckboxesRental.forEach(checkbox => checkbox.checked = false);
+                    applyFiltersRental();
+                });
+            }
+
+            // --- Comparison Logic ---
+             function updateComparisonBarTextRental() {
+                if(comparisonBarRental) { // Ensure comparisonBarRental is not null
+                    const titleEl = comparisonBarRental.querySelector('h3'); // Assuming h3 for title
+                    if(titleEl) titleEl.textContent = window.currentLanguage === 'zh' ? '已选对比产品：' : 'Selected for Comparison:';
+                    if(clearComparisonButtonRental) clearComparisonButtonRental.textContent = window.currentLanguage === 'zh' ? '清空' : 'Clear';
+                    if(startComparisonButtonRental) startComparisonButtonRental.textContent = window.currentLanguage === 'zh' ? '开始对比' : 'Compare Now';
+                }
+                updateComparisonDisplayRental();
+            }
+
+            function updateComparisonDisplayRental() {
+                if (!comparisonCountElementRental || !comparisonNamesElementRental || !comparisonBarRental) return;
+                comparisonCountElementRental.textContent = productsToCompareRental.length;
+                comparisonNamesElementRental.textContent = productsToCompareRental.map(p => window.currentLanguage === 'zh' ? p.nameZh : p.nameEn).join(', ');
+
+                if (productsToCompareRental.length > 0) {
+                    comparisonBarRental.classList.remove('translate-y-full');
+                } else {
+                    comparisonBarRental.classList.add('translate-y-full');
+                }
+            }
+
+            document.querySelectorAll('#product-list-rental .compare-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const productId = button.dataset.productId;
+                    const productNameZh = button.dataset.productNameZh;
+                    const productNameEn = button.dataset.productNameEn;
+                    const buttonTextSpan = button.querySelector('span');
+
+                    const index = productsToCompareRental.findIndex(p => p.id === productId);
+
+                    if (index > -1) { 
+                        productsToCompareRental.splice(index, 1);
+                        button.classList.remove('selected');
+                        if(buttonTextSpan) buttonTextSpan.textContent = window.currentLanguage === 'zh' ? '对比' : 'Compare';
+                    } else { 
+                        if (productsToCompareRental.length < 4) {
+                            productsToCompareRental.push({id: productId, nameZh: productNameZh, nameEn: productNameEn});
+                            button.classList.add('selected');
+                            if(buttonTextSpan) buttonTextSpan.textContent = window.currentLanguage === 'zh' ? '已选' : 'Selected';
+                        } else {
+                            alert(window.currentLanguage === 'zh' ? '最多只能选择4款产品进行对比。' : 'You can select a maximum of 4 products to compare.');
+                        }
+                    }
+                    updateComparisonDisplayRental();
+                });
+            });
+
+            if (clearComparisonButtonRental) {
+                clearComparisonButtonRental.addEventListener('click', () => {
+                    productsToCompareRental = [];
+                    document.querySelectorAll('#product-list-rental .compare-button.selected').forEach(btn => {
+                        btn.classList.remove('selected');
+                        const span = btn.querySelector('span');
+                        if(span) span.textContent = window.currentLanguage === 'zh' ? '对比' : 'Compare';
+                    });
+                    updateComparisonDisplayRental();
+                });
+            }
+
+            if (startComparisonButtonRental) {
+                startComparisonButtonRental.addEventListener('click', () => {
+                    if (productsToCompareRental.length < 2) {
+                        alert(window.currentLanguage === 'zh' ? '请至少选择两款产品进行对比。' : 'Please select at least two products to compare.');
+                        return;
+                    }
+                    const productNames = productsToCompareRental.map(p => window.currentLanguage === 'zh' ? p.nameZh : p.nameEn).join(' vs ');
+                    alert((window.currentLanguage === 'zh' ? '开始对比: ' : 'Comparing: ') + productNames);
+                });
+            }
+            
+            // --- Initial Setup ---
+            updatePageSpecificTextAndAttrsRental(); 
+            applyFiltersRental(); 
+
+            document.addEventListener('languageChanged', (event) => {
+                updatePageSpecificTextAndAttrsRental();
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${window.currentLanguage || 'zh'}`));
+            }
+        });
+    </script>
+</body>
+</html>

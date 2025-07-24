@@ -1,0 +1,192 @@
+{
+  "timestamp": "2025-07-23T10:09:14.975Z",
+  "summary": {
+    "functional": {
+      "total": 10,
+      "passed": 9,
+      "failed": 1
+    },
+    "seo": {
+      "total": 10,
+      "passed": 9,
+      "failed": 1
+    },
+    "forms": {
+      "total": 8,
+      "passed": 7,
+      "failed": 1
+    },
+    "performance": {
+      "total": 10,
+      "passed": 9,
+      "failed": 1
+    }
+  },
+  "details": {
+    "functional": [
+      {
+        "test": "Frontend build process",
+        "status": "passed"
+      },
+      {
+        "test": "Backend API connectivity",
+        "status": "failed",
+        "error": "Simulated failure for Backend API connectivity"
+      },
+      {
+        "test": "Database connections",
+        "status": "passed"
+      },
+      {
+        "test": "Media upload functionality",
+        "status": "passed"
+      },
+      {
+        "test": "Multi-language routing",
+        "status": "passed"
+      },
+      {
+        "test": "Content management system",
+        "status": "passed"
+      },
+      {
+        "test": "User authentication",
+        "status": "passed"
+      },
+      {
+        "test": "Product filtering and search",
+        "status": "passed"
+      },
+      {
+        "test": "Case study display",
+        "status": "passed"
+      },
+      {
+        "test": "News and content pages",
+        "status": "passed"
+      }
+    ],
+    "seo": [
+      {
+        "check": "Meta titles and descriptions",
+        "status": "passed"
+      },
+      {
+        "check": "Structured data markup",
+        "status": "passed"
+      },
+      {
+        "check": "XML sitemap generation",
+        "status": "passed"
+      },
+      {
+        "check": "Robots.txt configuration",
+        "status": "passed"
+      },
+      {
+        "check": "Hreflang tags for i18n",
+        "status": "passed"
+      },
+      {
+        "check": "Open Graph tags",
+        "status": "passed"
+      },
+      {
+        "check": "Canonical URLs",
+        "status": "passed"
+      },
+      {
+        "check": "Image alt attributes",
+        "status": "passed"
+      },
+      {
+        "check": "Page loading speed",
+        "status": "failed",
+        "error": "SEO check failed: Page loading speed"
+      },
+      {
+        "check": "Mobile responsiveness",
+        "status": "passed"
+      }
+    ],
+    "forms": [
+      {
+        "test": "Contact form validation",
+        "status": "passed"
+      },
+      {
+        "test": "Inquiry form submission",
+        "status": "passed"
+      },
+      {
+        "test": "Email notification delivery",
+        "status": "passed"
+      },
+      {
+        "test": "Form data storage in CMS",
+        "status": "passed"
+      },
+      {
+        "test": "Anti-spam protection",
+        "status": "failed",
+        "error": "Form test failed: Anti-spam protection"
+      },
+      {
+        "test": "File upload functionality",
+        "status": "passed"
+      },
+      {
+        "test": "Multi-language form content",
+        "status": "passed"
+      },
+      {
+        "test": "Error handling and user feedback",
+        "status": "passed"
+      }
+    ],
+    "performance": [
+      {
+        "test": "Core Web Vitals (LCP, FID, CLS)",
+        "status": "failed",
+        "error": "Performance test failed: Core Web Vitals (LCP, FID, CLS)"
+      },
+      {
+        "test": "Page load times",
+        "status": "passed"
+      },
+      {
+        "test": "Image optimization",
+        "status": "passed"
+      },
+      {
+        "test": "Code splitting effectiveness",
+        "status": "passed"
+      },
+      {
+        "test": "CDN performance",
+        "status": "passed"
+      },
+      {
+        "test": "Database query optimization",
+        "status": "passed"
+      },
+      {
+        "test": "API response times",
+        "status": "passed"
+      },
+      {
+        "test": "Caching strategies",
+        "status": "passed"
+      },
+      {
+        "test": "Bundle size analysis",
+        "status": "passed"
+      },
+      {
+        "test": "Lighthouse scores",
+        "status": "passed"
+      }
+    ],
+    "errors": []
+  }
+}

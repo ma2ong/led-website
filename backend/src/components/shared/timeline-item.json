@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_shared_timeline_items",
+  "info": {
+    "displayName": "时间线项目",
+    "description": "项目时间线上的事件或里程碑"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "milestone",
+        "task",
+        "event",
+        "decision",
+        "issue",
+        "other"
+      ],
+      "default": "milestone"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "planned",
+        "in-progress",
+        "completed",
+        "delayed",
+        "cancelled"
+      ],
+      "default": "completed"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

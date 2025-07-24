@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_product_usages",
+  "info": {
+    "displayName": "产品使用",
+    "description": "项目中使用的产品信息"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "quantity": {
+      "type": "integer",
+      "min": 1,
+      "default": 1
+    },
+    "usage": {
+      "type": "text"
+    },
+    "configuration": {
+      "type": "json"
+    },
+    "customizations": {
+      "type": "text"
+    },
+    "performance": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

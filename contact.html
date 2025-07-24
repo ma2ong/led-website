@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="联系我们 - 深圳联锦光电有限公司" data-lang-en="Contact Us - Shenzhen Lianjin Photoelectricity Co., Ltd.">联系我们 - 深圳联锦光电有限公司</title>
+    <meta name="description"
+          data-lang-zh-content="联系深圳联锦光电(RGBSHARE联锦)获取LED显示屏产品报价、技术支持或合作机会。我们提供详细的联系方式、在线询盘表单和公司位置。"
+          data-lang-en-content="Contact Shenzhen Lianjin Photoelectricity (RGBSHARE Lianjin) for LED display product quotes, technical support, or partnership opportunities. We provide detailed contact information, an online inquiry form, and company location.">
+    <meta name="keywords"
+          data-lang-zh-content="联系联锦光电, LED询盘, LED显示屏报价, 技术支持联系, RGBSHARE联系方式"
+          data-lang-en-content="Contact Lianjin Photoelectricity, LED Inquiry, LED Display Quote, Technical Support Contact, RGBSHARE Contact Info">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316;
+            font-weight: 700;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start; /* Align items to the start for multi-line text */
+            margin-bottom: 1rem;
+        }
+        .contact-info-item svg {
+            width: 1.5rem; /* 24px */
+            height: 1.5rem; /* 24px */
+            margin-right: 0.75rem; /* 12px */
+            color: #f97316;
+            flex-shrink: 0;
+            margin-top: 0.125rem; 
+        }
+        .form-input, .form-textarea, .form-select {
+            background-color: #374151;
+            color: #e5e7eb;
+            border: 1px solid #4b5563;
+            border-radius: 0.375rem;
+            padding: 0.75rem;
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus, .form-textarea:focus, .form-select:focus {
+            outline: none;
+            border-color: #f97316;
+            box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.5);
+        }
+        .submit-button {
+            background-color: #1e40af;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: #1d4ed8;
+        }
+        .map-container {
+            height: 400px;
+            background-color: #374151; /* Placeholder background */
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+        }
+        .mobile-menu {
+            display: none; 
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+        /* No specific mobile changes for this page beyond global menu */
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label_zh="主要导航" aria-label_en="Main Navigation">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" aria-label_zh="切换到中文" aria-label_en="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" aria-label_zh="切换到英文" aria-label_en="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm transition-colors" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label-zh="打开主菜单" aria-label-en="Open Main Menu" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label_zh="移动设备导航" aria-label_en="Mobile Navigation">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-12 md:py-16 bg-gray-800 text-center" aria-labelledby="page-title-contact">
+        <div class="container mx-auto px-6">
+            <h1 id="page-title-contact" class="text-3xl md:text-4xl font-bold text-white mb-3" data-lang-zh="联系我们" data-lang-en="Contact Us">联系我们</h1>
+            <p class="text-md text-gray-400" data-lang-zh="我们期待与您沟通，解答您的疑问，并探讨合作机会。" data-lang-en="We look forward to communicating with you, answering your questions, and exploring cooperation opportunities.">我们期待与您沟通，解答您的疑问，并探讨合作机会。</p>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-6 py-8 md:py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <section aria-labelledby="contact-info-heading">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg mb-8">
+                    <h2 id="contact-info-heading" class="text-2xl font-semibold text-white mb-6" data-lang-zh="联系信息" data-lang-en="Contact Information">联系信息</h2>
+                    <address class="not-italic">
+                        <div class="contact-info-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <strong data-lang-zh="公司地址：" data-lang-en="Address:">公司地址：</strong>
+                                <span data-lang-zh="中国广东省深圳市宝安区石岩街道塘头第一工业区C栋" data-lang-en="Building C, Tang Tou 1st Industrial Park, Shiyan Street, Bao'an District, Shenzhen, Guangdong, China">中国广东省深圳市宝安区石岩街道塘头第一工业区C栋</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.308 1.154a11.034 11.034 0 005.37 5.37l1.154-2.308a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <strong data-lang-zh="联系电话：" data-lang-en="Phone:">联系电话：</strong>
+                                <a href="tel:0755-82595016" class="hover:text-[#f97316]">0755-8259 5016</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <strong data-lang-zh="电子邮箱：" data-lang-en="Email:">电子邮箱：</strong>
+                                <a href="mailto:bruce@lianjinled.com" class="hover:text-[#f97316]">bruce@lianjinled.com</a>
+                            </div>
+                        </div>
+                         <div class="contact-info-item">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                            <div>
+                                <strong data-lang-zh="官方网站：" data-lang-en="Website:">官方网站：</strong>
+                                <a href="https://www.rgbshare.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#f97316]">www.rgbshare.com</a> / 
+                                <a href="https://www.lianjinled.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#f97316]">www.lianjinled.com</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+                
+                <div id="map-container" class="map-container" aria-label_zh="公司位置地图" aria-label_en="Company Location Map">
+                    <p data-lang-zh="地图加载中... (实际地图将在此处显示)" data-lang-en="Map loading... (Actual map will be displayed here)">地图加载中... (实际地图将在此处显示)</p>
+                    </div>
+            </section>
+
+            <section id="inquiry" class="bg-gray-700 p-6 md:p-8 rounded-lg shadow-lg" aria-labelledby="inquiry-form-heading">
+                <h2 id="inquiry-form-heading" class="text-2xl font-semibold text-white mb-6" data-lang-zh="在线询盘" data-lang-en="Online Inquiry">在线询盘</h2>
+                <p class="text-gray-300 mb-6 text-sm" data-lang-zh="请填写以下表单，我们的销售代表会尽快与您联系。带 <span class='text-red-500'>*</span> 为必填项。" data-lang-en="Please fill out the form below. Our sales representative will contact you soon. <span class='text-red-500'>*</span> indicates required field.">请填写以下表单，我们的销售代表会尽快与您联系。带 <span class='text-red-500'>*</span> 为必填项。</p>
+                <form id="inquiry-form">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1"><span data-lang-zh="您的姓名" data-lang-en="Your Name">您的姓名</span> <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true" class="form-input">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-300 mb-1"><span data-lang-zh="公司名称" data-lang-en="Company Name">公司名称</span> <span class="text-red-500">*</span></label>
+                            <input type="text" id="company" name="company" required aria-required="true" class="form-input">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1"><span data-lang-zh="电子邮箱" data-lang-en="Email Address">电子邮箱</span> <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true" class="form-input">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1"><span data-lang-zh="联系电话" data-lang-en="Phone Number">联系电话</span> <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true" class="form-input">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="product-interest" class="block text-sm font-medium text-gray-300 mb-1" data-lang-zh="感兴趣的产品系列 (可多选)" data-lang-en="Product Series of Interest (Multiple)">感兴趣的产品系列 (可多选)</label>
+                        <select id="product-interest" name="product_interest" multiple class="form-select h-32" aria-label_zh="感兴趣的产品系列" aria-label_en="Product Series of Interest">
+                            <option value="fine-pitch" data-lang-zh="小间距系列" data-lang-en="Fine Pitch Series">小间距系列</option>
+                            <option value="rental" data-lang-zh="租赁系列" data-lang-en="Rental Series">租赁系列</option>
+                            <option value="outdoor" data-lang-zh="户外固装系列" data-lang-en="Outdoor Fixed Series">户外固装系列</option>
+                            <option value="creative" data-lang-zh="创意显示系列" data-lang-en="Creative Display Series">创意显示系列</option>
+                            <option value="transparent" data-lang-zh="透明屏系列" data-lang-en="Transparent Series">透明屏系列</option>
+                            <option value="all-in-one" data-lang-zh="会议一体机" data-lang-en="All-in-One Conference">会议一体机</option>
+                            <option value="poster" data-lang-zh="LED广告机" data-lang-en="LED Poster">LED广告机</option>
+                            <option value="other" data-lang-zh="其他" data-lang-en="Other">其他</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label for="project-details" class="block text-sm font-medium text-gray-300 mb-1"><span data-lang-zh="项目需求描述" data-lang-en="Project Requirement Description">项目需求描述</span> <span class="text-red-500">*</span></label>
+                        <textarea id="project-details" name="project_details" rows="5" required aria-required="true" class="form-textarea" placeholder_zh="请简要描述您的项目需求，如应用场景、屏幕尺寸、预算范围、期望交付时间等。" placeholder_en="Please briefly describe your project requirements, such as application scenario, screen size, budget range, expected delivery time, etc."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" data-lang-zh="提交询盘" data-lang-en="Submit Inquiry">提交询盘</button>
+                </form>
+                <div id="inquiry-form-feedback" class="mt-4 text-sm" aria-live="polite"></div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-700 mt-12" role="contentinfo">
+        <div class="container mx-auto px-6 text-center">
+            <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure window.currentLanguage is available from main.js
+            if (typeof window.currentLanguage === 'undefined') {
+                window.currentLanguage = document.documentElement.lang || 'zh';
+            }
+
+            const inquiryForm = document.getElementById('inquiry-form');
+            const formFeedback = document.getElementById('inquiry-form-feedback');
+
+            // --- Meta Tags, ARIA Labels, and Placeholders Update Function ---
+            function updatePageSpecificTextAndAttrsContact() {
+                const descriptionTag = document.querySelector('meta[name="description"]');
+                const keywordsTag = document.querySelector('meta[name="keywords"]');
+                const titleTag = document.querySelector('title');
+
+                if (descriptionTag) {
+                    const descContent = descriptionTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (descContent) descriptionTag.setAttribute('content', descContent);
+                }
+                if (keywordsTag) {
+                    const keywordsContent = keywordsTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+                }
+                if(titleTag){
+                    const titleText = titleTag.getAttribute(`data-lang-${window.currentLanguage}`);
+                    if(titleText) document.title = titleText;
+                }
+                document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                    const altText = img.getAttribute(`alt-lang-${window.currentLanguage}`);
+                    if (altText) img.alt = altText;
+                });
+                document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                    const ariaLabelText = el.getAttribute(`aria-label-${window.currentLanguage}`);
+                    if (ariaLabelText) el.setAttribute('aria-label', ariaLabelText);
+                });
+                document.querySelectorAll('input[placeholder_zh], input[placeholder_en], textarea[placeholder_zh], textarea[placeholder_en]').forEach(input => {
+                    input.placeholder = input.getAttribute(`placeholder_${window.currentLanguage}`) || '';
+                });
+                 // Update labels for form elements that have separate span for text
+                document.querySelectorAll('label[for]').forEach(label => {
+                    const span = label.querySelector('span[data-lang-zh]'); // Check if the label text is in a span
+                    if (span) {
+                        const text = span.getAttribute(`data-lang-${window.currentLanguage}`);
+                        if (text) span.textContent = text;
+                    }
+                });
+            }
+            
+            // --- Inquiry Form Submission ---
+            if (inquiryForm) {
+                inquiryForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Basic form validation (check required fields)
+                    let isValid = true;
+                    this.querySelectorAll('[required]').forEach(input => {
+                        if (!input.value.trim()) {
+                            isValid = false;
+                            input.classList.add('border-red-500'); 
+                            input.classList.remove('border-gray-600');
+                        } else {
+                            input.classList.remove('border-red-500');
+                            input.classList.add('border-gray-600');
+                        }
+                    });
+
+                    if (!isValid) {
+                        if (formFeedback) {
+                            formFeedback.textContent = window.currentLanguage === 'zh' ? '请填写所有带 * 的必填项。' : 'Please fill in all required fields marked with *.';
+                            formFeedback.className = 'mt-4 text-sm text-red-400';
+                        }
+                        return;
+                    }
+
+                    const nameInput = document.getElementById('name');
+                    const name = nameInput ? nameInput.value : (window.currentLanguage === 'zh' ? '用户' : 'User');
+                    
+                    const messageZh = `感谢您 ${name}！您的询盘已提交成功，我们会尽快与您联系。`;
+                    const messageEn = `Thank you, ${name}! Your inquiry has been submitted successfully. We will contact you soon.`;
+                    
+                    if (formFeedback) {
+                        formFeedback.textContent = window.currentLanguage === 'zh' ? messageZh : messageEn;
+                        formFeedback.className = 'mt-4 text-sm text-green-400'; 
+                    }
+                    
+                    this.reset(); 
+                    this.querySelectorAll('.border-red-500').forEach(input => {
+                        input.classList.remove('border-red-500');
+                        input.classList.add('border-gray-600');
+                    });
+
+                    setTimeout(() => { 
+                        if (formFeedback) {
+                            formFeedback.textContent = '';
+                            formFeedback.className = 'mt-4 text-sm';
+                        }
+                    }, 5000);
+                    // TODO: Replace with actual form submission logic (e.g., AJAX call to backend)
+                });
+            }
+            
+            // --- Initial Setup ---
+            updatePageSpecificTextAndAttrsContact(); 
+
+            // Listen to the global languageChanged event
+            document.addEventListener('languageChanged', (event) => {
+                updatePageSpecificTextAndAttrsContact();
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${window.currentLanguage || 'zh'}`));
+            }
+             // Initialize aria-labels for specific controls
+            document.querySelectorAll('select[aria-label_zh], input[aria-label_zh], div[aria-label_zh]').forEach(el => { 
+                 const labelZh = el.getAttribute('aria-label_zh');
+                const labelEn = el.getAttribute('aria-label_en');
+                if (window.currentLanguage === 'zh' && labelZh) el.setAttribute('aria-label', labelZh);
+                else if (window.currentLanguage === 'en' && labelEn) el.setAttribute('aria-label', labelEn);
+            });
+
+            // TODO: Initialize Leaflet map here if uncommented in HTML
+            // Example:
+            // if (typeof L !== 'undefined') {
+            //     var map = L.map('map-container').setView([22.6591, 113.9528], 15); // Approx. Shiyan, Bao'an
+            //     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            //         maxZoom: 19,
+            //         attribution: '© OpenStreetMap contributors'
+            //     }).addTo(map);
+            //     L.marker([22.6591, 113.9528]).addTo(map) // Adjust coordinates precisely
+            //         .bindPopup(window.currentLanguage === 'zh' ? '深圳联锦光电有限公司<br>塘头第一工业区C栋' : 'Shenzhen Lianjin Photoelectricity Co., Ltd.<br>Building C, Tang Tou 1st Industrial Park')
+            //         .openPopup();
+            // }
+        });
+    </script>
+</body>
+</html>

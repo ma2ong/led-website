@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="行业解决方案 - 深圳联锦光电有限公司" data-lang-en="Industry Solutions - Shenzhen Lianjin Photoelectricity Co., Ltd.">行业解决方案 - 深圳联锦光电有限公司</title>
+    <meta name="description"
+          data-lang-zh-content="深圳联锦光电(RGBSHARE联锦)为各行业提供专业的LED显示整体解决方案，包括可视化指挥中心、商业广告、会议系统、舞台租赁、体育场馆和XR虚拟拍摄等。"
+          data-lang-en-content="Shenzhen Lianjin Photoelectricity (RGBSHARE Lianjin) offers professional LED display solutions for various industries, including visualization & control centers, commercial advertising, conference systems, stage rental, sports venues, and XR virtual production.">
+    <meta name="keywords"
+          data-lang-zh-content="LED解决方案, 行业应用, 指挥中心LED, 广告LED, 会议LED, 舞台LED, 体育场馆LED, XR虚拟拍摄LED, 联锦光电方案"
+          data-lang-en-content="LED Solutions, Industry Applications, Command Center LED, Advertising LED, Conference LED, Stage Rental LED, Sports Venue LED, XR Virtual Production LED, Lianjin Photoelectricity Solutions">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316;
+            font-weight: 700;
+        }
+        .solution-card img { 
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 0.375rem; 
+        }
+        .tab-button-group { 
+            border-bottom: 1px solid #374151;
+            margin-bottom: 2rem; 
+        }
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem 0.375rem 0 0; 
+            font-weight: 500;
+            color: #d1d5db;
+            background-color: transparent; 
+            border: 1px solid transparent; 
+            border-bottom: none; 
+            margin-bottom: -1px; 
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            outline: none; 
+        }
+        .tab-button:hover, .tab-button:focus-visible { 
+            background-color: #374151; 
+            color: #ffffff;
+            outline: 2px solid #f97316; 
+            outline-offset: -2px;
+        }
+        .tab-button.active {
+            background-color: #1f2937; 
+            color: #f97316; 
+            border-color: #374151 #374151 #1f2937 #374151; 
+        }
+        .tab-content {
+            display: none; 
+            background-color: #1f2937; 
+            padding: 1.5rem;
+            border: 1px solid #374151;
+            border-top: none; 
+            border-radius: 0 0 0.5rem 0.5rem; 
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .mobile-menu {
+            display: none; 
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+        @media (max-width: 768px) { 
+            .tab-button-group {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .tab-button {
+                margin-bottom: 0.5rem;
+                border-radius: 0.375rem; 
+                 margin-bottom: 0; 
+                 border: 1px solid #374151;
+            }
+             .tab-button.active{
+                border-color: #f97316;
+             }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label_zh="主要导航" aria-label_en="Main Navigation">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" aria-label_zh="切换到中文" aria-label_en="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" aria-label_zh="切换到英文" aria-label_en="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm transition-colors" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label-zh="打开主菜单" aria-label-en="Open Main Menu" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label_zh="移动设备导航" aria-label_en="Mobile Navigation">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-12 md:py-16 bg-gray-800 text-center" aria-labelledby="page-title-solutions">
+        <div class="container mx-auto px-6">
+            <h1 id="page-title-solutions" class="text-3xl md:text-4xl font-bold text-white mb-3" data-lang-zh="行业解决方案" data-lang-en="Industry Solutions">行业解决方案</h1>
+            <p class="text-md text-gray-400" data-lang-zh="针对不同行业应用场景，提供专业的LED显示整体解决方案。" data-lang-en="Providing professional LED display solutions for various industry applications.">针对不同行业应用场景，提供专业的LED显示整体解决方案。</p>
+        </div>
+    </section>
+
+    <section class="py-8 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="tab-button-group flex flex-wrap space-x-1 md:space-x-2" role="tablist" aria-label_zh="解决方案分类" aria-label_en="Solution Categories">
+                <button class="tab-button active" role="tab" aria-selected="true" aria-controls="visualization-content" id="visualization-tab" data-lang-zh="可视化指挥中心" data-lang-en="Visualization & Control">可视化指挥中心</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="commercial-ads-content" id="commercial-ads-tab" data-lang-zh="商业广告" data-lang-en="Commercial Advertising">商业广告</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="conference-rooms-content" id="conference-rooms-tab" data-lang-zh="会议系统" data-lang-en="Conference Systems">会议系统</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="stage-rental-content" id="stage-rental-tab" data-lang-zh="舞台租赁" data-lang-en="Stage Rental">舞台租赁</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="sports-venues-content" id="sports-venues-tab" data-lang-zh="体育场馆" data-lang-en="Sports Venues">体育场馆</button>
+                <button class="tab-button" role="tab" aria-selected="false" aria-controls="xr-virtual-content" id="xr-virtual-tab" data-lang-zh="XR虚拟拍摄" data-lang-en="XR Virtual Production">XR虚拟拍摄</button>
+            </div>
+
+            <div id="visualization-content" class="tab-content active" role="tabpanel" tabindex="0" aria-labelledby="visualization-tab">
+                <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="solution-card rounded-lg shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/600x338/1f2937/ffffff?text=可视化指挥中心方案" alt-lang-zh="可视化指挥中心解决方案示意图" alt-lang-en="Visualization & Control Center Solution Diagram" class="w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-4" data-lang-zh="可视化指挥中心解决方案" data-lang-en="Visualization & Control Center Solution">可视化指挥中心解决方案</h3>
+                        <p class="text-gray-300 mb-4" data-lang-zh="采用超高清小间距LED显示屏，实现海量数据可视化、实时监控调度、多信号源同屏显示。广泛应用于公安、交通、能源、智慧城市等领域，提升决策效率和应急响应能力。" data-lang-en="Utilizing ultra-HD fine pitch LED displays for massive data visualization, real-time monitoring and dispatch, and multi-signal co-screen display. Widely used in public security, transportation, energy, smart cities, enhancing decision-making efficiency and emergency response.">采用超高清小间距LED显示屏，实现海量数据可视化、实时监控调度、多信号源同屏显示。广泛应用于公安、交通、能源、智慧城市等领域，提升决策效率和应急响应能力。</p>
+                        <h4 class="text-lg font-semibold text-[#f97316] mb-2" data-lang-zh="技术优势：" data-lang-en="Technical Advantages:">技术优势：</h4>
+                        <ul class="list-disc list-inside text-gray-400 mb-4 text-sm space-y-1">
+                            <li data-lang-zh="超高分辨率，画面细腻无颗粒" data-lang-en="Ultra-high resolution, delicate and grain-free picture">超高分辨率，画面细腻无颗粒</li>
+                            <li data-lang-zh="高刷新率，动态画面流畅无拖影" data-lang-en="High refresh rate, smooth dynamic images without ghosting">高刷新率，动态画面流畅无拖影</li>
+                            <li data-lang-zh="宽色域，色彩还原真实自然" data-lang-en="Wide color gamut, true and natural color reproduction">宽色域，色彩还原真实自然</li>
+                            <li data-lang-zh="稳定可靠，支持7x24小时不间断运行" data-lang-en="Stable and reliable, supports 7x24 hours continuous operation">稳定可靠，支持7x24小时不间断运行</li>
+                        </ul>
+                        <p class="text-sm text-gray-400 mb-1 font-semibold" data-lang-zh="推荐产品：" data-lang-en="Recommended Products:">推荐产品：</p>
+                        <p class="text-sm mb-3"><a href="product-fine-pitch.html" class="text-[#10b981] hover:underline" data-lang-zh="X3系列小间距屏" data-lang-en="X3 Series Fine Pitch">X3系列小间距屏</a>, <a href="product-fine-pitch.html" class="text-[#10b981] hover:underline" data-lang-zh="Mi-Pro系列" data-lang-en="Mi-Pro Series">Mi-Pro系列</a></p>
+                        <p class="text-sm text-gray-400 mb-1 font-semibold" data-lang-zh="相关案例：" data-lang-en="Related Cases:">相关案例：</p>
+                        <p class="text-sm"><a href="case-studies.html#control-center" class="text-[#10b981] hover:underline" data-lang-zh="某市应急指挥中心" data-lang-en="City Emergency Command Center">某市应急指挥中心</a></p>
+                    </div>
+                </article>
+            </div>
+
+            <div id="commercial-ads-content" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="commercial-ads-tab">
+                 <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="solution-card rounded-lg shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/600x338/1f2937/ffffff?text=商业广告解决方案" alt-lang-zh="商业广告解决方案示意图" alt-lang-en="Commercial Advertising Solution Diagram" class="w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-4" data-lang-zh="商业广告解决方案" data-lang-en="Commercial Advertising Solution">商业广告解决方案</h3>
+                        <p class="text-gray-300 mb-4" data-lang-zh="提供户内外固装广告屏、LED广告机、透明橱窗屏等多种产品，满足购物中心、商业街、机场车站等不同场景的广告展示需求。高亮度、高对比度，色彩鲜艳，视觉冲击力强，有效吸引受众。" data-lang-en="Offering indoor/outdoor fixed ad screens, LED posters, transparent window screens for malls, commercial streets, airports, stations. High brightness, high contrast, vivid colors, strong visual impact to attract audiences.">提供户内外固装广告屏、LED广告机、透明橱窗屏等多种产品，满足购物中心、商业街、机场车站等不同场景的广告展示需求。高亮度、高对比度，色彩鲜艳，视觉冲击力强，有效吸引受众。</p>
+                        <h4 class="text-lg font-semibold text-[#f97316] mb-2" data-lang-zh="技术优势：" data-lang-en="Technical Advantages:">技术优势：</h4>
+                        <ul class="list-disc list-inside text-gray-400 mb-4 text-sm space-y-1">
+                            <li data-lang-zh="户外屏高防护等级，适应各种气候条件" data-lang-en="Outdoor screens with high protection level, adaptable to various climates">户外屏高防护等级，适应各种气候条件</li>
+                            <li data-lang-zh="智能控制，支持远程集群管理" data-lang-en="Intelligent control, supports remote cluster management">智能控制，支持远程集群管理</li>
+                            <li data-lang-zh="多种创意造型，提升广告吸引力" data-lang-en="Various creative shapes to enhance ad appeal">多种创意造型，提升广告吸引力</li>
+                        </ul>
+                        <p class="text-sm text-gray-400 mb-1 font-semibold" data-lang-zh="推荐产品：" data-lang-en="Recommended Products:">推荐产品：</p>
+                        <p class="text-sm mb-3"><a href="product-outdoor.html" class="text-[#10b981] hover:underline" data-lang-zh="ES/Ti系列户外屏" data-lang-en="ES/Ti Series Outdoor">ES/Ti系列户外屏</a>, <a href="product-poster.html" class="text-[#10b981] hover:underline" data-lang-zh="G系列广告机" data-lang-en="G Series Poster">G系列广告机</a>, <a href="product-transparent.html" class="text-[#10b981] hover:underline" data-lang-zh="透明屏" data-lang-en="Transparent Screens">透明屏</a></p>
+                        <p class="text-sm text-gray-400 mt-4 mb-1 font-semibold" data-lang-zh="相关案例：" data-lang-en="Related Cases:">相关案例：</p>
+                        <p class="text-sm"><a href="case-studies.html#shopping-mall-ads" class="text-[#10b981] hover:underline" data-lang-zh="某大型购物中心户外大屏" data-lang-en="Large Outdoor Screen for Shopping Mall">某大型购物中心户外大屏</a></p>
+                    </div>
+                </article>
+            </div>
+
+            <div id="conference-rooms-content" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="conference-rooms-tab">
+                <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="solution-card rounded-lg shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/600x338/1f2937/ffffff?text=会议系统解决方案" alt-lang-zh="智能会议系统解决方案示意图" alt-lang-en="Smart Conference System Solution Diagram" class="w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-4" data-lang-zh="智能会议系统解决方案" data-lang-en="Smart Conference System Solution">智能会议系统解决方案</h3>
+                        <p class="text-gray-300 mb-4" data-lang-zh="联锦光电MeeUs系列会议一体机，集高清显示、智能触控、无线投屏、远程会议于一体。多种尺寸可选，满足不同规模会议室需求，提升会议效率与协作体验。" data-lang-en="Lianjin's MeeUs series all-in-one conference displays integrate HD display, smart touch, wireless projection, and remote conferencing. Various sizes meet needs of different conference rooms, enhancing efficiency and collaboration.">联锦光电MeeUs系列会议一体机，集高清显示、智能触控、无线投屏、远程会议于一体。多种尺寸可选，满足不同规模会议室需求，提升会议效率与协作体验。</p>
+                        <h4 class="text-lg font-semibold text-[#f97316] mb-2" data-lang-zh="技术优势：" data-lang-en="Technical Advantages:">技术优势：</h4>
+                        <ul class="list-disc list-inside text-gray-400 mb-4 text-sm space-y-1">
+                            <li data-lang-zh="4K超清显示，细节尽现" data-lang-en="4K ultra-HD display, all details visible">4K超清显示，细节尽现</li>
+                            <li data-lang-zh="多点触控，书写流畅自然" data-lang-en="Multi-point touch, smooth and natural writing">多点触控，书写流畅自然</li>
+                            <li data-lang-zh="一键投屏，兼容多种设备" data-lang-en="One-click projection, compatible with multiple devices">一键投屏，兼容多种设备</li>
+                        </ul>
+                        <p class="text-sm text-gray-400 mb-1 font-semibold" data-lang-zh="推荐产品：" data-lang-en="Recommended Products:">推荐产品：</p>
+                        <p class="text-sm mb-3"><a href="product-all-in-one.html" class="text-[#10b981] hover:underline" data-lang-zh="MeeUs系列会议一体机" data-lang-en="MeeUs Series All-in-One">MeeUs系列会议一体机</a></p>
+                         <p class="text-sm text-gray-400 mt-4 mb-1 font-semibold" data-lang-zh="相关案例：" data-lang-en="Related Cases:">相关案例：</p>
+                        <p class="text-sm"><a href="case-studies.html#corporate-meeting-room" class="text-[#10b981] hover:underline" data-lang-zh="某集团企业多功能会议厅" data-lang-en="Multifunctional Hall of a Corporate Group">某集团企业多功能会议厅</a></p>
+                    </div>
+                </article>
+            </div>
+            
+            <div id="stage-rental-content" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="stage-rental-tab">
+                 <p class="text-center py-10" data-lang-zh="舞台租赁解决方案内容即将上线..." data-lang-en="Stage Rental Solutions content coming soon...">舞台租赁解决方案内容即将上线...</p>
+                 </div>
+            <div id="sports-venues-content" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="sports-venues-tab">
+                 <p class="text-center py-10" data-lang-zh="体育场馆解决方案内容即将上线..." data-lang-en="Sports Venues Solutions content coming soon...">体育场馆解决方案内容即将上线...</p>
+                 </div>
+            <div id="xr-virtual-content" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="xr-virtual-tab">
+                 <p class="text-center py-10" data-lang-zh="XR虚拟拍摄解决方案内容即将上线..." data-lang-en="XR Virtual Production Solutions content coming soon...">XR虚拟拍摄解决方案内容即将上线...</p>
+                 </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-700 mt-12" role="contentinfo">
+        <div class="container mx-auto px-6 text-center">
+            <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure window.currentLanguage is available from main.js
+            if (typeof window.currentLanguage === 'undefined') {
+                window.currentLanguage = document.documentElement.lang || 'zh';
+            }
+
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            let currentFocusedTab = 0; // For keyboard navigation
+
+            // Function to open a specific tab
+            function openSolutionTab(tabId) {
+                tabContents.forEach(content => {
+                    content.style.display = 'none';
+                    content.classList.remove('active');
+                });
+                tabButtons.forEach((button, index) => {
+                    button.classList.remove('active');
+                    button.setAttribute('aria-selected', 'false');
+                    button.setAttribute('tabindex', '-1'); 
+                    if(button.id === tabId + '-tab') {
+                        currentFocusedTab = index;
+                    }
+                });
+
+                const activeContent = document.getElementById(tabId + '-content');
+                const activeButton = document.getElementById(tabId + '-tab');
+
+                if (activeContent) {
+                    activeContent.style.display = 'block';
+                    activeContent.classList.add('active');
+                }
+                if (activeButton) {
+                    activeButton.classList.add('active');
+                    activeButton.setAttribute('aria-selected', 'true');
+                    activeButton.setAttribute('tabindex', '0'); 
+                }
+            }
+            
+            // Add click and keydown event listeners to tab buttons
+            tabButtons.forEach((button, index) => {
+                button.addEventListener('click', (event) => {
+                    const tabId = event.currentTarget.id.replace('-tab', '');
+                    openSolutionTab(tabId);
+                    // Update URL hash for better navigation and bookmarking
+                    window.location.hash = tabId + '-content';
+                });
+                
+                button.addEventListener('keydown', (event) => {
+                    let newTabIndex = currentFocusedTab;
+                    let newTabId = '';
+
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault(); // Prevent default space scroll
+                        newTabId = event.currentTarget.id.replace('-tab', '');
+                        openSolutionTab(newTabId);
+                        window.location.hash = newTabId + '-content';
+                    } else if (event.key === 'ArrowRight') {
+                        event.preventDefault();
+                        newTabIndex = (currentFocusedTab + 1) % tabButtons.length;
+                    } else if (event.key === 'ArrowLeft') {
+                        event.preventDefault();
+                        newTabIndex = (currentFocusedTab - 1 + tabButtons.length) % tabButtons.length;
+                    } else if (event.key === 'Home') {
+                        event.preventDefault();
+                        newTabIndex = 0;
+                    } else if (event.key === 'End') {
+                        event.preventDefault();
+                        newTabIndex = tabButtons.length - 1;
+                    }
+
+                    if (newTabIndex !== currentFocusedTab && tabButtons[newTabIndex]) {
+                        tabButtons[newTabIndex].focus(); // Move focus, but don't activate on arrow keys alone
+                        currentFocusedTab = newTabIndex;
+                    }
+                });
+            });
+            
+            // Function to update meta tags and ARIA labels based on language
+            function updatePageSpecificTextAndAttrsSolutions() {
+                const descriptionTag = document.querySelector('meta[name="description"]');
+                const keywordsTag = document.querySelector('meta[name="keywords"]');
+                const titleTag = document.querySelector('title');
+
+                if (descriptionTag) {
+                    const descContent = descriptionTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (descContent) descriptionTag.setAttribute('content', descContent);
+                }
+                if (keywordsTag) {
+                    const keywordsContent = keywordsTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+                }
+                if(titleTag){
+                    const titleText = titleTag.getAttribute(`data-lang-${window.currentLanguage}`);
+                    if(titleText) document.title = titleText;
+                }
+                document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                    const altText = img.getAttribute(`alt-lang-${window.currentLanguage}`);
+                    if (altText) img.alt = altText;
+                });
+                document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                    const ariaLabelText = el.getAttribute(`aria-label-${window.currentLanguage}`);
+                    if (ariaLabelText) el.setAttribute('aria-label', ariaLabelText);
+                });
+            }
+
+            // Initial setup
+            updatePageSpecificTextAndAttrsSolutions(); 
+            // Activate tab based on URL hash or default to first tab
+            let initialTabId = 'visualization'; 
+            if (window.location.hash) {
+                // Ensure the hash corresponds to a valid tab ID structure
+                const hashValue = window.location.hash.substring(1);
+                if (hashValue.endsWith('-content')) { // Check if hash is in the expected format
+                    const potentialTabId = hashValue.replace('-content', '');
+                    if (document.getElementById(potentialTabId + '-tab')) { 
+                        initialTabId = potentialTabId;
+                    }
+                }
+            }
+            openSolutionTab(initialTabId);
+
+
+            // Listen to the global languageChanged event from main.js
+            document.addEventListener('languageChanged', (event) => {
+                updatePageSpecificTextAndAttrsSolutions();
+                // Tab button text itself is handled by main.js's updateTextContentForAllElements
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${window.currentLanguage || 'zh'}`));
+            }
+        });
+    </script>
+</body>
+</html>

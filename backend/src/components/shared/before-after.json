@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_shared_before_afters",
+  "info": {
+    "displayName": "前后对比",
+    "description": "项目实施前后的对比"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "beforeImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "afterImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "beforeDescription": {
+      "type": "text"
+    },
+    "afterDescription": {
+      "type": "text"
+    },
+    "improvementMetrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.key-value"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "visual",
+        "performance",
+        "functionality",
+        "efficiency",
+        "other"
+      ],
+      "default": "visual"
+    }
+  }
+}

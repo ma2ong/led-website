@@ -1,0 +1,63 @@
+{
+  "collectionName": "components_global_navigation_items",
+  "info": {
+    "displayName": "导航项目",
+    "description": "网站导航菜单项"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ],
+      "default": "_self"
+    },
+    "children": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.navigation-item"
+    },
+    "isButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonStyle": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "text"
+      ],
+      "default": "primary"
+    },
+    "requiresAuth": {
+      "type": "boolean",
+      "default": false
+    },
+    "roles": {
+      "type": "json"
+    }
+  }
+}

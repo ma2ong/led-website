@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_case_study_client_infos",
+  "info": {
+    "displayName": "客户信息",
+    "description": "案例研究中的客户信息"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "industry": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "establishedYear": {
+      "type": "integer"
+    },
+    "employeeCount": {
+      "type": "string"
+    },
+    "annualRevenue": {
+      "type": "string"
+    }
+  }
+}

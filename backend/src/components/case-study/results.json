@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_case_study_results",
+  "info": {
+    "displayName": "项目成果",
+    "description": "项目实施后的成果和效果"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "achievements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.achievement"
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.metric"
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.benefit"
+    },
+    "beforeAfterImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.before-after"
+    },
+    "performanceData": {
+      "type": "json"
+    },
+    "clientFeedback": {
+      "type": "richtext"
+    },
+    "roi": {
+      "type": "string"
+    },
+    "impactSummary": {
+      "type": "text"
+    },
+    "futureExpansion": {
+      "type": "text"
+    }
+  }
+}

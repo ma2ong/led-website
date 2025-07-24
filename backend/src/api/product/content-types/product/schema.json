@@ -1,0 +1,223 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": "LED产品信息管理"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "shortDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "outdoor",
+        "indoor",
+        "rental",
+        "creative",
+        "transparent",
+        "fine-pitch",
+        "poster",
+        "all-in-one"
+      ],
+      "required": true
+    },
+    "technicalSpecs": {
+      "type": "json",
+      "required": false
+    },
+    "features": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "applications": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "specifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.specification"
+    },
+    "advantages": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "modelNumber": {
+      "type": "string",
+      "required": false
+    },
+    "pixelPitch": {
+      "type": "string",
+      "required": false
+    },
+    "resolution": {
+      "type": "string",
+      "required": false
+    },
+    "brightness": {
+      "type": "string",
+      "required": false
+    },
+    "refreshRate": {
+      "type": "string",
+      "required": false
+    },
+    "viewingAngle": {
+      "type": "string",
+      "required": false
+    },
+    "powerConsumption": {
+      "type": "string",
+      "required": false
+    },
+    "operatingTemperature": {
+      "type": "string",
+      "required": false
+    },
+    "ipRating": {
+      "type": "string",
+      "required": false
+    },
+    "lifespan": {
+      "type": "string",
+      "required": false
+    },
+    "warranty": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "certifications": {
+      "type": "json",
+      "required": false
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["files"]
+    },
+    "price": {
+      "type": "decimal",
+      "required": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    },
+    "viewCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "seoTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seoDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seoKeywords": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cases": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::case-study.case-study",
+      "mappedBy": "products"
+    },
+    "relatedNews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news.news",
+      "inversedBy": "relatedProducts"
+    }
+  }
+}

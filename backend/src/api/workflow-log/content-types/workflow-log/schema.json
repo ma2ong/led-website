@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workflow_logs",
+  "info": {
+    "singularName": "workflow-log",
+    "pluralName": "workflow-logs",
+    "displayName": "工作流日志",
+    "description": "记录内容状态变化的日志"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contentType": {
+      "type": "string",
+      "required": true,
+      "description": "内容类型"
+    },
+    "contentId": {
+      "type": "integer",
+      "required": true,
+      "description": "内容ID"
+    },
+    "fromState": {
+      "type": "string",
+      "required": true,
+      "description": "原始状态"
+    },
+    "toState": {
+      "type": "string",
+      "required": true,
+      "description": "目标状态"
+    },
+    "transitionedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "admin::user",
+      "inversedBy": "workflowLogs",
+      "description": "执行转换的用户"
+    },
+    "transitionedAt": {
+      "type": "datetime",
+      "required": true,
+      "description": "转换时间"
+    },
+    "comment": {
+      "type": "text",
+      "description": "转换备注"
+    }
+  }
+}

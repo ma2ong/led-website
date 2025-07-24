@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_case_study_challenges",
+  "info": {
+    "displayName": "挑战",
+    "description": "项目面临的挑战和问题"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "keyPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-point"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.requirement"
+    },
+    "constraints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.constraint"
+    },
+    "timeline": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "technicalChallenges": {
+      "type": "json"
+    },
+    "businessChallenges": {
+      "type": "json"
+    }
+  }
+}

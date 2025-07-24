@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_global_company_infos",
+  "info": {
+    "displayName": "公司信息",
+    "description": "公司基本信息"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "legalName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "foundedYear": {
+      "type": "integer"
+    },
+    "registrationNumber": {
+      "type": "string"
+    },
+    "taxId": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "employeeCount": {
+      "type": "string"
+    },
+    "headquarters": {
+      "type": "string"
+    },
+    "branches": {
+      "type": "json"
+    },
+    "certifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.certification"
+    },
+    "mission": {
+      "type": "text"
+    },
+    "vision": {
+      "type": "text"
+    },
+    "values": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "页脚",
+    "description": "网站页脚配置"
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.footer-column"
+    },
+    "bottomText": {
+      "type": "string"
+    },
+    "showSocialMedia": {
+      "type": "boolean",
+      "default": true
+    },
+    "showLogo": {
+      "type": "boolean",
+      "default": true
+    },
+    "showContactInfo": {
+      "type": "boolean",
+      "default": true
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "copyrightText": {
+      "type": "string"
+    },
+    "privacyPolicyLink": {
+      "type": "string"
+    },
+    "termsOfServiceLink": {
+      "type": "string"
+    }
+  }
+}

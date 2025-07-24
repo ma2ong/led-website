@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_resources",
+  "info": {
+    "displayName": "资源",
+    "description": "项目所需资源"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "human",
+        "equipment",
+        "material",
+        "software",
+        "service"
+      ],
+      "required": true
+    },
+    "quantity": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cost": {
+      "type": "string"
+    }
+  }
+}

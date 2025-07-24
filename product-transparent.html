@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="透明LED显示屏 - 产品中心 - 深圳联锦光电有限公司" data-lang-en="Transparent LED Displays - Product Center - Shenzhen Lianjin Photoelectricity Co., Ltd.">透明LED显示屏 - 产品中心 - 深圳联锦光电有限公司</title>
+    <meta name="description"
+          data-lang-zh-content="探索深圳联锦光电(RGBSHARE联锦)的透明LED显示屏系列。我们的透明屏具有高通透率、轻薄设计，完美融入建筑玻璃幕墙、商业橱窗等场景，创造独特视觉效果。"
+          data-lang-en-content="Discover Shenzhen Lianjin Photoelectricity's (RGBSHARE Lianjin) transparent LED display series. Our transparent screens feature high transparency and slim design, perfectly integrating with glass facades, shop windows, and creating unique visual effects.">
+    <meta name="keywords"
+          data-lang-zh-content="透明LED屏, LED玻璃屏, 橱窗显示屏, 高通透LED, P2.5透明, P3.91透明, 联锦光电透明屏"
+          data-lang-en-content="Transparent LED screen, LED glass display, shop window display, high transparency LED, P2.5 transparent, P3.91 transparent, Lianjin Photoelectricity transparent display">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316;
+            font-weight: 700;
+        }
+        .filter-sidebar {
+            background-color: #1f2937;
+            border-right: 1px solid #374151; 
+            border-radius: 0.5rem; 
+        }
+        .filter-group-title {
+            color: #f97316;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .filter-option label {
+            color: #d1d5db;
+            cursor: pointer;
+            display: flex; 
+            align-items: center;
+        }
+        .filter-option input[type="checkbox"] {
+            accent-color: #f97316;
+            margin-right: 0.5rem; 
+        }
+        .product-item-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 0.5rem; 
+        }
+        .product-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+        }
+        .product-item-card img {
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-top-left-radius: 0.5rem; 
+            border-top-right-radius: 0.5rem;
+        }
+        .compare-button {
+            background-color: #374151;
+            color: #e5e7eb;
+            border: 1px solid #4b5563;
+            padding: 0.25rem 0.75rem; 
+            border-radius: 0.375rem;
+            font-size: 0.75rem; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .compare-button.selected {
+            background-color: #10b981; 
+            color: white;
+            border-color: #10b981;
+        }
+        .comparison-bar {
+            background-color: #1f2937;
+            border-top: 1px solid #374151;
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 40; 
+        }
+        .mobile-menu {
+            display: none; 
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+        @media (max-width: 768px) { 
+            .filter-sidebar {
+                width: 100%;
+                border-right: none;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label_zh="主要导航" aria-label_en="Main Navigation">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" aria-label_zh="切换到中文" aria-label_en="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" aria-label_zh="切换到英文" aria-label_en="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm transition-colors" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label-zh="打开主菜单" aria-label-en="Open Main Menu" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label_zh="移动设备导航" aria-label_en="Mobile Navigation">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-12 md:py-16 bg-gray-800 text-center" aria-labelledby="page-title-transparent">
+        <div class="container mx-auto px-6">
+            <h1 id="page-title-transparent" class="text-3xl md:text-4xl font-bold text-white mb-3" data-lang-zh="透明LED显示屏" data-lang-en="Transparent LED Displays">透明LED显示屏</h1>
+            <p class="text-md text-gray-400" data-lang-zh="高通透性，轻盈设计，与建筑融为一体，创造独特视觉效果。" data-lang-en="High transparency, lightweight design, integrates with architecture for unique visual effects.">高通透性，轻盈设计，与建筑融为一体，创造独特视觉效果。</p>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-6 py-8 md:py-12 flex flex-col md:flex-row gap-8">
+        <aside class="w-full md:w-1/4 lg:w-1/5 filter-sidebar p-6 rounded-lg" role="complementary" aria-labelledby="filter-products-title-transparent">
+            <h2 id="filter-products-title-transparent" class="text-xl font-semibold text-white mb-6" data-lang-zh="筛选产品" data-lang-en="Filter Products">筛选产品</h2>
+            
+            <div class="mb-6" role="group" aria-labelledby="filter-environment-title-transparent">
+                <h3 id="filter-environment-title-transparent" class="filter-group-title text-sm uppercase tracking-wider" data-lang-zh="使用环境" data-lang-en="Environment">使用环境</h3>
+                <div class="space-y-2 mt-2">
+                    <div class="filter-option"><label><input type="checkbox" value="indoor" class="filter-checkbox" data-filter-group="environment"> <span data-lang-zh="户内" data-lang-en="Indoor">户内</span></label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="outdoor" class="filter-checkbox" data-filter-group="environment"> <span data-lang-zh="户外" data-lang-en="Outdoor">户外</span></label></div>
+                </div>
+            </div>
+
+            <div class="mb-6" role="group" aria-labelledby="filter-pixelpitch-title-transparent">
+                <h3 id="filter-pixelpitch-title-transparent" class="filter-group-title text-sm uppercase tracking-wider" data-lang-zh="像素间距 (横向)" data-lang-en="Pixel Pitch (Horizontal)">像素间距 (横向)</h3>
+                <div class="space-y-2 mt-2">
+                    <div class="filter-option"><label><input type="checkbox" value="p2.5" class="filter-checkbox" data-filter-group="pixelPitch"> P2.5mm</label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="p3.91" class="filter-checkbox" data-filter-group="pixelPitch"> P3.91mm</label></div>
+                    </div>
+            </div>
+            
+            <div class="mb-6" role="group" aria-labelledby="filter-transparency-title-transparent">
+                <h3 id="filter-transparency-title-transparent" class="filter-group-title text-sm uppercase tracking-wider" data-lang-zh="通透率" data-lang-en="Transparency Rate">通透率</h3>
+                <div class="space-y-2 mt-2">
+                    <div class="filter-option"><label><input type="checkbox" value="70-85" class="filter-checkbox" data-filter-group="transparencyRate"> <span data-lang-zh="70%-85%" data-lang-en="70%-85%">70%-85%</span></label></div>
+                    <div class="filter-option"><label><input type="checkbox" value="gt85" class="filter-checkbox" data-filter-group="transparencyRate"> <span data-lang-zh="85%以上 (如有)" data-lang-en="Above 85% (if available)">85%以上 (如有)</span></label></div>
+                </div>
+            </div>
+            <button id="reset-filters-button-transparent" class="w-full py-2 px-4 rounded-md bg-gray-600 hover:bg-gray-500 text-white transition-colors text-sm" data-lang-zh="重置筛选" data-lang-en="Reset Filters">重置筛选</button>
+        </aside>
+
+        <main class="w-full md:w-3/4 lg:w-4/5" role="main" aria-labelledby="product-list-title-transparent">
+             <h2 id="product-list-title-transparent" class="sr-only" data-lang-zh="透明屏产品列表" data-lang-en="Transparent Screen Product List">透明屏产品列表</h2>
+            <div id="product-list-transparent" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                <article class="product-item-card rounded-lg shadow-lg overflow-hidden" data-environment="outdoor" data-pixel-pitch="p3.91" data-transparency-rate="70-85">
+                    <a href="product-detail-transparent-outdoor-p3978.html">
+                        <img src="https://placehold.co/350x220/1e40af/ffffff?text=户外透明屏+P3.91-7.81" alt-lang-zh="户外透明LED屏 P3.91-7.81" alt-lang-en="Outdoor Transparent LED Screen P3.91-7.81" class="w-full">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-white mb-1">户外透明屏 P3.91-7.81</h3>
+                        <p class="text-xs text-gray-400 mb-2" data-lang-zh="像素: 3.91(横)x7.81(纵)mm | 通透率: 70%-85% | IP65" data-lang-en="Pitch: 3.91(H)x7.81(V)mm | Transparency: 70%-85% | IP65">像素: 3.91(横)x7.81(纵)mm | 通透率: 70%-85% | IP65</p>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-2" data-lang-zh="高亮高通透，户外防水设计，适用于建筑幕墙、大型商场等。" data-lang-en="High brightness & transparency, outdoor waterproof design, for building facades, large malls.">高亮高通透，户外防水设计，适用于建筑幕墙、大型商场等。</p>
+                        <div class="flex justify-between items-center mt-3">
+                            <a href="product-detail-transparent-outdoor-p3978.html" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="查看详情" data-lang-en="View Details">查看详情 &rarr;</a>
+                            <button class="compare-button" data-product-id="Transparent-Outdoor-P3.91-7.81" data-product-name-zh="户外透明屏 P3.91-7.81" data-product-name-en="Outdoor Transparent P3.91-7.81"><span data-lang-zh="对比" data-lang-en="Compare">对比</span></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-item-card rounded-lg shadow-lg overflow-hidden" data-environment="indoor" data-pixel-pitch="p2.5" data-transparency-rate="70-85">
+                     <a href="product-detail-transparent-indoor-p2550.html">
+                        <img src="https://placehold.co/350x220/1e40af/ffffff?text=户内透明屏+P2.5-5.0" alt-lang-zh="户内透明LED屏 P2.5-5.0" alt-lang-en="Indoor Transparent LED Screen P2.5-5.0" class="w-full">
+                    </a>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-white mb-1">户内透明屏 P2.5-5.0</h3>
+                        <p class="text-xs text-gray-400 mb-2" data-lang-zh="像素: 2.5(横)x5.0(纵)mm | 通透率: 70%-85% | 轻薄" data-lang-en="Pitch: 2.5(H)x5.0(V)mm | Transparency: 70%-85% | Slim">像素: 2.5(横)x5.0(纵)mm | 通透率: 70%-85% | 轻薄</p>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-2" data-lang-zh="专为户内设计，保持高通透性的同时提供清晰明亮的显示效果，适用于零售橱窗、展厅。" data-lang-en="Designed for indoors, maintaining high transparency with clear, bright display. For retail windows, showrooms.">专为户内设计，保持高通透性的同时提供清晰明亮的显示效果，适用于零售橱窗、展厅。</p>
+                         <div class="flex justify-between items-center mt-3">
+                            <a href="product-detail-transparent-indoor-p2550.html" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="查看详情" data-lang-en="View Details">查看详情 &rarr;</a>
+                            <button class="compare-button" data-product-id="Transparent-Indoor-P2.5-5.0" data-product-name-zh="户内透明屏 P2.5-5.0" data-product-name-en="Indoor Transparent P2.5-5.0"><span data-lang-zh="对比" data-lang-en="Compare">对比</span></button>
+                        </div>
+                    </div>
+                </article>
+                 </div>
+            <div class="mt-12 flex justify-center">
+                <nav class="flex space-x-2" aria-label_zh="分页导航" aria-label_en="Pagination">
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="上一页" aria-label_en="Previous Page">&laquo;</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-[#f97316] text-white" aria-current="page" aria-label_zh="当前页, 第1页" aria-label_en="Current Page, Page 1">1</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="第2页" aria-label_en="Page 2">2</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="下一页" aria-label_en="Next Page">&raquo;</a>
+                </nav>
+            </div>
+        </main>
+    </div>
+
+    <div id="comparison-bar-transparent" class="fixed bottom-0 left-0 right-0 comparison-bar p-4 shadow-2xl transform translate-y-full transition-transform duration-300 ease-in-out" role="region" aria-labelledby="comparison-bar-title-transparent">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
+            <div class="text-center sm:text-left">
+                <h3 id="comparison-bar-title-transparent" class="text-white font-semibold" data-lang-zh="已选对比产品：" data-lang-en="Selected for Comparison:">已选对比产品：</h3>
+                <span id="comparison-items-count-transparent" class="text-[#f97316] font-bold">0</span>
+                <span id="comparison-items-names-transparent" class="text-gray-300 text-sm ml-0 sm:ml-2 block sm:inline"></span>
+            </div>
+            <div class="flex gap-2 mt-2 sm:mt-0">
+                <button id="clear-comparison-button-transparent" class="text-gray-400 hover:text-white text-sm py-2 px-3 rounded-md bg-gray-600 hover:bg-gray-500" data-lang-zh="清空" data-lang-en="Clear">清空</button>
+                <button id="start-comparison-button-transparent" class="bg-[#10b981] hover:bg-green-600 text-white py-2 px-4 rounded-md text-sm" data-lang-zh="开始对比" data-lang-en="Compare Now">开始对比</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-700 mt-12" role="contentinfo">
+        <div class="container mx-auto px-6 text-center">
+            <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure window.currentLanguage is available from main.js
+            if (typeof window.currentLanguage === 'undefined') {
+                window.currentLanguage = document.documentElement.lang || 'zh';
+            }
+
+            const productItemsTransparent = document.querySelectorAll('#product-list-transparent .product-item-card');
+            const filterCheckboxesTransparent = document.querySelectorAll('.filter-checkbox'); // Generic class for filter checkboxes
+            const resetFiltersButtonTransparent = document.getElementById('reset-filters-button-transparent');
+            
+            const comparisonBarTransparent = document.getElementById('comparison-bar-transparent');
+            const comparisonCountElementTransparent = document.getElementById('comparison-items-count-transparent');
+            const comparisonNamesElementTransparent = document.getElementById('comparison-items-names-transparent');
+            const clearComparisonButtonTransparent = document.getElementById('clear-comparison-button-transparent');
+            const startComparisonButtonTransparent = document.getElementById('start-comparison-button-transparent');
+            let productsToCompareTransparent = [];
+
+            // --- Meta Tags and ARIA Labels Update Function ---
+            function updatePageSpecificTextAndAttrsTransparent() {
+                const descriptionTag = document.querySelector('meta[name="description"]');
+                const keywordsTag = document.querySelector('meta[name="keywords"]');
+                const titleTag = document.querySelector('title');
+
+                if (descriptionTag) {
+                    const descContent = descriptionTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (descContent) descriptionTag.setAttribute('content', descContent);
+                }
+                if (keywordsTag) {
+                    const keywordsContent = keywordsTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+                }
+                if(titleTag){
+                    const titleText = titleTag.getAttribute(`data-lang-${window.currentLanguage}`);
+                    if(titleText) document.title = titleText;
+                }
+                document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                    const altText = img.getAttribute(`alt-lang-${window.currentLanguage}`);
+                    if (altText) img.alt = altText;
+                });
+                document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                    const ariaLabelText = el.getAttribute(`aria-label-${window.currentLanguage}`);
+                    if (ariaLabelText) el.setAttribute('aria-label', ariaLabelText);
+                });
+                // Update compare button text
+                document.querySelectorAll('#product-list-transparent .compare-button').forEach(btn => {
+                    const productNameKey = window.currentLanguage === 'zh' ? btn.dataset.productNameZh : btn.dataset.productNameEn;
+                    if (!productsToCompareTransparent.some(p => p.id === btn.dataset.productId)) {
+                        const compareText = btn.querySelector('span');
+                        if(compareText) compareText.textContent = window.currentLanguage === 'zh' ? '对比' : 'Compare';
+                    } else {
+                         const selectedText = btn.querySelector('span');
+                        if(selectedText) selectedText.textContent = window.currentLanguage === 'zh' ? '已选' : 'Selected';
+                    }
+                });
+                updateComparisonBarTextTransparent();
+            }
+            
+            // --- Filtering Logic ---
+            function getActiveFiltersTransparent() {
+                const filters = {};
+                filterCheckboxesTransparent.forEach(checkbox => {
+                    const group = checkbox.dataset.filterGroup; // Ensure this data-attribute is on the checkbox
+                    if (!filters[group]) {
+                        filters[group] = [];
+                    }
+                    if (checkbox.checked) {
+                        filters[group].push(checkbox.value);
+                    }
+                });
+                return filters;
+            }
+
+            function applyFiltersTransparent() {
+                const activeFilters = getActiveFiltersTransparent();
+                productItemsTransparent.forEach(item => {
+                    let matchesAllGroups = true;
+                    for (const group in activeFilters) {
+                        if (activeFilters[group].length > 0) { // Only apply filter if a checkbox in this group is checked
+                            let matchesThisGroup = false;
+                            const itemValueForGroup = (item.dataset[group] || "").toLowerCase();
+                            const itemValuesArray = itemValueForGroup.split(" "); 
+
+                            for (const filterValue of activeFilters[group]) {
+                                if (itemValuesArray.includes(filterValue.toLowerCase())) {
+                                    matchesThisGroup = true;
+                                    break; 
+                                }
+                            }
+                            if (!matchesThisGroup) {
+                                matchesAllGroups = false;
+                                break;
+                            }
+                        }
+                    }
+                    item.style.display = matchesAllGroups ? '' : 'none'; 
+                });
+            }
+
+            filterCheckboxesTransparent.forEach(checkbox => checkbox.addEventListener('change', applyFiltersTransparent));
+            
+            if(resetFiltersButtonTransparent) {
+                resetFiltersButtonTransparent.addEventListener('click', () => {
+                    filterCheckboxesTransparent.forEach(checkbox => checkbox.checked = false);
+                    applyFiltersTransparent();
+                });
+            }
+
+            // --- Comparison Logic ---
+             function updateComparisonBarTextTransparent() {
+                if(comparisonBarTransparent) { 
+                    const titleEl = comparisonBarTransparent.querySelector('h3'); 
+                    if(titleEl) titleEl.textContent = window.currentLanguage === 'zh' ? '已选对比产品：' : 'Selected for Comparison:';
+                    if(clearComparisonButtonTransparent) clearComparisonButtonTransparent.textContent = window.currentLanguage === 'zh' ? '清空' : 'Clear';
+                    if(startComparisonButtonTransparent) startComparisonButtonTransparent.textContent = window.currentLanguage === 'zh' ? '开始对比' : 'Compare Now';
+                }
+                updateComparisonDisplayTransparent();
+            }
+
+            function updateComparisonDisplayTransparent() {
+                if (!comparisonCountElementTransparent || !comparisonNamesElementTransparent || !comparisonBarTransparent) return;
+                comparisonCountElementTransparent.textContent = productsToCompareTransparent.length;
+                comparisonNamesElementTransparent.textContent = productsToCompareTransparent.map(p => window.currentLanguage === 'zh' ? p.nameZh : p.nameEn).join(', ');
+
+                if (productsToCompareTransparent.length > 0) {
+                    comparisonBarTransparent.classList.remove('translate-y-full');
+                } else {
+                    comparisonBarTransparent.classList.add('translate-y-full');
+                }
+            }
+
+            document.querySelectorAll('#product-list-transparent .compare-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const productId = button.dataset.productId;
+                    const productNameZh = button.dataset.productNameZh;
+                    const productNameEn = button.dataset.productNameEn;
+                    const buttonTextSpan = button.querySelector('span');
+
+                    const index = productsToCompareTransparent.findIndex(p => p.id === productId);
+
+                    if (index > -1) { 
+                        productsToCompareTransparent.splice(index, 1);
+                        button.classList.remove('selected');
+                        if(buttonTextSpan) buttonTextSpan.textContent = window.currentLanguage === 'zh' ? '对比' : 'Compare';
+                    } else { 
+                        if (productsToCompareTransparent.length < 4) {
+                            productsToCompareTransparent.push({id: productId, nameZh: productNameZh, nameEn: productNameEn});
+                            button.classList.add('selected');
+                           if(buttonTextSpan) buttonTextSpan.textContent = window.currentLanguage === 'zh' ? '已选' : 'Selected';
+                        } else {
+                            alert(window.currentLanguage === 'zh' ? '最多只能选择4款产品进行对比。' : 'You can select a maximum of 4 products to compare.');
+                        }
+                    }
+                    updateComparisonDisplayTransparent();
+                });
+            });
+
+            if (clearComparisonButtonTransparent) {
+                clearComparisonButtonTransparent.addEventListener('click', () => {
+                    productsToCompareTransparent = [];
+                    document.querySelectorAll('#product-list-transparent .compare-button.selected').forEach(btn => {
+                        btn.classList.remove('selected');
+                        const span = btn.querySelector('span');
+                        if(span) span.textContent = window.currentLanguage === 'zh' ? '对比' : 'Compare';
+                    });
+                    updateComparisonDisplayTransparent();
+                });
+            }
+
+            if (startComparisonButtonTransparent) {
+                startComparisonButtonTransparent.addEventListener('click', () => {
+                    if (productsToCompareTransparent.length < 2) {
+                        alert(window.currentLanguage === 'zh' ? '请至少选择两款产品进行对比。' : 'Please select at least two products to compare.');
+                        return;
+                    }
+                    const productNames = productsToCompareTransparent.map(p => window.currentLanguage === 'zh' ? p.nameZh : p.nameEn).join(' vs ');
+                    alert((window.currentLanguage === 'zh' ? '开始对比: ' : 'Comparing: ') + productNames);
+                    // TODO: Implement actual comparison page/modal navigation
+                });
+            }
+            
+            // --- Initial Setup ---
+            updatePageSpecificTextAndAttrsTransparent(); 
+            applyFiltersTransparent(); // Apply filters on load
+
+            // Listen to the global languageChanged event
+            document.addEventListener('languageChanged', (event) => {
+                updatePageSpecificTextAndAttrsTransparent();
+            });
+
+            // Ensure mobile menu button ARIA labels are set correctly on load
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${window.currentLanguage || 'zh'}`));
+            }
+        });
+    </script>
+</body>
+</html>

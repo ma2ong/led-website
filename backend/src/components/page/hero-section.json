@@ -1,0 +1,79 @@
+{
+  "collectionName": "components_page_hero_sections",
+  "info": {
+    "displayName": "英雄区块",
+    "description": "页面顶部的主视觉区块"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "backgroundVideo": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "fullscreen",
+        "split",
+        "centered",
+        "video-background",
+        "animated"
+      ],
+      "default": "default"
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "center"
+    },
+    "overlayOpacity": {
+      "type": "decimal",
+      "min": 0,
+      "max": 1,
+      "default": 0.5
+    },
+    "height": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "fullscreen"
+      ],
+      "default": "medium"
+    },
+    "animation": {
+      "type": "string"
+    }
+  }
+}

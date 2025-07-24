@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.lianjinled.com/</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/zh/</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/en/</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/zh/products</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/products"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/en/products</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/products"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/zh/case-studies</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/case-studies"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/en/case-studies</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/case-studies"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/zh/news</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/news"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/news"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/en/news</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/news"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/news"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/zh/contact</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/contact"/>
+  </url>
+  <url>
+    <loc>https://www.lianjinled.com/en/contact</loc>
+    <lastmod>2025-07-23T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.lianjinled.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lianjinled.com/en/contact"/>
+  </url>
+</urlset>

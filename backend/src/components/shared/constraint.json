@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_shared_constraints",
+  "info": {
+    "displayName": "约束条件",
+    "description": "项目约束和限制条件"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "budget",
+        "time",
+        "technical",
+        "regulatory",
+        "environmental",
+        "resource"
+      ],
+      "default": "technical"
+    },
+    "impact": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    },
+    "mitigation": {
+      "type": "text"
+    }
+  }
+}

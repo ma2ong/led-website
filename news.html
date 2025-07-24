@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="新闻资讯 - 深圳联锦光电有限公司" data-lang-en="News & Insights - Shenzhen Lianjin Photoelectricity Co., Ltd.">新闻资讯 - 深圳联锦光电有限公司</title>
+    <meta name="description"
+          data-lang-zh-content="获取深圳联锦光电(RGBSHARE联锦)的最新公司新闻、行业动态、技术文章和展会信息。了解LED显示屏行业的前沿技术和趋势。"
+          data-lang-en-content="Get the latest company news, industry updates, technical articles, and exhibition information from Shenzhen Lianjin Photoelectricity (RGBSHARE Lianjin). Learn about cutting-edge technologies and trends in the LED display industry.">
+    <meta name="keywords"
+          data-lang-zh-content="LED新闻, 公司动态, 行业资讯, 技术文章, LED展会, 联锦光电新闻"
+          data-lang-en-content="LED News, Company Updates, Industry Insights, Technical Articles, LED Exhibitions, Lianjin Photoelectricity News">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(31, 41, 55, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .language-switcher span {
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+        }
+        .language-switcher .active-lang {
+            color: #f97316;
+            font-weight: 700;
+        }
+        .filter-controls { /* Container for filter buttons and search bar */
+            background-color: #1f2937;
+            padding: 1rem; /* Add some padding */
+            border-bottom: 1px solid #374151;
+        }
+        .filter-controls input[type="text"] {
+            background-color: #374151;
+            color: #e5e7eb;
+            border: 1px solid #4b5563;
+            border-radius: 0.375rem;
+            padding: 0.5rem 0.75rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .filter-controls input[type="text"]:focus {
+            outline: none;
+            border-color: #f97316;
+            box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.5);
+        }
+        .news-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 0.5rem; /* Rounded corners for cards */
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+        }
+        .news-card img {
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-top-left-radius: 0.5rem; /* Match card radius */
+            border-top-right-radius: 0.5rem;
+        }
+        .tag-button {
+            background-color: #374151;
+            color: #d1d5db;
+            padding: 0.375rem 1rem; /* Slightly more padding */
+            border-radius: 9999px; /* pill shape */
+            font-size: 0.875rem; /* Standardized font size */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 1px solid transparent;
+            outline: none;
+        }
+        .tag-button:hover, .tag-button:focus-visible {
+            background-color: #4b5563;
+            color: #ffffff;
+            outline: 2px solid #f97316;
+            outline-offset: 1px;
+        }
+        .tag-button.active {
+            background-color: #f97316;
+            color: white;
+            border-color: #f97316;
+        }
+        .mobile-menu {
+            display: none; 
+        }
+        .mobile-menu.open {
+            display: block; 
+        }
+        @media (max-width: 768px) { 
+            .filter-controls {
+                flex-direction: column;
+                gap: 0.75rem; 
+            }
+             .filter-controls input[type="text"], .tag-button-group {
+                width: 100%;
+            }
+            .tag-button-group {
+                justify-content: center; /* Center tags on mobile */
+                gap: 0.5rem; /* Add gap between tags on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-sticky shadow-lg" role="banner">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="homepage.html" class="text-2xl font-bold text-white" aria-label="RGBSHARE联锦 Homepage">
+                RGBSHARE <span class="text-[#f97316]">联锦</span>
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center desktop-menu" role="navigation" aria-label_zh="主要导航" aria-label_en="Main Navigation">
+                <a href="homepage.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="首页" data-lang-en="Home">首页</a>
+                <a href="about.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+                <a href="products.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+                <a href="solutions.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+                <a href="case-studies.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+                <a href="news.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+                <a href="support.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+                <a href="contact.html" class="text-gray-300 hover:text-[#f97316] transition-colors" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="language-switcher text-sm text-gray-300" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0" aria-label_zh="切换到中文" aria-label_en="Switch to Chinese">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0" aria-label_zh="切换到英文" aria-label_en="Switch to English">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm transition-colors" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label-zh="打开主菜单" aria-label-en="Open Main Menu" aria-haspopup="true" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-800" role="navigation" aria-label_zh="移动设备导航" aria-label_en="Mobile Navigation">
+            <a href="homepage.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="首页" data-lang-en="Home">首页</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="关于我们" data-lang-en="About Us">关于我们</a>
+            <a href="products.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="产品中心" data-lang-en="Products">产品中心</a>
+            <a href="solutions.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="解决方案" data-lang-en="Solutions">解决方案</a>
+            <a href="case-studies.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="成功案例" data-lang-en="Cases">成功案例</a>
+            <a href="news.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="新闻资讯" data-lang-en="News">新闻资讯</a>
+            <a href="support.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="技术支持" data-lang-en="Support">技术支持</a>
+            <a href="contact.html" class="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-[#f97316]" data-lang-zh="联系我们" data-lang-en="Contact">联系我们</a>
+            <div class="px-6 py-3 border-t border-gray-700">
+                 <div class="language-switcher text-sm text-gray-300 mb-2" aria-label_zh="语言切换" aria-label_en="Language Switcher">
+                    <span class="active-lang" onclick="switchLanguage('zh')" role="button" tabindex="0">中</span> / 
+                    <span onclick="switchLanguage('en')" role="button" tabindex="0">EN</span>
+                </div>
+                <a href="contact.html#inquiry" class="bg-[#f97316] hover:bg-[#fb923c] text-white py-2 px-4 rounded-md text-sm w-full text-center block" data-lang-zh="询盘" data-lang-en="Inquiry">询盘</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-12 md:py-16 bg-gray-800 text-center" aria-labelledby="page-title-news">
+        <div class="container mx-auto px-6">
+            <h1 id="page-title-news" class="text-3xl md:text-4xl font-bold text-white mb-3" data-lang-zh="新闻与洞察" data-lang-en="News & Insights">新闻与洞察</h1>
+            <p class="text-md text-gray-400" data-lang-zh="了解联锦光电最新动态、行业趋势和技术分享。" data-lang-en="Stay updated with Lianjin's latest news, industry trends, and technology insights.">了解联锦光电最新动态、行业趋势和技术分享。</p>
+        </div>
+    </section>
+
+    <section class="py-6 filter-controls" aria-labelledby="filter-news-title">
+        <div class="container mx-auto px-6">
+            <h2 id="filter-news-title" class="sr-only" data-lang-zh="筛选新闻" data-lang-en="Filter News">筛选新闻</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="tag-button-group flex flex-wrap gap-2" role="tablist" aria-label_zh="新闻分类" aria-label_en="News Categories">
+                    <button class="tag-button active" role="tab" aria-selected="true" data-category="all" data-lang-zh="全部" data-lang-en="All">全部</button>
+                    <button class="tag-button" role="tab" aria-selected="false" data-category="company" data-lang-zh="公司新闻" data-lang-en="Company News">公司新闻</button>
+                    <button class="tag-button" role="tab" aria-selected="false" data-category="industry" data-lang-zh="行业动态" data-lang-en="Industry News">行业动态</button>
+                    <button class="tag-button" role="tab" aria-selected="false" data-category="tech" data-lang-zh="技术文章" data-lang-en="Tech Articles">技术文章</button>
+                    <button class="tag-button" role="tab" aria-selected="false" data-category="exhibition" data-lang-zh="展会信息" data-lang-en="Exhibitions">展会信息</button>
+                </div>
+                <div class="relative w-full md:w-auto md:max-w-xs">
+                    <label for="news-search" class="sr-only" data-lang-zh="搜索新闻" data-lang-en="Search News">搜索新闻</label>
+                    <input type="text" id="news-search" 
+                           placeholder_zh="搜索新闻..." placeholder_en="Search news..." 
+                           aria-label_zh="按关键词搜索新闻" aria-label_en="Search news by keyword"
+                           class="w-full py-2 px-4 pr-10">
+                    <div class="absolute top-0 right-0 mt-2 mr-3" aria-hidden="true">
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 md:py-12 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div id="news-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="news-card rounded-lg shadow-xl overflow-hidden" data-category="company tech">
+                    <a href="news-detail-template.html?id=news1">
+                        <img src="https://placehold.co/400x225/1f2937/ffffff?text=联锦发布新技术" alt-lang-zh="联锦光电发布最新小间距技术新闻图片" alt-lang-en="Lianjin Unveils Latest Fine Pitch Technology News Image" class="w-full" loading="lazy">
+                    </a>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-400 mb-1" data-lang-zh="2025年5月15日" data-lang-en="May 15, 2025">2025年5月15日</p>
+                        <h3 class="text-lg font-semibold text-white mb-2 hover:text-[#f97316] transition-colors"><a href="news-detail-template.html?id=news1" data-lang-zh="联锦光电发布最新小间距技术" data-lang-en="Lianjin Unveils Latest Fine Pitch Technology">联锦光电发布最新小间距技术</a></h3>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-3" data-lang-zh="在今日的技术研讨会上，联锦光电展示了其在小间距LED显示领域的最新突破，为行业带来了更高清、更稳定的解决方案。" data-lang-en="At today's tech seminar, Lianjin showcased its latest breakthroughs in fine pitch LED displays, offering higher definition and stability.">在今日的技术研讨会上，联锦光电展示了其在小间距LED显示领域的最新突破，为行业带来了更高清、更稳定的解决方案。</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <a href="news-detail-template.html?id=news1" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="阅读全文" data-lang-en="Read More">阅读全文 &rarr;</a>
+                            <span class="text-xs text-gray-500" data-category-tags-zh="公司新闻, 技术文章" data-category-tags-en="Company News, Tech Articles">公司新闻, 技术文章</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card rounded-lg shadow-xl overflow-hidden" data-category="company exhibition">
+                    <a href="news-detail-template.html?id=news2">
+                        <img src="https://placehold.co/400x225/1f2937/ffffff?text=联锦参加ISLE" alt-lang-zh="联锦光电参加国际显示技术展ISLE新闻图片" alt-lang-en="Lianjin Participates in ISLE Expo News Image" class="w-full" loading="lazy">
+                    </a>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-400 mb-1" data-lang-zh="2025年5月10日" data-lang-en="May 10, 2025">2025年5月10日</p>
+                        <h3 class="text-lg font-semibold text-white mb-2 hover:text-[#f97316] transition-colors"><a href="news-detail-template.html?id=news2" data-lang-zh="联锦光电参加国际显示技术展ISLE" data-lang-en="Lianjin Participates in ISLE Expo">联锦光电参加国际显示技术展ISLE</a></h3>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-3" data-lang-zh="联锦光电携多款创新产品亮相ISLE 2025，展示了其在LED显示技术领域的领先实力，吸引了众多国际客户的关注。" data-lang-en="Lianjin showcased innovative products at ISLE 2025, demonstrating its leading strength in LED display technology, attracting international attention.">联锦光电携多款创新产品亮相ISLE 2025，展示了其在LED显示技术领域的领先实力，吸引了众多国际客户的关注。</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <a href="news-detail-template.html?id=news2" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="阅读全文" data-lang-en="Read More">阅读全文 &rarr;</a>
+                            <span class="text-xs text-gray-500" data-category-tags-zh="公司新闻, 展会信息" data-category-tags-en="Company News, Exhibitions">公司新闻, 展会信息</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card rounded-lg shadow-xl overflow-hidden" data-category="industry tech">
+                    <a href="news-detail-template.html?id=news3">
+                        <img src="https://placehold.co/400x225/1f2937/ffffff?text=智慧城市LED应用" alt-lang-zh="LED显示屏在智慧城市中的应用趋势新闻图片" alt-lang-en="Trends in LED Display Application in Smart Cities News Image" class="w-full" loading="lazy">
+                    </a>
+                    <div class="p-6">
+                        <p class="text-xs text-gray-400 mb-1" data-lang-zh="2025年4月28日" data-lang-en="April 28, 2025">2025年4月28日</p>
+                        <h3 class="text-lg font-semibold text-white mb-2 hover:text-[#f97316] transition-colors"><a href="news-detail-template.html?id=news3" data-lang-zh="LED显示屏在智慧城市中的应用趋势" data-lang-en="Trends in LED Display Application in Smart Cities">LED显示屏在智慧城市中的应用趋势</a></h3>
+                        <p class="text-sm text-gray-300 mb-3 line-clamp-3" data-lang-zh="随着智慧城市建设的推进，LED显示屏凭借其高亮度、高清晰度和智能交互等特性，在交通、安防、信息发布等领域发挥着越来越重要的作用。" data-lang-en="With smart city development, LED displays play a crucial role in transportation, security, and information dissemination due to their features.">随着智慧城市建设的推进，LED显示屏凭借其高亮度、高清晰度和智能交互等特性，在交通、安防、信息发布等领域发挥着越来越重要的作用。</p>
+                         <div class="flex items-center justify-between mt-4">
+                            <a href="news-detail-template.html?id=news3" class="text-[#f97316] hover:text-[#fb923c] font-medium text-sm" data-lang-zh="阅读全文" data-lang-en="Read More">阅读全文 &rarr;</a>
+                            <span class="text-xs text-gray-500" data-category-tags-zh="行业动态, 技术文章" data-category-tags-en="Industry News, Tech Articles">行业动态, 技术文章</span>
+                        </div>
+                    </div>
+                </article>
+                 </div>
+            <div class="mt-12 flex justify-center">
+                <nav class="flex space-x-2" aria-label_zh="分页导航" aria-label_en="Pagination">
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="上一页" aria-label_en="Previous Page">&laquo;</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-[#f97316] text-white" aria-current="page" aria-label_zh="当前页, 第1页" aria-label_en="Current Page, Page 1">1</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="第2页" aria-label_en="Page 2">2</a>
+                    <a href="#" class="py-2 px-3 rounded-md bg-gray-700 text-gray-300 hover:bg-gray-600" aria-label_zh="下一页" aria-label_en="Next Page">&raquo;</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-700 mt-12" role="contentinfo">
+        <div class="container mx-auto px-6 text-center">
+            <p data-lang-zh="&copy; 2025 深圳联锦光电有限公司 版权所有。" data-lang-en="&copy; 2025 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.">&copy; 2025 深圳联锦光电有限公司 版权所有。</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure window.currentLanguage is available from main.js
+            if (typeof window.currentLanguage === 'undefined') {
+                window.currentLanguage = document.documentElement.lang || 'zh';
+            }
+
+            const newsGrid = document.getElementById('news-grid');
+            const newsCards = newsGrid ? newsGrid.querySelectorAll('.news-card') : []; 
+            const tagButtons = document.querySelectorAll('.tag-button-group .tag-button');
+            const searchInput = document.getElementById('news-search');
+            let currentCategory = 'all'; 
+
+            // --- Meta Tags and ARIA Labels Update Function ---
+            function updatePageSpecificTextAndAttrsNews() {
+                const descriptionTag = document.querySelector('meta[name="description"]');
+                const keywordsTag = document.querySelector('meta[name="keywords"]');
+                const titleTag = document.querySelector('title');
+
+                if (descriptionTag) {
+                    const descContent = descriptionTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (descContent) descriptionTag.setAttribute('content', descContent);
+                }
+                if (keywordsTag) {
+                    const keywordsContent = keywordsTag.getAttribute(`data-lang-${window.currentLanguage}-content`);
+                    if (keywordsContent) keywordsTag.setAttribute('content', keywordsContent);
+                }
+                if(titleTag){
+                    const titleText = titleTag.getAttribute(`data-lang-${window.currentLanguage}`);
+                    if(titleText) document.title = titleText;
+                }
+                document.querySelectorAll('img[alt-lang-zh], img[alt-lang-en]').forEach(img => {
+                    const altText = img.getAttribute(`alt-lang-${window.currentLanguage}`);
+                    if (altText) img.alt = altText;
+                });
+                document.querySelectorAll('[aria-label-zh], [aria-label-en]').forEach(el => {
+                    const ariaLabelText = el.getAttribute(`aria-label-${window.currentLanguage}`);
+                    if (ariaLabelText) el.setAttribute('aria-label', ariaLabelText);
+                });
+                document.querySelectorAll('input[placeholder_zh], input[placeholder_en]').forEach(input => {
+                    input.placeholder = input.getAttribute(`placeholder_${window.currentLanguage}`);
+                });
+                // Update category tags text in cards
+                document.querySelectorAll('[data-category-tags-zh]').forEach(span => {
+                    const tagsText = span.getAttribute(`data-category-tags-${window.currentLanguage}`);
+                    if (tagsText) span.textContent = tagsText;
+                });
+            }
+            
+            // --- Filtering and Searching Logic ---
+            function applyFilters() {
+                if (!newsCards.length && !searchInput) return; // Exit if essential elements are missing
+                const searchTerm = searchInput ? searchInput.value.toLowerCase() : "";
+                newsCards.forEach(card => {
+                    const cardCategories = card.dataset.category ? card.dataset.category.split(' ') : [];
+                    const titleEl = card.querySelector('h3 a'); 
+                    const excerptEl = card.querySelector('p.line-clamp-3');
+                    
+                    const titleText = (titleEl && (titleEl.getAttribute(`data-lang-${window.currentLanguage}`) || titleEl.textContent) || "").toLowerCase();
+                    const excerptText = (excerptEl && (excerptEl.getAttribute(`data-lang-${window.currentLanguage}`) || excerptEl.textContent) || "").toLowerCase();
+
+                    const categoryMatch = (currentCategory === 'all' || cardCategories.includes(currentCategory));
+                    const searchMatch = (searchTerm === '' || titleText.includes(searchTerm) || excerptText.includes(searchTerm));
+                    
+                    if (categoryMatch && searchMatch) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            tagButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    tagButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-selected', 'false');
+                    });
+                    event.currentTarget.classList.add('active');
+                    event.currentTarget.setAttribute('aria-selected', 'true');
+                    currentCategory = event.currentTarget.dataset.category;
+                    applyFilters();
+                });
+                button.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        event.currentTarget.click(); 
+                    }
+                });
+            });
+
+            if(searchInput) {
+                searchInput.addEventListener('keyup', () => {
+                    applyFilters();
+                });
+            }
+            
+            // --- Initial Setup ---
+            updatePageSpecificTextAndAttrsNews(); 
+            const allButton = document.querySelector('.tag-button[data-category="all"]');
+            if (allButton) {
+                allButton.classList.add('active');
+                allButton.setAttribute('aria-selected', 'true');
+            }
+            applyFilters(); 
+
+            // Listen to the global languageChanged event
+            document.addEventListener('languageChanged', (event) => {
+                updatePageSpecificTextAndAttrsNews();
+                applyFilters(); 
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-label-zh', '打开主菜单');
+                mobileMenuButton.setAttribute('aria-label-en', 'Open Main Menu');
+                mobileMenuButton.setAttribute('aria-label', mobileMenuButton.getAttribute(`aria-label-${window.currentLanguage || 'zh'}`));
+            }
+            document.querySelectorAll('.filter-controls input[type="text"]').forEach(el => {
+                 const labelZh = el.getAttribute('aria-label_zh');
+                const labelEn = el.getAttribute('aria-label_en');
+                if (window.currentLanguage === 'zh' && labelZh) el.setAttribute('aria-label', labelZh);
+                else if (window.currentLanguage === 'en' && labelEn) el.setAttribute('aria-label', labelEn);
+            });
+        });
+    </script>
+</body>
+</html>

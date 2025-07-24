@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_bullet_points",
+  "info": {
+    "displayName": "要点",
+    "description": "项目要点或列表项"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    }
+  }
+}

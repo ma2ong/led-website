@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_case_study_project_infos",
+  "info": {
+    "displayName": "项目信息",
+    "description": "案例研究中的项目详细信息"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "completionDate": {
+      "type": "date"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "text"
+    },
+    "teamSize": {
+      "type": "integer"
+    },
+    "projectManager": {
+      "type": "string"
+    },
+    "specifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.key-value"
+    },
+    "deliverables": {
+      "type": "json"
+    }
+  }
+}

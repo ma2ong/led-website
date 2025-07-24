@@ -1,0 +1,149 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inquiries",
+  "info": {
+    "singularName": "inquiry",
+    "pluralName": "inquiries",
+    "displayName": "Inquiry",
+    "description": "客户询盘管理"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": false
+    },
+    "company": {
+      "type": "string",
+      "required": false
+    },
+    "country": {
+      "type": "string",
+      "required": false
+    },
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": false
+    },
+    "requirements": {
+      "type": "text",
+      "required": true
+    },
+    "productInterest": {
+      "type": "enumeration",
+      "enum": [
+        "outdoor",
+        "indoor",
+        "rental",
+        "creative",
+        "transparent",
+        "fine-pitch",
+        "poster",
+        "all-in-one",
+        "other"
+      ],
+      "required": false
+    },
+    "projectBudget": {
+      "type": "enumeration",
+      "enum": [
+        "under-ten-k",
+        "ten-k-to-fifty-k",
+        "fifty-k-to-hundred-k",
+        "hundred-k-to-five-hundred-k",
+        "over-five-hundred-k",
+        "not-specified"
+      ],
+      "default": "not-specified"
+    },
+    "projectTimeline": {
+      "type": "enumeration",
+      "enum": [
+        "immediate",
+        "one-to-three-months",
+        "three-to-six-months",
+        "six-to-twelve-months",
+        "over-one-year",
+        "not-specified"
+      ],
+      "default": "not-specified"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "contacted",
+        "in-progress",
+        "quoted",
+        "closed-won",
+        "closed-lost",
+        "spam"
+      ],
+      "default": "new",
+      "required": true
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "default": "medium"
+    },
+    "assignedTo": {
+      "type": "string",
+      "required": false
+    },
+    "notes": {
+      "type": "text",
+      "required": false
+    },
+    "followUpDate": {
+      "type": "date",
+      "required": false
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "website",
+        "email",
+        "phone",
+        "exhibition",
+        "referral",
+        "social-media",
+        "other"
+      ],
+      "default": "website"
+    },
+    "ipAddress": {
+      "type": "string",
+      "required": false
+    },
+    "userAgent": {
+      "type": "string",
+      "required": false
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    }
+  }
+}

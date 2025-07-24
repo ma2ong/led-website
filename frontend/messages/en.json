@@ -1,0 +1,33 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions", 
+    "cases": "Case Studies",
+    "news": "News",
+    "about": "About Us",
+    "contact": "Contact",
+    "support": "Support"
+  },
+  "Common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "contactUs": "Contact Us",
+    "getQuote": "Get Quote",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry"
+  },
+  "HomePage": {
+    "title": "Shenzhen Lianjin Optoelectronics Co., Ltd.",
+    "subtitle": "Professional LED Display Manufacturer",
+    "description": "Committed to providing high-quality LED display solutions for global customers"
+  },
+  "Footer": {
+    "company": "Shenzhen Lianjin Optoelectronics Co., Ltd.",
+    "address": "Bao'an District, Shenzhen",
+    "phone": "Phone",
+    "email": "Email", 
+    "copyright": "All Rights Reserved"
+  }
+}

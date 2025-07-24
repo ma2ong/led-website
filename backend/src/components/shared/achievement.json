@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_shared_achievements",
+  "info": {
+    "displayName": "成就",
+    "description": "项目或产品取得的成就"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "performance",
+        "efficiency",
+        "quality",
+        "innovation",
+        "sustainability",
+        "recognition",
+        "other"
+      ],
+      "default": "performance"
+    }
+  }
+}

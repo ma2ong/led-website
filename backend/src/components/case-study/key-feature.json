@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_case_study_key_features",
+  "info": {
+    "displayName": "关键特性",
+    "description": "案例关键特性和亮点"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.key-value"
+    },
+    "benefits": {
+      "type": "json"
+    }
+  }
+}

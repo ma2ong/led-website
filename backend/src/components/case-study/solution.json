@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_case_study_solutions",
+  "info": {
+    "displayName": "解决方案",
+    "description": "项目的解决方案和实施方法"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "approach": {
+      "type": "richtext"
+    },
+    "keyFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    },
+    "technicalDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.technical-detail"
+    },
+    "implementation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.implementation-step"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "diagrams": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "productsUsed": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.product-usage"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.timeline-item"
+    }
+  }
+}

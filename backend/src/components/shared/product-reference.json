@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_product_references",
+  "info": {
+    "displayName": "产品引用",
+    "description": "引用的产品信息"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 1
+    },
+    "specifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.key-value"
+    },
+    "customization": {
+      "type": "text"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "accessory",
+        "support"
+      ],
+      "default": "primary"
+    }
+  }
+}
