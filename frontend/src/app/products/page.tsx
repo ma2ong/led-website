@@ -1,488 +1,333 @@
-// Products Page - Based on Lianjin LED Brochure Content
 export default function ProductsPage() {
   return (
-    <div className="min-h-screen bg-secondary">
-      {/* Header Section */}
-      <header className="bg-primary text-light py-lg">
-        <div className="container">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold mb-0 text-light">LIANJIN LED</h1>
-              <span className="ml-md text-sm opacity-90">联锦光电</span>
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+      {/* Navigation Header */}
+      <header className="navbar-sticky shadow-lg">
+        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="/" className="text-2xl font-bold text-white">
+            RGBSHARE <span className="text-orange-500">联锦</span>
+          </a>
+          <nav className="hidden md:flex space-x-4 items-center">
+            <a href="/" className="text-gray-300 hover:text-orange-500 transition-colors">首页</a>
+            <a href="/about" className="text-gray-300 hover:text-orange-500 transition-colors">关于我们</a>
+            <a href="/products" className="text-orange-500 font-medium">产品中心</a>
+            <a href="/solutions" className="text-gray-300 hover:text-orange-500 transition-colors">解决方案</a>
+            <a href="/cases" className="text-gray-300 hover:text-orange-500 transition-colors">成功案例</a>
+            <a href="/news" className="text-gray-300 hover:text-orange-500 transition-colors">新闻资讯</a>
+            <a href="/support" className="text-gray-300 hover:text-orange-500 transition-colors">技术支持</a>
+            <a href="/contact" className="text-gray-300 hover:text-orange-500 transition-colors">联系我们</a>
+          </nav>
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="language-switcher text-sm text-gray-300">
+              <span className="active-lang text-orange-500 font-bold">中</span> / 
+              <span className="cursor-pointer hover:text-orange-500">EN</span>
             </div>
-            <div className="hidden md:flex items-center space-x-lg">
-              <a href="/" className="text-light opacity-80 hover:opacity-100">Home</a>
-              <a href="/about" className="text-light opacity-80 hover:opacity-100">About</a>
-              <a href="/products" className="text-light">Products</a>
-              <a href="/contact" className="text-light opacity-80 hover:opacity-100">Contact</a>
-            </div>
+            <a href="/contact" className="secondary-button text-sm">询盘</a>
           </div>
         </div>
       </header>
 
-      {/* Page Title */}
-      <section className="py-xl bg-primary text-light">
-        <div className="container text-center">
-          <h2 className="text-4xl font-bold mb-md">Product Categories</h2>
-          <p className="text-xl opacity-90">Professional LED Display Solutions for Every Application</p>
+      {/* Page Header */}
+      <section className="py-16 bg-gray-800 text-center">
+        <div className="container mx-auto px-6">
+          <h1 className="section-title">产品中心</h1>
+          <p className="section-subtitle">
+            探索深圳联锦光电(RGBSHARE联锦)全系列LED显示屏产品，包括小间距、租赁、户外、创意显示屏、会议一体机、广告机等。查找最适合您需求的解决方案。
+          </p>
         </div>
       </section>
 
-      {/* Main Content */}
-      <main className="py-2xl">
-        <div className="container">
-          
-          {/* Fine Pitch LED Display */}
-          <section className="mb-3xl">
-            <div className="card">
-              <div className="card-body">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-lg text-primary">Fine Pitch LED Display</h3>
-                    <h4 className="text-lg text-secondary mb-md">小间距LED显示屏</h4>
-                    <p className="text-lg mb-lg text-secondary">
-                      Ultra-high resolution displays perfect for control rooms, broadcast studios, and high-end commercial applications.
-                    </p>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Product Series:</h5>
-                      <div className="grid grid-cols-2 gap-md">
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">X3-SMD Series</div>
-                          <div className="text-sm text-secondary">P0.9, P1.25, P1.56, P1.87</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">X3-COB Series</div>
-                          <div className="text-sm text-secondary">P0.9, P1.25, P1.56</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">X3-Curve Series</div>
-                          <div className="text-sm text-secondary">Curved displays</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Mi-Pro Series</div>
-                          <div className="text-sm text-secondary">Professional grade</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Key Features:</h5>
-                      <ul className="space-y-sm">
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Ultra-fine pixel pitch from P0.9 to P1.87</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>4K/8K resolution support</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>High refresh rate and grayscale</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Seamless splicing technology</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-8xl mb-lg">📺</div>
-                    <div className="text-sm text-secondary">
-                      Applications: Control rooms, broadcast studios, conference rooms, commercial displays
-                    </div>
-                  </div>
+      {/* Product Categories */}
+      <section className="py-16 bg-gray-900">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {/* Fine Pitch LED */}
+            <article className="product-card">
+              <div className="h-64 bg-gradient-to-br from-blue-700 to-blue-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-6xl mb-4">📺</div>
+                  <div className="text-2xl font-bold">小间距LED显示屏</div>
+                  <div className="text-sm mt-2 opacity-80">Fine Pitch LED Display</div>
                 </div>
               </div>
-            </div>
-          </section>
-
-          {/* Rental LED Display */}
-          <section className="mb-3xl">
-            <div className="card">
-              <div className="card-body">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-                  <div className="text-center">
-                    <div className="text-8xl mb-lg">🎭</div>
-                    <div className="text-sm text-secondary">
-                      Applications: Concerts, events, exhibitions, stage performances, virtual production
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-3xl font-bold mb-lg text-primary">Rental LED Display</h3>
-                    <h4 className="text-lg text-secondary mb-md">租赁LED显示屏</h4>
-                    <p className="text-lg mb-lg text-secondary">
-                      Lightweight, quick-assembly displays designed for touring, events, and temporary installations.
-                    </p>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Product Series:</h5>
-                      <div className="grid grid-cols-2 gap-md">
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">R3 Series</div>
-                          <div className="text-sm text-secondary">Outdoor/Indoor</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">R Series</div>
-                          <div className="text-sm text-secondary">Standard rental</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">XR Series</div>
-                          <div className="text-sm text-secondary">Virtual production</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Dance Floor</div>
-                          <div className="text-sm text-secondary">Interactive floor</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Key Features:</h5>
-                      <ul className="space-y-sm">
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Lightweight aluminum cabinet design</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Quick lock system for fast assembly</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>High refresh rate for camera applications</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Curved and flexible configurations</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Outdoor LED Display */}
-          <section className="mb-3xl">
-            <div className="card">
-              <div className="card-body">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-lg text-primary">Outdoor LED Display</h3>
-                    <h4 className="text-lg text-secondary mb-md">户外LED显示屏</h4>
-                    <p className="text-lg mb-lg text-secondary">
-                      High-brightness, energy-efficient displays built to withstand harsh outdoor environments.
-                    </p>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Product Series:</h5>
-                      <div className="grid grid-cols-2 gap-md">
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">ES Series</div>
-                          <div className="text-sm text-secondary">Energy-saving</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">ES-C Series</div>
-                          <div className="text-sm text-secondary">Curved outdoor</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Ti Series</div>
-                          <div className="text-sm text-secondary">High-end outdoor</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Ti-C Series</div>
-                          <div className="text-sm text-secondary">Curved Ti series</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Key Features:</h5>
-                      <ul className="space-y-sm">
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>High brightness up to 8000 nits</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>IP65 weatherproof rating</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Energy-saving technology</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Wide viewing angle</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-8xl mb-lg">🏢</div>
-                    <div className="text-sm text-secondary">
-                      Applications: Digital billboards, building facades, sports stadiums, transportation hubs
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Meeting Display */}
-          <section className="mb-3xl">
-            <div className="card">
-              <div className="card-body">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-                  <div className="text-center">
-                    <div className="text-8xl mb-lg">💼</div>
-                    <div className="text-sm text-secondary">
-                      Applications: Conference rooms, boardrooms, presentation halls, collaborative spaces
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-3xl font-bold mb-lg text-primary">Meeting Display</h3>
-                    <h4 className="text-lg text-secondary mb-md">会议一体机</h4>
-                    <p className="text-lg mb-lg text-secondary">
-                      All-in-one LED display solutions with integrated touch functionality for modern meeting rooms.
-                    </p>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Product Series:</h5>
-                      <div className="p-md bg-secondary rounded">
-                        <div className="font-bold">MeeUs Series</div>
-                        <div className="text-sm text-secondary">All-in-One LED Touching Solution</div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Key Features:</h5>
-                      <ul className="space-y-sm">
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Interactive touch functionality</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>4K ultra-high definition</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Integrated computing system</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Wireless presentation capability</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Creative LED Display */}
-          <section className="mb-3xl">
-            <div className="card">
-              <div className="card-body">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-lg text-primary">Creative LED Display</h3>
-                    <h4 className="text-lg text-secondary mb-md">创意LED显示屏</h4>
-                    <p className="text-lg mb-lg text-secondary">
-                      Innovative display solutions including transparent, flexible, and custom-shaped LED screens.
-                    </p>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Product Types:</h5>
-                      <div className="grid grid-cols-2 gap-md">
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Transparent LED</div>
-                          <div className="text-sm text-secondary">See-through displays</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Flexible LED</div>
-                          <div className="text-sm text-secondary">Bendable screens</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Custom Shapes</div>
-                          <div className="text-sm text-secondary">Unique designs</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">Spherical LED</div>
-                          <div className="text-sm text-secondary">360° displays</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Key Features:</h5>
-                      <ul className="space-y-sm">
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Innovative design possibilities</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Lightweight and flexible</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Custom engineering services</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Unique visual experiences</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-8xl mb-lg">✨</div>
-                    <div className="text-sm text-secondary">
-                      Applications: Retail stores, museums, architectural integration, art installations
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Poster LED Display */}
-          <section className="mb-3xl">
-            <div className="card">
-              <div className="card-body">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-                  <div className="text-center">
-                    <div className="text-8xl mb-lg">📱</div>
-                    <div className="text-sm text-secondary">
-                      Applications: Retail advertising, shopping malls, airports, hotels, corporate lobbies
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-3xl font-bold mb-lg text-primary">Poster LED Display</h3>
-                    <h4 className="text-lg text-secondary mb-md">LED海报屏</h4>
-                    <p className="text-lg mb-lg text-secondary">
-                      Compact digital signage solutions perfect for advertising and information display.
-                    </p>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Product Series:</h5>
-                      <div className="grid grid-cols-3 gap-md">
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">G-T4 Series</div>
-                          <div className="text-sm text-secondary">Standard poster</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">G-X4 Series</div>
-                          <div className="text-sm text-secondary">Premium poster</div>
-                        </div>
-                        <div className="p-md bg-secondary rounded">
-                          <div className="font-bold">G-T5 Series</div>
-                          <div className="text-sm text-secondary">Advanced poster</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mb-lg">
-                      <h5 className="font-bold text-primary mb-md">Key Features:</h5>
-                      <ul className="space-y-sm">
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Ultra-thin design</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Easy content management</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Single/double-sided options</span>
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-primary mr-sm">•</span>
-                          <span>Remote control capability</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Contact CTA */}
-          <section className="text-center">
-            <div className="card">
-              <div className="card-body">
-                <h3 className="text-2xl font-bold mb-md text-primary">Need a Custom Solution?</h3>
-                <p className="text-lg mb-lg text-secondary">
-                  Our engineering team can design and manufacture LED displays tailored to your specific requirements.
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">小间距显示屏系列</h3>
+                <p className="text-gray-400 mb-4">
+                  高清画质，无缝拼接，适用于控制室、会议室、展厅等高端应用场景。提供P0.9-P1.87多种像素间距选择。
                 </p>
-                <div className="flex flex-col md:flex-row gap-md justify-center">
-                  <a href="/contact" className="btn btn-primary btn-lg">
-                    Contact Our Experts
-                  </a>
-                  <a href="mailto:sales@lianjinled.com" className="btn btn-secondary btn-lg">
-                    Request Quote
-                  </a>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要系列：</h4>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• X3-SMD系列</li>
+                    <li>• X3-COB系列</li>
+                    <li>• Mi-Pro系列</li>
+                  </ul>
+                </div>
+                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
+                  查看详细规格 →
+                </a>
+              </div>
+            </article>
+
+            {/* Rental LED */}
+            <article className="product-card">
+              <div className="h-64 bg-gradient-to-br from-purple-700 to-purple-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-6xl mb-4">🎭</div>
+                  <div className="text-2xl font-bold">租赁LED显示屏</div>
+                  <div className="text-sm mt-2 opacity-80">Rental LED Display</div>
                 </div>
               </div>
-            </div>
-          </section>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">租赁显示屏系列</h3>
+                <p className="text-gray-400 mb-4">
+                  轻便易装，高刷新率，专为舞台活动、展览展示、演出租赁等应用设计，支持快速安装拆卸。
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要系列：</h4>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• R3系列</li>
+                    <li>• R系列标准版</li>
+                    <li>• XR虚拟制作系列</li>
+                  </ul>
+                </div>
+                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
+                  查看详细规格 →
+                </a>
+              </div>
+            </article>
+
+            {/* Outdoor LED */}
+            <article className="product-card">
+              <div className="h-64 bg-gradient-to-br from-green-700 to-green-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-6xl mb-4">🏢</div>
+                  <div className="text-2xl font-bold">户外LED显示屏</div>
+                  <div className="text-sm mt-2 opacity-80">Outdoor LED Display</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">户外显示屏系列</h3>
+                <p className="text-gray-400 mb-4">
+                  高亮防水，稳定耐用，适用于户外广告、体育场馆、交通显示等应用，支持高达8000nits亮度。
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要系列：</h4>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• ES节能系列</li>
+                    <li>• Ti节能系列</li>
+                    <li>• 标准户外系列</li>
+                  </ul>
+                </div>
+                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
+                  查看详细规格 →
+                </a>
+              </div>
+            </article>
+
+            {/* Creative LED */}
+            <article className="product-card">
+              <div className="h-64 bg-gradient-to-br from-pink-700 to-pink-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-6xl mb-4">✨</div>
+                  <div className="text-2xl font-bold">创意LED显示屏</div>
+                  <div className="text-sm mt-2 opacity-80">Creative LED Display</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">创意显示屏系列</h3>
+                <p className="text-gray-400 mb-4">
+                  透明屏、柔性屏等创新产品，打破常规显示形态，创造无限视觉可能，适用于建筑媒体、艺术装置。
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要类型：</h4>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• 透明LED显示屏</li>
+                    <li>• 柔性LED显示屏</li>
+                    <li>• 异形LED显示屏</li>
+                  </ul>
+                </div>
+                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
+                  查看详细规格 →
+                </a>
+              </div>
+            </article>
+
+            {/* All-in-One Display */}
+            <article className="product-card">
+              <div className="h-64 bg-gradient-to-br from-teal-700 to-teal-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-6xl mb-4">💼</div>
+                  <div className="text-2xl font-bold">会议一体机</div>
+                  <div className="text-sm mt-2 opacity-80">All-in-One Display</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">会议一体机系列</h3>
+                <p className="text-gray-400 mb-4">
+                  集成式智能会议显示解决方案，支持触控交互、无线投屏等功能，专为现代会议室设计。
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要系列：</h4>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• MeeUs一体机系列</li>
+                    <li>• 触控交互功能</li>
+                    <li>• 无线投屏支持</li>
+                  </ul>
+                </div>
+                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
+                  查看详细规格 →
+                </a>
+              </div>
+            </article>
+
+            {/* Poster LED */}
+            <article className="product-card">
+              <div className="h-64 bg-gradient-to-br from-red-700 to-red-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="text-6xl mb-4">📱</div>
+                  <div className="text-2xl font-bold">LED广告机</div>
+                  <div className="text-sm mt-2 opacity-80">Poster LED Display</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">LED广告机系列</h3>
+                <p className="text-gray-400 mb-4">
+                  便携式数字LED广告海报，超薄设计，支持远程内容管理，适用于零售、餐饮等商业环境。
+                </p>
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要系列：</h4>
+                  <ul className="text-sm text-gray-400 space-y-1">
+                    <li>• G-T4系列</li>
+                    <li>• G-X4系列</li>
+                    <li>• G-T5系列</li>
+                  </ul>
+                </div>
+                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
+                  查看详细规格 →
+                </a>
+              </div>
+            </article>
+
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Technical Specifications */}
+      <section className="py-16 bg-gray-800">
+        <div className="container mx-auto px-6">
+          <h2 className="section-title">技术规格对比</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full bg-gray-700 rounded-lg overflow-hidden">
+              <thead className="bg-gray-600">
+                <tr>
+                  <th className="px-6 py-4 text-left text-white font-semibold">产品系列</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">像素间距</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">亮度</th>
+                  <th className="px-6 py-4 text-left text-white font-semibold">应用场景</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-300">
+                <tr className="border-b border-gray-600">
+                  <td className="px-6 py-4 font-medium">小间距显示屏</td>
+                  <td className="px-6 py-4">P0.9-P1.87</td>
+                  <td className="px-6 py-4">800-1200 nits</td>
+                  <td className="px-6 py-4">控制室、会议室</td>
+                </tr>
+                <tr className="border-b border-gray-600">
+                  <td className="px-6 py-4 font-medium">租赁显示屏</td>
+                  <td className="px-6 py-4">P2.6-P4.8</td>
+                  <td className="px-6 py-4">4000-6000 nits</td>
+                  <td className="px-6 py-4">舞台、活动</td>
+                </tr>
+                <tr className="border-b border-gray-600">
+                  <td className="px-6 py-4 font-medium">户外显示屏</td>
+                  <td className="px-6 py-4">P4-P10</td>
+                  <td className="px-6 py-4">5000-8000 nits</td>
+                  <td className="px-6 py-4">户外广告、体育场</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-medium">创意显示屏</td>
+                  <td className="px-6 py-4">定制</td>
+                  <td className="px-6 py-4">1000-4000 nits</td>
+                  <td className="px-6 py-4">建筑媒体、艺术</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="py-20 bg-blue-700 text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-4">需要产品咨询？</h2>
+          <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            我们的技术专家将为您推荐最适合的LED显示解决方案
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" className="bg-white text-blue-700 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+              获取产品报价
+            </a>
+            <a href="tel:+8675582595016" className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors">
+              致电咨询
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
-      <footer className="bg-dark text-light py-2xl">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-lg mb-xl">
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold mb-lg text-light">LIANJIN LED</h4>
-              <p className="text-sm opacity-80">
-                Professional LED display manufacturer since 2007
+              <div className="text-2xl font-bold text-white mb-4">
+                RGBSHARE <span className="text-orange-500">联锦</span>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                深圳联锦光电有限公司，专业LED显示屏制造商，为全球客户提供高品质的显示解决方案。
               </p>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">Products</h5>
-              <ul className="text-sm space-y-sm opacity-80">
-                <li>Fine Pitch LED Display</li>
-                <li>Rental LED Display</li>
-                <li>Outdoor LED Display</li>
-                <li>Creative LED Solutions</li>
+              <h4 className="font-bold text-lg mb-4">产品系列</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">小间距显示屏</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">租赁显示屏</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">户外显示屏</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">创意显示屏</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">Company</h5>
-              <ul className="text-sm space-y-sm opacity-80">
-                <li><a href="/" className="text-light opacity-80 hover:opacity-100">Home</a></li>
-                <li><a href="/about" className="text-light opacity-80 hover:opacity-100">About Us</a></li>
-                <li><a href="/contact" className="text-light opacity-80 hover:opacity-100">Contact</a></li>
+              <h4 className="font-bold text-lg mb-4">技术支持</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">产品手册</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">安装指南</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">维护保养</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">常见问题</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">Contact</h5>
-              <div className="text-sm space-y-sm opacity-80">
-                <div>+86 755-8259-5016</div>
-                <div>sales@lianjinled.com</div>
-                <div>Shenzhen, China</div>
+              <h4 className="font-bold text-lg mb-4">联系方式</h4>
+              <div className="space-y-3 text-sm text-gray-400">
+                <div className="flex items-center">
+                  <span className="mr-2">📞</span>
+                  <span>+86 755-8259-5016</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="mr-2">✉️</span>
+                  <span>bruce@lianjinled.com</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="mr-2">📍</span>
+                  <span>深圳市宝安区</span>
+                </div>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-700 pt-lg text-center">
-            <p className="text-sm opacity-60">
-              © 2024 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved.
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p className="text-sm text-gray-400">
+              © 2024 深圳联锦光电有限公司 版权所有
             </p>
           </div>
         </div>
