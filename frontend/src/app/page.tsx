@@ -1,338 +1,412 @@
-// Lianjin LED Homepage - Professional LED Display Solutions
+// LIANJIN LED - Modern Professional Homepage
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-secondary">
-      {/* Header Section */}
-      <header className="bg-primary text-light py-lg">
-        <div className="container">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold mb-0 text-light">LIANJIN LED</h1>
-              <span className="ml-md text-sm opacity-90">联锦光电</span>
+    <div className="min-h-screen">
+      {/* Modern Navigation */}
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center space-x-4">
+              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">L</span>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-primary">LIANJIN LED</h1>
+                <span className="text-xs text-secondary">联锦光电</span>
+              </div>
             </div>
-            <div className="hidden md:flex items-center space-x-lg">
-              <span className="text-sm">Professional LED Display Manufacturer</span>
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="/" className="text-primary font-medium">Home</a>
+              <a href="/products" className="text-secondary hover:text-primary transition-colors">Products</a>
+              <a href="/about" className="text-secondary hover:text-primary transition-colors">About</a>
+              <a href="/contact" className="text-secondary hover:text-primary transition-colors">Contact</a>
+              <a href="/contact" className="btn btn-primary btn-sm">Get Quote</a>
             </div>
           </div>
         </div>
-      </header>
+      </nav>
 
-      {/* Main Content */}
-      <main>
-        {/* Hero Section */}
-        <section className="py-3xl bg-primary text-light">
-          <div className="container text-center">
-            <div className="fade-in">
-              <h2 className="text-5xl font-bold mb-lg text-light">
-                Innovative LED Display Solutions
-              </h2>
-              <p className="text-xl mb-md opacity-90">
-                Leading manufacturer of high-quality LED displays for global markets
-              </p>
-              <p className="text-lg mb-xl opacity-80">
-                创新LED显示解决方案 | 全球市场的高品质LED显示屏制造商
-              </p>
-              <div className="flex flex-col md:flex-row gap-md justify-center">
-                <a href="#products" className="btn btn-secondary btn-lg">
-                  Our Products
+      {/* Hero Section - Modern Design */}
+      <section className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-blue-50">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                  🏆 Leading LED Manufacturer Since 2007
+                </div>
+                <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  Innovative
+                  <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> LED Display</span>
+                  <br />Solutions
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Professional LED display manufacturer serving 160+ countries worldwide with cutting-edge technology and exceptional quality.
+                </p>
+                <p className="text-lg text-gray-500">
+                  专业LED显示屏制造商，为全球160+国家提供尖端技术和卓越品质
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="/products" className="btn btn-primary btn-lg px-8 py-4 text-lg">
+                  Explore Products
                 </a>
-                <a href="#contact" className="btn btn-primary btn-lg bg-accent border-accent">
-                  Get Quote
+                <a href="/contact" className="btn btn-secondary btn-lg px-8 py-4 text-lg">
+                  Get Consultation
                 </a>
+              </div>
+
+              {/* Key Stats */}
+              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">50K㎡</div>
+                  <div className="text-sm text-gray-600">Factory Area</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">160+</div>
+                  <div className="text-sm text-gray-600">Countries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">17+</div>
+                  <div className="text-sm text-gray-600">Years</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Hero Visual */}
+            <div className="relative">
+              <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8">
+                <div className="aspect-video bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <div className="text-6xl mb-4">📺</div>
+                    <div className="text-xl font-semibold">LED Display Technology</div>
+                    <div className="text-sm opacity-90 mt-2">Ultra-High Resolution • Energy Efficient • Reliable</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-4 mt-6">
+                  <div className="text-center p-3 bg-gray-50 rounded-lg">
+                    <div className="text-2xl mb-1">🏭</div>
+                    <div className="text-xs font-medium">Manufacturing</div>
+                  </div>
+                  <div className="text-center p-3 bg-gray-50 rounded-lg">
+                    <div className="text-2xl mb-1">🔬</div>
+                    <div className="text-xs font-medium">R&D</div>
+                  </div>
+                  <div className="text-center p-3 bg-gray-50 rounded-lg">
+                    <div className="text-2xl mb-1">🌍</div>
+                    <div className="text-xs font-medium">Global</div>
+                  </div>
+                </div>
+              </div>
+              {/* Background decoration */}
+              <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
+              <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-amber-200 rounded-full opacity-20 blur-3xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories - Modern Grid */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Product Categories</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive LED display solutions engineered for excellence across diverse applications
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Fine Pitch LED */}
+            <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative p-8">
+                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                  <span className="text-3xl">📺</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Fine Pitch LED Display</h3>
+                <p className="text-gray-600 mb-4">Ultra-high resolution displays for control rooms and premium commercial applications</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div>• X3-SMD, X3-COB, Mi-Pro Series</div>
+                  <div>• P0.9 - P1.87 pixel pitch</div>
+                  <div>• 4K/8K resolution support</div>
+                </div>
+                <div className="mt-6">
+                  <a href="/products" className="text-blue-600 font-medium hover:text-blue-800 transition-colors">
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Rental LED */}
+            <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-purple-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative p-8">
+                <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
+                  <span className="text-3xl">🎭</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Rental LED Display</h3>
+                <p className="text-gray-600 mb-4">Lightweight, quick-assembly displays for events, concerts, and touring applications</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div>• R3, R Series, XR Virtual Production</div>
+                  <div>• Quick lock assembly system</div>
+                  <div>• Curved configurations available</div>
+                </div>
+                <div className="mt-6">
+                  <a href="/products" className="text-purple-600 font-medium hover:text-purple-800 transition-colors">
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Outdoor LED */}
+            <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative p-8">
+                <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
+                  <span className="text-3xl">🏢</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Outdoor LED Display</h3>
+                <p className="text-gray-600 mb-4">High-brightness, weatherproof displays for outdoor advertising and digital billboards</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div>• ES Series, Ti Series Energy-saving</div>
+                  <div>• Up to 8000 nits brightness</div>
+                  <div>• IP65 weatherproof rating</div>
+                </div>
+                <div className="mt-6">
+                  <a href="/products" className="text-green-600 font-medium hover:text-green-800 transition-colors">
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Meeting Display */}
+            <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-amber-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative p-8">
+                <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-200 transition-colors">
+                  <span className="text-3xl">💼</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Meeting Display</h3>
+                <p className="text-gray-600 mb-4">All-in-one LED solutions with touch functionality for modern conference rooms</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div>• MeeUs All-in-One Series</div>
+                  <div>• Interactive touch capability</div>
+                  <div>• Wireless presentation support</div>
+                </div>
+                <div className="mt-6">
+                  <a href="/products" className="text-amber-600 font-medium hover:text-amber-800 transition-colors">
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Creative LED */}
+            <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-50 to-pink-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative p-8">
+                <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
+                  <span className="text-3xl">✨</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Creative LED Display</h3>
+                <p className="text-gray-600 mb-4">Innovative transparent, flexible, and custom-shaped displays for unique installations</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div>• Transparent & Flexible options</div>
+                  <div>• Custom shapes & sizes</div>
+                  <div>• Architectural integration</div>
+                </div>
+                <div className="mt-6">
+                  <a href="/products" className="text-pink-600 font-medium hover:text-pink-800 transition-colors">
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Poster LED */}
+            <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative p-8">
+                <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-200 transition-colors">
+                  <span className="text-3xl">📱</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Poster LED Display</h3>
+                <p className="text-gray-600 mb-4">Compact digital signage solutions for retail, hospitality, and corporate environments</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div>• G-T4, G-X4, G-T5 Series</div>
+                  <div>• Ultra-thin design</div>
+                  <div>• Remote content management</div>
+                </div>
+                <div className="mt-6">
+                  <a href="/products" className="text-indigo-600 font-medium hover:text-indigo-800 transition-colors">
+                    Learn More →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Company Highlights Section */}
-        <section className="py-2xl">
-          <div className="container">
-            <div className="text-center mb-2xl">
-              <h3 className="text-4xl font-bold mb-lg">Why Choose LIANJIN LED</h3>
-              <p className="text-xl text-secondary max-w-3xl mx-auto">
-                Since 2007, we have been a leading high-tech enterprise specializing in LED display R&D, manufacturing, and global service
-              </p>
-            </div>
-            
-            {/* Key Statistics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-lg mb-2xl">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-sm">50,000㎡</div>
-                <div className="text-sm text-secondary">Total Factory Area</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-sm">160+</div>
-                <div className="text-sm text-secondary">Countries Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-sm">2007</div>
-                <div className="text-sm text-secondary">Established</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-sm">ISO</div>
-                <div className="text-sm text-secondary">Certified Quality</div>
-              </div>
-            </div>
-
-            {/* Core Advantages */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
-              <div className="text-center">
-                <div className="text-5xl mb-lg">🏭</div>
-                <h4 className="text-xl font-bold mb-md text-primary">Advanced Manufacturing</h4>
-                <p className="text-secondary">20,000㎡ production workshop with world-class equipment including Panasonic SMT machines</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl mb-lg">🔬</div>
-                <h4 className="text-xl font-bold mb-md text-primary">R&D Excellence</h4>
-                <p className="text-secondary">Professional R&D team focused on innovation and next-generation LED technology development</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl mb-lg">🌍</div>
-                <h4 className="text-xl font-bold mb-md text-primary">Global Service</h4>
-                <p className="text-secondary">Comprehensive sales network covering 160+ countries with 24/7 technical support</p>
-              </div>
-            </div>
+          <div className="text-center mt-12">
+            <a href="/products" className="btn btn-primary btn-lg px-8 py-4">
+              View All Products
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Product Categories Section */}
-        <section id="products" className="py-2xl bg-secondary">
-          <div className="container">
-            <div className="text-center mb-2xl">
-              <h3 className="text-4xl font-bold mb-lg">Product Categories</h3>
-              <p className="text-xl text-secondary max-w-3xl mx-auto">
-                Professional LED display solutions for diverse applications worldwide
-              </p>
-            </div>
-            
-            {/* Main Product Categories */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg mb-2xl">
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-5xl mb-lg">📺</div>
-                  <h4 className="text-xl font-bold mb-md text-primary">Fine Pitch LED Display</h4>
-                  <p className="text-sm text-secondary mb-md">X3-SMD, X3-COB, X3-Curve, Mi-Pro Series</p>
-                  <p className="text-xs text-secondary">Ultra-high resolution for control rooms and commercial displays</p>
-                </div>
-              </div>
-              
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-5xl mb-lg">🎭</div>
-                  <h4 className="text-xl font-bold mb-md text-primary">Rental LED Display</h4>
-                  <p className="text-sm text-secondary mb-md">R3, R Series, XR Virtual Production</p>
-                  <p className="text-xs text-secondary">Lightweight, quick assembly for events and stages</p>
-                </div>
-              </div>
-              
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-5xl mb-lg">🏢</div>
-                  <h4 className="text-xl font-bold mb-md text-primary">Outdoor LED Display</h4>
-                  <p className="text-sm text-secondary mb-md">ES Series, Ti Series Energy-saving</p>
-                  <p className="text-xs text-secondary">High brightness, weatherproof for outdoor advertising</p>
-                </div>
-              </div>
-              
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-5xl mb-lg">💼</div>
-                  <h4 className="text-xl font-bold mb-md text-primary">Meeting Display</h4>
-                  <p className="text-sm text-secondary mb-md">MeeUs All-in-One LED Solution</p>
-                  <p className="text-xs text-secondary">Interactive touch-enabled for conference rooms</p>
-                </div>
-              </div>
-              
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-5xl mb-lg">✨</div>
-                  <h4 className="text-xl font-bold mb-md text-primary">Creative LED Display</h4>
-                  <p className="text-sm text-secondary mb-md">Transparent, Flexible, Custom Shapes</p>
-                  <p className="text-xs text-secondary">Innovative designs for unique installations</p>
-                </div>
-              </div>
-              
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-5xl mb-lg">📱</div>
-                  <h4 className="text-xl font-bold mb-md text-primary">Poster LED Display</h4>
-                  <p className="text-sm text-secondary mb-md">G-T4, G-X4, G-T5 Series</p>
-                  <p className="text-xs text-secondary">Compact digital signage solutions</p>
-                </div>
-              </div>
-            </div>
+      {/* Company Highlights */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose LIANJIN LED</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              17 years of excellence in LED display manufacturing with world-class facilities and global reach
+            </p>
+          </div>
 
-            {/* View All Products Button */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <a href="/products" className="btn btn-primary btn-lg">
-                View All Products
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* About Company Section */}
-        <section id="about" className="py-2xl">
-          <div className="container">
-            <div className="text-center mb-2xl">
-              <h3 className="text-4xl font-bold mb-lg">About LIANJIN LED</h3>
-              <h4 className="text-xl text-primary mb-md">关于联锦光电</h4>
-            </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
-              <div>
-                <p className="text-lg mb-lg text-secondary">
-                  Founded in 2007, Shenzhen Lianjin Photoelectricity Co., Ltd. is a national high-tech enterprise specializing in LED display R&D, manufacturing, sales, and engineering services. With registered capital of 20.1 million RMB, we operate from a 50,000㎡ facility with 20,000㎡ production workshop.
-                </p>
-                <p className="text-md mb-lg text-secondary opacity-80">
-                  成立于2007年，深圳联锦光电有限公司是一家集LED显示屏研发、生产、销售、工程服务为一体的国家高新技术企业。注册资本2010万元人民币，总占地面积50000㎡，生产车间20000㎡。
-                </p>
-                
-                {/* Company Mission */}
-                <div className="mb-lg">
-                  <h5 className="text-lg font-bold text-primary mb-md">Our Mission</h5>
-                  <p className="text-secondary">Contributing to society, creating benefits for employees</p>
-                  <p className="text-sm text-secondary opacity-80">为社会做贡献，为员工谋福利</p>
-                </div>
+              <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl">🏭</span>
               </div>
-              
-              <div>
-                {/* Certifications */}
-                <div className="card mb-lg">
-                  <div className="card-body">
-                    <h4 className="text-xl font-bold mb-lg text-primary">Certifications & Standards</h4>
-                    <div className="grid grid-cols-3 gap-md">
-                      <div className="text-center p-sm bg-secondary rounded">
-                        <div className="font-bold text-primary">ISO45001</div>
-                        <div className="text-xs text-secondary">Quality System</div>
-                      </div>
-                      <div className="text-center p-sm bg-secondary rounded">
-                        <div className="font-bold text-primary">CE</div>
-                        <div className="text-xs text-secondary">European</div>
-                      </div>
-                      <div className="text-center p-sm bg-secondary rounded">
-                        <div className="font-bold text-primary">FCC</div>
-                        <div className="text-xs text-secondary">US Standard</div>
-                      </div>
-                      <div className="text-center p-sm bg-secondary rounded">
-                        <div className="font-bold text-primary">3C</div>
-                        <div className="text-xs text-secondary">China</div>
-                      </div>
-                      <div className="text-center p-sm bg-secondary rounded">
-                        <div className="font-bold text-primary">RoHS</div>
-                        <div className="text-xs text-secondary">Environmental</div>
-                      </div>
-                      <div className="text-center p-sm bg-secondary rounded">
-                        <div className="font-bold text-primary">TUV</div>
-                        <div className="text-xs text-secondary">Safety</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Global Exhibitions */}
-                <div className="card">
-                  <div className="card-body">
-                    <h4 className="text-xl font-bold mb-lg text-primary">Global Exhibitions</h4>
-                    <div className="grid grid-cols-2 gap-sm text-sm text-secondary">
-                      <div>• ISLE (China)</div>
-                      <div>• ISE (Europe)</div>
-                      <div>• Infocomm (Global)</div>
-                      <div>• LED China (Shenzhen)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-2xl bg-secondary">
-          <div className="container">
-            <div className="text-center mb-2xl">
-              <h3 className="text-4xl font-bold mb-lg">Contact Us</h3>
-              <p className="text-xl text-secondary">
-                Ready to discuss your LED display project? Get in touch with our experts.
-              </p>
-              <p className="text-md text-secondary opacity-80">
-                准备讨论您的LED显示项目？请联系我们的专家。
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Advanced Manufacturing</h3>
+              <p className="text-gray-600 leading-relaxed">
+                50,000㎡ total facility with 20,000㎡ production workshop equipped with world-class Panasonic SMT machines and automated testing systems
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-4xl mb-lg">📞</div>
-                  <h4 className="font-bold mb-md">Phone / 电话</h4>
-                  <p className="text-primary font-semibold">+86 755-2345-6789</p>
-                  <p className="text-sm text-secondary">24/7 Technical Support</p>
-                </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl">🔬</span>
               </div>
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-4xl mb-lg">✉️</div>
-                  <h4 className="font-bold mb-md">Email / 邮箱</h4>
-                  <p className="text-primary font-semibold">sales@lianjinled.com</p>
-                  <p className="text-sm text-secondary">Quick Response Guaranteed</p>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">R&D Excellence</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Dedicated research team developing next-generation LED technologies with focus on energy efficiency and innovative display solutions
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl">🌍</span>
               </div>
-              <div className="card text-center">
-                <div className="card-body">
-                  <div className="text-4xl mb-lg">📍</div>
-                  <h4 className="font-bold mb-md">Address / 地址</h4>
-                  <p className="text-secondary">Building A, LED Industrial Park<br />Bao'an District, Shenzhen, China</p>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Service</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Comprehensive sales network covering 160+ countries with 24/7 technical support and local service partnerships worldwide
+              </p>
+            </div>
+          </div>
+
+          {/* Certifications */}
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Certifications & Standards</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              <div className="text-center p-4 bg-gray-50 rounded-xl">
+                <div className="font-bold text-blue-600 text-lg">ISO45001</div>
+                <div className="text-sm text-gray-600">Quality System</div>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-xl">
+                <div className="font-bold text-blue-600 text-lg">CE</div>
+                <div className="text-sm text-gray-600">European</div>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-xl">
+                <div className="font-bold text-blue-600 text-lg">FCC</div>
+                <div className="text-sm text-gray-600">US Standard</div>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-xl">
+                <div className="font-bold text-blue-600 text-lg">3C</div>
+                <div className="text-sm text-gray-600">China</div>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-xl">
+                <div className="font-bold text-blue-600 text-lg">RoHS</div>
+                <div className="text-sm text-gray-600">Environmental</div>
+              </div>
+              <div className="text-center p-4 bg-gray-50 rounded-xl">
+                <div className="font-bold text-blue-600 text-lg">TUV</div>
+                <div className="text-sm text-gray-600">Safety</div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      {/* Footer */}
-      <footer className="bg-dark text-light py-2xl">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-lg mb-xl">
+      {/* Contact CTA */}
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Start Your LED Project?</h2>
+          <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+            Get expert consultation and custom solutions from our LED display specialists
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" className="btn bg-white text-blue-600 hover:bg-gray-100 btn-lg px-8 py-4">
+              Get Free Consultation
+            </a>
+            <a href="tel:+8675582595016" className="btn border-2 border-white text-white hover:bg-white hover:text-blue-600 btn-lg px-8 py-4">
+              Call +86 755-8259-5016
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Modern Footer */}
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold mb-lg text-light">LIANJIN LED</h4>
-              <p className="text-sm opacity-80 mb-md">
-                Professional LED display manufacturer committed to delivering innovative visual solutions worldwide.
-              </p>
-              <p className="text-xs opacity-60">
-                专业LED显示屏制造商，致力于为全球提供创新的视觉解决方案。
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold">L</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-lg">LIANJIN LED</h4>
+                  <span className="text-sm text-gray-400">联锦光电</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Professional LED display manufacturer since 2007, committed to delivering innovative visual solutions worldwide.
               </p>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">Products</h5>
-              <ul className="text-sm space-y-sm opacity-80">
-                <li>Outdoor LED Displays</li>
-                <li>Indoor LED Displays</li>
-                <li>Rental LED Screens</li>
-                <li>Creative LED Solutions</li>
+              <h5 className="font-bold text-lg mb-4">Products</h5>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><a href="/products" className="hover:text-white transition-colors">Fine Pitch LED Display</a></li>
+                <li><a href="/products" className="hover:text-white transition-colors">Rental LED Display</a></li>
+                <li><a href="/products" className="hover:text-white transition-colors">Outdoor LED Display</a></li>
+                <li><a href="/products" className="hover:text-white transition-colors">Creative LED Solutions</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">Services</h5>
-              <ul className="text-sm space-y-sm opacity-80">
-                <li>Custom Design</li>
-                <li>Installation Support</li>
-                <li>Technical Training</li>
-                <li>Maintenance Service</li>
+              <h5 className="font-bold text-lg mb-4">Company</h5>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/about" className="hover:text-white transition-colors">Manufacturing</a></li>
+                <li><a href="/about" className="hover:text-white transition-colors">Quality Control</a></li>
+                <li><a href="/contact" className="hover:text-white transition-colors">Global Partners</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">Company</h5>
-              <ul className="text-sm space-y-sm opacity-80">
-                <li>About Us</li>
-                <li>Quality Control</li>
-                <li>Global Partners</li>
-                <li>News & Events</li>
-              </ul>
+              <h5 className="font-bold text-lg mb-4">Contact</h5>
+              <div className="space-y-3 text-sm text-gray-400">
+                <div className="flex items-center space-x-2">
+                  <span>📞</span>
+                  <span>+86 755-8259-5016</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span>✉️</span>
+                  <span>bruce@lianjinled.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span>📍</span>
+                  <span>Shenzhen, China</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="border-t border-gray-700 pt-lg text-center">
-            <p className="text-sm opacity-60">
-              © 2024 Lianjin LED Technology Co., Ltd. All rights reserved. | 
-              <span className="ml-sm">深圳联锦光电有限公司 版权所有</span>
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p className="text-sm text-gray-400">
+              © 2024 Shenzhen Lianjin Photoelectricity Co., Ltd. All rights reserved. | 深圳联锦光电有限公司 版权所有
             </p>
           </div>
         </div>
