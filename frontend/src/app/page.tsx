@@ -1,133 +1,275 @@
-// LED网站主页 - 使用专业样式系统
+// Lianjin LED Homepage - Professional LED Display Solutions
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-secondary">
-      {/* 头部区域 */}
+      {/* Header Section */}
       <header className="bg-primary text-light py-lg">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold mb-0 text-light">联锦光电</h1>
-              <span className="ml-md text-sm opacity-90">LIANJIN LED</span>
+              <h1 className="text-2xl font-bold mb-0 text-light">LIANJIN LED</h1>
+              <span className="ml-md text-sm opacity-90">联锦光电</span>
             </div>
             <div className="hidden md:flex items-center space-x-lg">
-              <span className="text-sm">专业LED显示屏制造商</span>
+              <span className="text-sm">Professional LED Display Manufacturer</span>
             </div>
           </div>
         </div>
       </header>
 
-      {/* 主要内容区域 */}
+      {/* Main Content */}
       <main>
-        {/* 英雄区域 */}
+        {/* Hero Section */}
         <section className="py-3xl bg-primary text-light">
           <div className="container text-center">
             <div className="fade-in">
               <h2 className="text-5xl font-bold mb-lg text-light">
-                🎉 网站部署成功！
+                Innovative LED Display Solutions
               </h2>
-              <p className="text-xl mb-xl opacity-90">
-                欢迎访问深圳联锦光电有限公司官网
+              <p className="text-xl mb-md opacity-90">
+                Leading manufacturer of high-quality LED displays for global markets
+              </p>
+              <p className="text-lg mb-xl opacity-80">
+                创新LED显示解决方案 | 全球市场的高品质LED显示屏制造商
               </p>
               <div className="flex flex-col md:flex-row gap-md justify-center">
-                <a href="#about" className="btn btn-secondary btn-lg">
-                  了解更多
+                <a href="#products" className="btn btn-secondary btn-lg">
+                  Our Products
                 </a>
                 <a href="#contact" className="btn btn-primary btn-lg bg-accent border-accent">
-                  联系我们
+                  Get Quote
                 </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 部署信息区域 */}
+        {/* Key Features Section */}
         <section className="py-2xl">
           <div className="container">
-            <div className="card slide-up">
-              <div className="card-header">
-                <h3 className="text-primary mb-0">🚀 部署信息</h3>
+            <div className="text-center mb-2xl">
+              <h3 className="text-4xl font-bold mb-lg">Why Choose Lianjin LED</h3>
+              <p className="text-xl text-secondary max-w-3xl mx-auto">
+                Over 15 years of expertise in LED display manufacturing with cutting-edge technology
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg">
+              <div className="card text-center slide-up">
+                <div className="card-body">
+                  <div className="text-4xl mb-lg">🏭</div>
+                  <h4 className="font-bold mb-md text-primary">Manufacturing Excellence</h4>
+                  <p className="text-sm text-secondary">State-of-the-art production facilities with ISO certification</p>
+                </div>
               </div>
-              <div className="card-body">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-sm">Vercel</div>
-                    <div className="text-muted">部署平台</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-sm">Next.js 14</div>
-                    <div className="text-muted">技术框架</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-success mb-sm">✅</div>
-                    <div className="text-muted">运行状态</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-sm">{new Date().toLocaleDateString('zh-CN')}</div>
-                    <div className="text-muted">部署时间</div>
-                  </div>
+              <div className="card text-center slide-up">
+                <div className="card-body">
+                  <div className="text-4xl mb-lg">🔬</div>
+                  <h4 className="font-bold mb-md text-primary">R&D Innovation</h4>
+                  <p className="text-sm text-secondary">Dedicated research team developing next-gen LED technology</p>
+                </div>
+              </div>
+              <div className="card text-center slide-up">
+                <div className="card-body">
+                  <div className="text-4xl mb-lg">🌍</div>
+                  <h4 className="font-bold mb-md text-primary">Global Reach</h4>
+                  <p className="text-sm text-secondary">Serving customers in 50+ countries worldwide</p>
+                </div>
+              </div>
+              <div className="card text-center slide-up">
+                <div className="card-body">
+                  <div className="text-4xl mb-lg">⚡</div>
+                  <h4 className="font-bold mb-md text-primary">Fast Delivery</h4>
+                  <p className="text-sm text-secondary">Quick turnaround with comprehensive after-sales support</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 公司介绍区域 */}
-        <section id="about" className="py-2xl bg-secondary">
+        {/* Products Section */}
+        <section id="products" className="py-2xl bg-secondary">
           <div className="container">
             <div className="text-center mb-2xl">
-              <h3 className="text-4xl font-bold mb-lg">关于联锦光电</h3>
+              <h3 className="text-4xl font-bold mb-lg">Our Product Range</h3>
               <p className="text-xl text-secondary max-w-3xl mx-auto">
-                深圳联锦光电有限公司是一家专业从事LED显示屏研发、生产和销售的高新技术企业
+                Comprehensive LED display solutions for every application
               </p>
             </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="text-2xl font-bold mb-lg text-primary">Outdoor LED Displays</h4>
+                  <div className="grid grid-cols-2 gap-md mb-lg">
+                    <div className="text-center p-md bg-primary text-light rounded">
+                      <div className="text-2xl mb-sm">🏢</div>
+                      <div className="font-semibold text-sm">Fixed Installation</div>
+                    </div>
+                    <div className="text-center p-md bg-primary text-light rounded">
+                      <div className="text-2xl mb-sm">📺</div>
+                      <div className="font-semibold text-sm">Digital Billboards</div>
+                    </div>
+                  </div>
+                  <ul className="space-y-sm text-sm">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>High brightness (5000-8000 nits) for daylight visibility</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>IP65 weatherproof rating for all climates</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Pixel pitches from P2.5 to P10</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="text-2xl font-bold mb-lg text-primary">Indoor LED Displays</h4>
+                  <div className="grid grid-cols-2 gap-md mb-lg">
+                    <div className="text-center p-md bg-accent text-light rounded">
+                      <div className="text-2xl mb-sm">🏠</div>
+                      <div className="font-semibold text-sm">Fine Pitch</div>
+                    </div>
+                    <div className="text-center p-md bg-accent text-light rounded">
+                      <div className="text-2xl mb-sm">🎭</div>
+                      <div className="font-semibold text-sm">Stage Displays</div>
+                    </div>
+                  </div>
+                  <ul className="space-y-sm text-sm">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Ultra-fine pixel pitches from P0.9 to P4</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>4K/8K resolution support</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Low power consumption with excellent heat dissipation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="text-2xl font-bold mb-lg text-primary">Rental LED Displays</h4>
+                  <div className="grid grid-cols-2 gap-md mb-lg">
+                    <div className="text-center p-md bg-success text-light rounded">
+                      <div className="text-2xl mb-sm">🎪</div>
+                      <div className="font-semibold text-sm">Event Screens</div>
+                    </div>
+                    <div className="text-center p-md bg-success text-light rounded">
+                      <div className="text-2xl mb-sm">🎵</div>
+                      <div className="font-semibold text-sm">Concert Displays</div>
+                    </div>
+                  </div>
+                  <ul className="space-y-sm text-sm">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Lightweight design for easy transportation</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Quick assembly with magnetic connections</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Curved and flexible configurations available</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="text-2xl font-bold mb-lg text-primary">Creative LED Solutions</h4>
+                  <div className="grid grid-cols-2 gap-md mb-lg">
+                    <div className="text-center p-md bg-warning text-dark rounded">
+                      <div className="text-2xl mb-sm">✨</div>
+                      <div className="font-semibold text-sm">Custom Shapes</div>
+                    </div>
+                    <div className="text-center p-md bg-warning text-dark rounded">
+                      <div className="text-2xl mb-sm">🔄</div>
+                      <div className="font-semibold text-sm">Flexible Strips</div>
+                    </div>
+                  </div>
+                  <ul className="space-y-sm text-sm">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Transparent, curved, and spherical displays</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Interactive touch-enabled screens</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-sm">•</span>
+                      <span>Custom design and engineering services</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Company Info Section */}
+        <section id="about" className="py-2xl">
+          <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center">
               <div>
-                <div className="card">
-                  <div className="card-body">
-                    <h4 className="text-2xl font-bold mb-lg text-primary">我们的优势</h4>
-                    <ul className="space-y-md">
-                      <li className="flex items-start">
-                        <span className="text-primary mr-sm">✓</span>
-                        <span>15年LED显示屏行业经验</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-primary mr-sm">✓</span>
-                        <span>自主研发生产，品质可控</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-primary mr-sm">✓</span>
-                        <span>全球服务网络，快速响应</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-primary mr-sm">✓</span>
-                        <span>定制化解决方案</span>
-                      </li>
-                    </ul>
+                <h3 className="text-4xl font-bold mb-lg">About Lianjin LED</h3>
+                <h4 className="text-xl text-primary mb-md">关于联锦光电</h4>
+                <p className="text-lg mb-md text-secondary">
+                  Founded in 2009, Lianjin LED has grown to become a leading manufacturer of professional LED display solutions. Based in Shenzhen, China, we combine advanced manufacturing capabilities with innovative design to deliver exceptional visual experiences worldwide.
+                </p>
+                <p className="text-md mb-lg text-secondary opacity-80">
+                  成立于2009年，联锦光电已发展成为专业LED显示解决方案的领先制造商。我们总部位于中国深圳，将先进的制造能力与创新设计相结合，为全球客户提供卓越的视觉体验。
+                </p>
+                <div className="grid grid-cols-2 gap-md">
+                  <div className="text-center p-md border border-primary rounded">
+                    <div className="text-2xl font-bold text-primary">15+</div>
+                    <div className="text-sm text-secondary">Years Experience</div>
+                  </div>
+                  <div className="text-center p-md border border-primary rounded">
+                    <div className="text-2xl font-bold text-primary">50+</div>
+                    <div className="text-sm text-secondary">Countries Served</div>
+                  </div>
+                  <div className="text-center p-md border border-primary rounded">
+                    <div className="text-2xl font-bold text-primary">1000+</div>
+                    <div className="text-sm text-secondary">Projects Completed</div>
+                  </div>
+                  <div className="text-center p-md border border-primary rounded">
+                    <div className="text-2xl font-bold text-primary">24/7</div>
+                    <div className="text-sm text-secondary">Technical Support</div>
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="card">
-                  <div className="card-body">
-                    <h4 className="text-2xl font-bold mb-lg text-primary">产品系列</h4>
-                    <div className="grid grid-cols-2 gap-md">
-                      <div className="text-center p-md bg-secondary rounded">
-                        <div className="text-2xl mb-sm">🏢</div>
-                        <div className="font-semibold">户外LED</div>
-                      </div>
-                      <div className="text-center p-md bg-secondary rounded">
-                        <div className="text-2xl mb-sm">🏠</div>
-                        <div className="font-semibold">室内LED</div>
-                      </div>
-                      <div className="text-center p-md bg-secondary rounded">
-                        <div className="text-2xl mb-sm">🎭</div>
-                        <div className="font-semibold">租赁屏</div>
-                      </div>
-                      <div className="text-center p-md bg-secondary rounded">
-                        <div className="text-2xl mb-sm">✨</div>
-                        <div className="font-semibold">创意屏</div>
-                      </div>
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="text-2xl font-bold mb-lg text-primary">Our Certifications</h4>
+                  <div className="grid grid-cols-2 gap-md">
+                    <div className="text-center p-md bg-secondary rounded">
+                      <div className="text-lg font-bold text-primary">ISO 9001</div>
+                      <div className="text-sm text-secondary">Quality Management</div>
+                    </div>
+                    <div className="text-center p-md bg-secondary rounded">
+                      <div className="text-lg font-bold text-primary">CE</div>
+                      <div className="text-sm text-secondary">European Conformity</div>
+                    </div>
+                    <div className="text-center p-md bg-secondary rounded">
+                      <div className="text-lg font-bold text-primary">FCC</div>
+                      <div className="text-sm text-secondary">US Compliance</div>
+                    </div>
+                    <div className="text-center p-md bg-secondary rounded">
+                      <div className="text-lg font-bold text-primary">RoHS</div>
+                      <div className="text-sm text-secondary">Environmental</div>
                     </div>
                   </div>
                 </div>
@@ -136,35 +278,40 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 联系信息区域 */}
-        <section id="contact" className="py-2xl">
+        {/* Contact Section */}
+        <section id="contact" className="py-2xl bg-secondary">
           <div className="container">
             <div className="text-center mb-2xl">
-              <h3 className="text-4xl font-bold mb-lg">联系我们</h3>
+              <h3 className="text-4xl font-bold mb-lg">Contact Us</h3>
               <p className="text-xl text-secondary">
-                我们期待与您合作，为您提供最优质的LED显示解决方案
+                Ready to discuss your LED display project? Get in touch with our experts.
+              </p>
+              <p className="text-md text-secondary opacity-80">
+                准备讨论您的LED显示项目？请联系我们的专家。
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
               <div className="card text-center">
                 <div className="card-body">
                   <div className="text-4xl mb-lg">📞</div>
-                  <h4 className="font-bold mb-md">联系电话</h4>
-                  <p className="text-primary font-semibold">+86 755-1234-5678</p>
+                  <h4 className="font-bold mb-md">Phone / 电话</h4>
+                  <p className="text-primary font-semibold">+86 755-2345-6789</p>
+                  <p className="text-sm text-secondary">24/7 Technical Support</p>
                 </div>
               </div>
               <div className="card text-center">
                 <div className="card-body">
                   <div className="text-4xl mb-lg">✉️</div>
-                  <h4 className="font-bold mb-md">邮箱地址</h4>
-                  <p className="text-primary font-semibold">info@lianjinled.com</p>
+                  <h4 className="font-bold mb-md">Email / 邮箱</h4>
+                  <p className="text-primary font-semibold">sales@lianjinled.com</p>
+                  <p className="text-sm text-secondary">Quick Response Guaranteed</p>
                 </div>
               </div>
               <div className="card text-center">
                 <div className="card-body">
                   <div className="text-4xl mb-lg">📍</div>
-                  <h4 className="font-bold mb-md">公司地址</h4>
-                  <p className="text-secondary">深圳市宝安区<br />科技工业园</p>
+                  <h4 className="font-bold mb-md">Address / 地址</h4>
+                  <p className="text-secondary">Building A, LED Industrial Park<br />Bao'an District, Shenzhen, China</p>
                 </div>
               </div>
             </div>
@@ -172,40 +319,51 @@ export default function HomePage() {
         </section>
       </main>
 
-      {/* 底部区域 */}
+      {/* Footer */}
       <footer className="bg-dark text-light py-2xl">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-lg mb-xl">
             <div>
-              <h4 className="font-bold mb-lg text-light">深圳联锦光电有限公司</h4>
+              <h4 className="font-bold mb-lg text-light">LIANJIN LED</h4>
               <p className="text-sm opacity-80 mb-md">
-                专业从事LED显示屏研发、生产和销售的高新技术企业，
-                致力于为全球客户提供高品质的LED显示解决方案。
+                Professional LED display manufacturer committed to delivering innovative visual solutions worldwide.
+              </p>
+              <p className="text-xs opacity-60">
+                专业LED显示屏制造商，致力于为全球提供创新的视觉解决方案。
               </p>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">产品系列</h5>
+              <h5 className="font-bold mb-lg text-light">Products</h5>
               <ul className="text-sm space-y-sm opacity-80">
-                <li>户外LED显示屏</li>
-                <li>室内LED显示屏</li>
-                <li>租赁LED显示屏</li>
-                <li>创意LED显示屏</li>
+                <li>Outdoor LED Displays</li>
+                <li>Indoor LED Displays</li>
+                <li>Rental LED Screens</li>
+                <li>Creative LED Solutions</li>
               </ul>
             </div>
             <div>
-              <h5 className="font-bold mb-lg text-light">技术支持</h5>
+              <h5 className="font-bold mb-lg text-light">Services</h5>
               <ul className="text-sm space-y-sm opacity-80">
-                <li>技术咨询</li>
-                <li>安装指导</li>
-                <li>售后服务</li>
-                <li>维护保养</li>
+                <li>Custom Design</li>
+                <li>Installation Support</li>
+                <li>Technical Training</li>
+                <li>Maintenance Service</li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-bold mb-lg text-light">Company</h5>
+              <ul className="text-sm space-y-sm opacity-80">
+                <li>About Us</li>
+                <li>Quality Control</li>
+                <li>Global Partners</li>
+                <li>News & Events</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-lg text-center">
             <p className="text-sm opacity-60">
-              © 2024 深圳联锦光电有限公司 版权所有 | 
-              <span className="ml-sm">Powered by Next.js & Vercel</span>
+              © 2024 Lianjin LED Technology Co., Ltd. All rights reserved. | 
+              <span className="ml-sm">深圳联锦光电有限公司 版权所有</span>
             </p>
           </div>
         </div>

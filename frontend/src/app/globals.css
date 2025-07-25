@@ -428,6 +428,14 @@ img {
 .opacity-80 { opacity: 0.8; }
 .opacity-90 { opacity: 0.9; }
 
+/* 颜色扩展 */
+.text-dark { color: var(--text-primary); }
+.text-warning { color: var(--warning-color); }
+
+/* 边框样式扩展 */
+.border { border: 1px solid var(--border-color); }
+.border-primary { border-color: var(--primary-color); }
+
 /* 动画效果 */
 .fade-in {
   animation: fadeIn var(--transition-normal) ease-in-out;
