@@ -153,8 +153,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/zh/home',
-        destination: '/zh',
+        source: '/zh-Hans/home',
+        destination: '/zh-Hans',
         permanent: true,
       },
       {
@@ -162,15 +162,21 @@ const nextConfig = {
         destination: '/en',
         permanent: true,
       },
+      // Legacy redirect for old zh locale
+      {
+        source: '/zh',
+        destination: '/zh-Hans',
+        permanent: true,
+      },
+      {
+        source: '/zh/:path*',
+        destination: '/zh-Hans/:path*',
+        permanent: true,
+      },
     ];
   },
 
-  // Internationalization
-  i18n: {
-    locales: ['zh', 'en'],
-    defaultLocale: 'zh',
-    localeDetection: true,
-  },
+  // Note: i18n config is not needed for App Router with [locale] dynamic routes
 
   // Output configuration for Vercel deployment
   output: 'standalone',
