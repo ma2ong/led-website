@@ -1,4 +1,4 @@
-// 最简化的根页面 - 用于测试Vercel部署
+// 完全干净的根页面
 export default function HomePage() {
   return (
     <html lang="zh">
@@ -56,23 +56,6 @@ export default function HomePage() {
             <h2 style={{ color: '#008000', marginTop: 0 }}>公司简介</h2>
             <p>深圳联锦光电有限公司是一家专业从事LED显示屏研发、生产和销售的高新技术企业。</p>
             <p>我们致力于为全球客户提供高品质的LED显示解决方案。</p>
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <a 
-              href="/simple-test" 
-              style={{ 
-                display: 'inline-block',
-                padding: '0.75rem 1.5rem',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '4px',
-                margin: '0.5rem'
-              }}
-            >
-              访问测试页面
-            </a>
           </div>
           
           <footer style={{ 

@@ -28,13 +28,16 @@
   "license": "MIT",
   "devDependencies": {
     "axios": "^1.6.0",
-    "lighthouse": "^11.0.0",
     "chrome-launcher": "^1.0.0",
+    "concurrently": "^8.2.0",
     "jsdom": "^23.0.0",
-    "concurrently": "^8.2.0"
+    "lighthouse": "^11.0.0"
   },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.2.0"
   }
 }
