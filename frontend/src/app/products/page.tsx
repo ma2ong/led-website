@@ -1,71 +1,69 @@
+import Navigation from '@/components/Navigation';
+
 export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
-      {/* Navigation Header */}
-      <header className="navbar-sticky shadow-lg">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="/" className="text-2xl font-bold text-white">
-            RGBSHARE <span className="text-orange-500">联锦</span>
-          </a>
-          <nav className="hidden md:flex space-x-4 items-center">
-            <a href="/" className="text-gray-300 hover:text-orange-500 transition-colors">首页</a>
-            <a href="/about" className="text-gray-300 hover:text-orange-500 transition-colors">关于我们</a>
-            <a href="/products" className="text-orange-500 font-medium">产品中心</a>
-            <a href="/solutions" className="text-gray-300 hover:text-orange-500 transition-colors">解决方案</a>
-            <a href="/cases" className="text-gray-300 hover:text-orange-500 transition-colors">成功案例</a>
-            <a href="/news" className="text-gray-300 hover:text-orange-500 transition-colors">新闻资讯</a>
-            <a href="/support" className="text-gray-300 hover:text-orange-500 transition-colors">技术支持</a>
-            <a href="/contact" className="text-gray-300 hover:text-orange-500 transition-colors">联系我们</a>
-          </nav>
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="language-switcher text-sm text-gray-300">
-              <span className="active-lang text-orange-500 font-bold">中</span> / 
-              <span className="cursor-pointer hover:text-orange-500">EN</span>
-            </div>
-            <a href="/contact" className="secondary-button text-sm">询盘</a>
-          </div>
-        </div>
-      </header>
+      {/* Enhanced Navigation */}
+      <Navigation />
 
       {/* Page Header */}
-      <section className="py-16 bg-gray-800 text-center">
-        <div className="container mx-auto px-6">
-          <h1 className="section-title">产品中心</h1>
-          <p className="section-subtitle">
-            探索深圳联锦光电(RGBSHARE联锦)全系列LED显示屏产品，包括小间距、租赁、户外、创意显示屏、会议一体机、广告机等。查找最适合您需求的解决方案。
-          </p>
+      <section className="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-center relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-2000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="animate-fade-in-up">
+            <h1 className="led-title-section text-5xl mb-8">产品中心</h1>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              探索深圳联锦光电(RGBSHARE联锦)全系列LED显示屏产品
+            </p>
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto mt-4">
+              包括小间距、租赁、户外、创意显示屏、会议一体机、广告机等专业解决方案
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Product Categories */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="led-grid-3">
             
             {/* Fine Pitch LED */}
-            <article className="product-card">
-              <div className="h-64 bg-gradient-to-br from-blue-700 to-blue-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-6xl mb-4">📺</div>
-                  <div className="text-2xl font-bold">小间距LED显示屏</div>
-                  <div className="text-sm mt-2 opacity-80">Fine Pitch LED Display</div>
+            <article className="led-card animate-fade-in-up">
+              <div className="h-64 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-black opacity-20"></div>
+                <div className="text-white text-center relative z-10">
+                  <div className="text-7xl mb-4 filter drop-shadow-lg">📺</div>
+                  <div className="text-2xl font-bold mb-2">小间距LED显示屏</div>
+                  <div className="led-badge">P0.9-P1.87</div>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">小间距显示屏系列</h3>
-                <p className="text-gray-400 mb-4">
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">超高清小间距系列</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
                   高清画质，无缝拼接，适用于控制室、会议室、展厅等高端应用场景。提供P0.9-P1.87多种像素间距选择。
                 </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">主要系列：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• X3-SMD系列</li>
-                    <li>• X3-COB系列</li>
-                    <li>• Mi-Pro系列</li>
-                  </ul>
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-white mb-3">主要系列：</h4>
+                  <div className="grid grid-cols-1 gap-2">
+                    <div className="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                      <span className="text-gray-300">X3-SMD系列</span>
+                      <span className="led-badge-outline text-xs">高清</span>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                      <span className="text-gray-300">X3-COB系列</span>
+                      <span className="led-badge-outline text-xs">超清</span>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                      <span className="text-gray-300">Mi-Pro系列</span>
+                      <span className="led-badge-outline text-xs">专业</span>
+                    </div>
+                  </div>
                 </div>
-                <a href="#" className="text-orange-500 hover:text-orange-400 font-medium">
-                  查看详细规格 →
+                <a href="/contact" className="btn-led-secondary w-full text-center">
+                  获取详细规格
                 </a>
               </div>
             </article>

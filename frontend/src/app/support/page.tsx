@@ -1,31 +1,10 @@
+import Navigation from '@/components/Navigation';
+
 export default function SupportPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
-      {/* Navigation Header */}
-      <header className="navbar-sticky shadow-lg">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="/" className="text-2xl font-bold text-white">
-            RGBSHARE <span className="text-orange-500">联锦</span>
-          </a>
-          <nav className="hidden md:flex space-x-4 items-center">
-            <a href="/" className="text-gray-300 hover:text-orange-500 transition-colors">首页</a>
-            <a href="/about" className="text-gray-300 hover:text-orange-500 transition-colors">关于我们</a>
-            <a href="/products" className="text-gray-300 hover:text-orange-500 transition-colors">产品中心</a>
-            <a href="/solutions" className="text-gray-300 hover:text-orange-500 transition-colors">解决方案</a>
-            <a href="/cases" className="text-gray-300 hover:text-orange-500 transition-colors">成功案例</a>
-            <a href="/news" className="text-gray-300 hover:text-orange-500 transition-colors">新闻资讯</a>
-            <a href="/support" className="text-orange-500 font-medium">技术支持</a>
-            <a href="/contact" className="text-gray-300 hover:text-orange-500 transition-colors">联系我们</a>
-          </nav>
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="language-switcher text-sm text-gray-300">
-              <span className="active-lang text-orange-500 font-bold">中</span> / 
-              <span className="cursor-pointer hover:text-orange-500">EN</span>
-            </div>
-            <a href="/contact" className="secondary-button text-sm">询盘</a>
-          </div>
-        </div>
-      </header>
+      {/* Enhanced Navigation */}
+      <Navigation />
 
       {/* Page Header */}
       <section className="py-16 bg-gray-800 text-center">
