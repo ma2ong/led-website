@@ -4,6 +4,8 @@
 import Navigation from '@/components/Navigation';
 import BackToTop from '@/components/BackToTop';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { AnimatedContainer, ScrollAnimated, AnimatedCard, CountUp } from '@/components/AnimatedComponents';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -58,20 +60,20 @@ export default function HomePage() {
       <section className="py-20 md:py-32 bg-gray-800 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-800 via-gray-800 to-gray-900"></div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16 animate-fade-in-up">
+          <ScrollAnimated className="text-center mb-16">
             <h2 className="led-title-section">{t('home.products.title')}</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-6 leading-relaxed">
               {t('home.products.subtitle')}
             </p>
-          </div>
+          </ScrollAnimated>
           <div className="led-grid-3">
             
             {/* Fine Pitch Display */}
-            <article className="led-card animate-fade-in-up">
+            <AnimatedCard className="led-card interactive-card" delay={0}>
               <div className="h-56 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-black opacity-20"></div>
                 <div className="text-white text-center relative z-10">
-                  <div className="text-6xl mb-4 filter drop-shadow-lg">📺</div>
+                  <div className="text-6xl mb-4 filter drop-shadow-lg animate-float">📺</div>
                   <div className="text-2xl font-bold">小间距显示屏</div>
                   <div className="led-badge mt-3">P0.9-P1.87</div>
                 </div>
@@ -86,12 +88,12 @@ export default function HomePage() {
                     <span className="block">✓ 超高清显示</span>
                     <span className="block">✓ 无缝拼接</span>
                   </div>
-                  <a href="/products" className="btn-led-secondary text-sm px-6 py-2">
+                  <a href="/products" className="btn-led-secondary text-sm px-6 py-2 hover-glow">
                     了解详情
                   </a>
                 </div>
               </div>
-            </article>
+            </AnimatedCard>
 
             {/* Rental Display */}
             <article className="led-card animate-fade-in-up animate-delay-100">
