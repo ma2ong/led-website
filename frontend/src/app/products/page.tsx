@@ -1,8 +1,13 @@
+'use client';
+
 import Navigation from '@/components/Navigation';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ProductsPage() {
+  const { t } = useLanguage();
+  
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Enhanced Navigation */}
@@ -19,12 +24,12 @@ export default function ProductsPage() {
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="animate-fade-in-up">
-            <h1 className="led-title-section text-5xl mb-8">产品中心</h1>
+            <h1 className="led-title-section text-5xl mb-8">{t('products.title')}</h1>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              探索深圳联锦光电(RGBSHARE联锦)全系列LED显示屏产品
+              {t('products.subtitle')}
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto mt-4">
-              包括小间距、租赁、户外、创意显示屏、会议一体机、广告机等专业解决方案
+              {t('products.description')}
             </p>
           </div>
         </div>
@@ -46,9 +51,9 @@ export default function ProductsPage() {
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">超高清小间距系列</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">{t('products.finePitch.title')}</h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  高清画质，无缝拼接，适用于控制室、会议室、展厅等高端应用场景。提供P0.9-P1.87多种像素间距选择。
+                  {t('products.finePitch.description')}
                 </p>
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-white mb-3">主要系列：</h4>
@@ -68,7 +73,7 @@ export default function ProductsPage() {
                   </div>
                 </div>
                 <a href="/contact" className="btn-led-secondary w-full text-center">
-                  获取详细规格
+                  {t('products.getSpecs')}
                 </a>
               </div>
             </article>
