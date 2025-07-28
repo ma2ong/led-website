@@ -1,10 +1,15 @@
 import Navigation from '@/components/Navigation';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Enhanced Navigation */}
       <Navigation />
+      
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb />
 
       {/* Page Header */}
       <section className="py-16 bg-gray-800 text-center">

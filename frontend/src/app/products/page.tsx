@@ -1,10 +1,15 @@
 import Navigation from '@/components/Navigation';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
 
 export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Enhanced Navigation */}
       <Navigation />
+      
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb />
 
       {/* Page Header */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-center relative overflow-hidden">
@@ -330,6 +335,9 @@ export default function ProductsPage() {
           </div>
         </div>
       </footer>
+
+      {/* Back to Top Button */}
+      <BackToTop />
     </div>
   );
 }

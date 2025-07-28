@@ -3,11 +3,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,14 +21,14 @@ export default function Navigation() {
   }, []);
 
   const navItems = [
-    { href: '/', label: '首页', labelEn: 'Home' },
-    { href: '/about', label: '关于我们', labelEn: 'About' },
-    { href: '/products', label: '产品中心', labelEn: 'Products' },
-    { href: '/solutions', label: '解决方案', labelEn: 'Solutions' },
-    { href: '/cases', label: '成功案例', labelEn: 'Cases' },
-    { href: '/news', label: '新闻资讯', labelEn: 'News' },
-    { href: '/support', label: '技术支持', labelEn: 'Support' },
-    { href: '/contact', label: '联系我们', labelEn: 'Contact' },
+    { href: '/', key: 'nav.home' },
+    { href: '/about', key: 'nav.about' },
+    { href: '/products', key: 'nav.products' },
+    { href: '/solutions', key: 'nav.solutions' },
+    { href: '/cases', key: 'nav.cases' },
+    { href: '/news', key: 'nav.news' },
+    { href: '/support', key: 'nav.support' },
+    { href: '/contact', key: 'nav.contact' },
   ];
 
   const isActive = (href: string) => {
@@ -67,7 +69,7 @@ export default function Navigation() {
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
                 }`}
               >
-                <span className="relative z-10">{item.label}</span>
+                <span className="relative z-10">{t(item.key)}</span>
                 {isActive(item.href) && (
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-blue-500/20 rounded-lg"></div>
                 )}
@@ -80,18 +82,32 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center space-x-4">
             {/* Language Switcher */}
             <div className="flex items-center space-x-2 text-sm">
-              <button className="px-3 py-1 rounded-full bg-orange-500 text-white font-medium">
+              <button 
+                onClick={() => setLanguage('zh')}
+                className={`px-3 py-1 rounded-full font-medium transition-colors ${
+                  language === 'zh' 
+                    ? 'bg-orange-500 text-white' 
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
                 中
               </button>
               <span className="text-gray-400">/</span>
-              <button className="px-3 py-1 rounded-full text-gray-400 hover:text-white transition-colors">
+              <button 
+                onClick={() => setLanguage('en')}
+                className={`px-3 py-1 rounded-full font-medium transition-colors ${
+                  language === 'en' 
+                    ? 'bg-orange-500 text-white' 
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
                 EN
               </button>
             </div>
 
             {/* CTA Button */}
             <Link href="/contact" className="btn-led-secondary text-sm px-6 py-2">
-              免费咨询
+              {t('nav.consultation')}
             </Link>
           </div>
 
@@ -131,22 +147,35 @@ export default function Navigation() {
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
                 }`}
               >
-                <div className="flex items-center justify-between">
-                  <span>{item.label}</span>
-                  <span className="text-xs text-gray-500">{item.labelEn}</span>
-                </div>
+                <span>{t(item.key)}</span>
               </Link>
             ))}
             
             {/* Mobile Actions */}
             <div className="pt-4 mt-4 border-t border-gray-700">
               <div className="flex items-center justify-between px-4 py-2">
-                <span className="text-gray-400 text-sm">语言选择</span>
+                <span className="text-gray-400 text-sm">
+                  {language === 'zh' ? '语言选择' : 'Language'}
+                </span>
                 <div className="flex items-center space-x-2">
-                  <button className="px-3 py-1 rounded-full bg-orange-500 text-white text-sm font-medium">
+                  <button 
+                    onClick={() => setLanguage('zh')}
+                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                      language === 'zh' 
+                        ? 'bg-orange-500 text-white' 
+                        : 'text-gray-400'
+                    }`}
+                  >
                     中文
                   </button>
-                  <button className="px-3 py-1 rounded-full text-gray-400 text-sm">
+                  <button 
+                    onClick={() => setLanguage('en')}
+                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                      language === 'en' 
+                        ? 'bg-orange-500 text-white' 
+                        : 'text-gray-400'
+                    }`}
+                  >
                     English
                   </button>
                 </div>
@@ -156,7 +185,7 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
                 className="block mx-4 mt-4 btn-led-primary text-center"
               >
-                免费咨询
+                {t('nav.consultation')}
               </Link>
             </div>
           </nav>
