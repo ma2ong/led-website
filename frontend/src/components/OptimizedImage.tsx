@@ -280,6 +280,6 @@ export function ImageGallery({ images, className = '', columns = 3 }: ImageGalle
     </>
   );
 }
-/
-/ 默认导出
+
+// 默认导出
 export default OptimizedImage;
