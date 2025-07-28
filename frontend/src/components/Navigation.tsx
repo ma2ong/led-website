@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { NavLanguageSwitcher } from '@/components/LanguageSwitcher';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,29 +82,7 @@ export default function Navigation() {
           {/* Right Side Actions */}
           <div className="hidden lg:flex items-center space-x-4">
             {/* Language Switcher */}
-            <div className="flex items-center space-x-2 text-sm">
-              <button 
-                onClick={() => setLanguage('zh')}
-                className={`px-3 py-1 rounded-full font-medium transition-colors ${
-                  language === 'zh' 
-                    ? 'bg-orange-500 text-white' 
-                    : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                中
-              </button>
-              <span className="text-gray-400">/</span>
-              <button 
-                onClick={() => setLanguage('en')}
-                className={`px-3 py-1 rounded-full font-medium transition-colors ${
-                  language === 'en' 
-                    ? 'bg-orange-500 text-white' 
-                    : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                EN
-              </button>
-            </div>
+            <NavLanguageSwitcher />
 
             {/* CTA Button */}
             <Link href="/contact" className="btn-led-secondary text-sm px-6 py-2">
@@ -157,28 +136,7 @@ export default function Navigation() {
                 <span className="text-gray-400 text-sm">
                   {language === 'zh' ? '语言选择' : 'Language'}
                 </span>
-                <div className="flex items-center space-x-2">
-                  <button 
-                    onClick={() => setLanguage('zh')}
-                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                      language === 'zh' 
-                        ? 'bg-orange-500 text-white' 
-                        : 'text-gray-400'
-                    }`}
-                  >
-                    中文
-                  </button>
-                  <button 
-                    onClick={() => setLanguage('en')}
-                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                      language === 'en' 
-                        ? 'bg-orange-500 text-white' 
-                        : 'text-gray-400'
-                    }`}
-                  >
-                    English
-                  </button>
-                </div>
+                <NavLanguageSwitcher />
               </div>
               <Link
                 href="/contact"

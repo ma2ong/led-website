@@ -1,10 +1,30 @@
+'use client';
 import Navigation from '@/components/Navigation';
+import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from '@/components/BackToTop';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useState } from 'react';
 
 export default function CasesPage() {
+  const { t } = useLanguage();
+  const [showFeaturedOnly, setShowFeaturedOnly] = useState(false);
+  
+  // 暂时使用静态数据，等后端集成完成后再启用动态数据
+  const isLoading = false;
+  const error = null;
+  const cases: any[] = [];
+  const featuredCases: any[] = [];
+
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
-      {/* Enhanced Navigation */}
       <Navigation />
+      
+      <Breadcrumb 
+        items={[
+          { label: '首页', href: '/' },
+          { label: '成功案例', href: '/cases' }
+        ]} 
+      />
 
       {/* Page Header */}
       <section className="py-16 bg-gray-800 text-center">
@@ -14,179 +34,13 @@ export default function CasesPage() {
         </div>
       </section>
 
-      {/* Featured Cases */}
+      {/* Cases Grid */}
       <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Case 1 - International Conference Center */}
-            <article className="product-card">
-              <div className="h-48 bg-gradient-to-br from-blue-700 to-blue-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-4">🏛️</div>
-                  <div className="text-xl font-bold">国际会议中心</div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">某国际会议中心</h3>
-                <p className="text-sm text-gray-400 mb-3">应用产品：X3系列 P1.2 小间距屏</p>
-                <p className="text-gray-400 mb-4">
-                  为大型国际会议中心提供了超高清小间距LED显示墙，支持4K信号输入，为重要会议提供完美的视觉体验。
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">项目亮点：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• 200㎡超大显示面积</li>
-                    <li>• P1.2超高清显示</li>
-                    <li>• 7×24小时稳定运行</li>
-                  </ul>
-                </div>
-                <a href="/contact" className="text-orange-500 hover:text-orange-400 font-medium">
-                  了解详情 →
-                </a>
-              </div>
-            </article>
-
-            {/* Case 2 - Outdoor Billboard */}
-            <article className="product-card">
-              <div className="h-48 bg-gradient-to-br from-green-700 to-green-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-4">🏙️</div>
-                  <div className="text-xl font-bold">大型户外广告牌</div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">城市地标广告牌</h3>
-                <p className="text-sm text-gray-400 mb-3">应用产品：ES系列 P6 户外节能屏</p>
-                <p className="text-gray-400 mb-4">
-                  在城市核心商业区安装的大型户外LED广告牌，采用节能技术，为品牌提供强有力的视觉冲击。
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">项目亮点：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• 500㎡超大屏幕</li>
-                    <li>• 8000nits高亮度</li>
-                    <li>• 节能30%以上</li>
-                  </ul>
-                </div>
-                <a href="/contact" className="text-orange-500 hover:text-orange-400 font-medium">
-                  了解详情 →
-                </a>
-              </div>
-            </article>
-
-            {/* Case 3 - XR Virtual Studio */}
-            <article className="product-card">
-              <div className="h-48 bg-gradient-to-br from-purple-700 to-purple-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-4">🎬</div>
-                  <div className="text-xl font-bold">XR虚拟摄影棚</div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">XR虚拟摄影棚</h3>
-                <p className="text-sm text-gray-400 mb-3">应用产品：XR系列 P1.9 租赁屏</p>
-                <p className="text-gray-400 mb-4">
-                  为影视制作公司打造的XR虚拟摄影棚，实现实时渲染和虚实结合的拍摄效果。
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">项目亮点：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• 360°环形LED墙</li>
-                    <li>• 3840Hz超高刷新率</li>
-                    <li>• 实时动作捕捉支持</li>
-                  </ul>
-                </div>
-                <a href="/contact" className="text-orange-500 hover:text-orange-400 font-medium">
-                  了解详情 →
-                </a>
-              </div>
-            </article>
-
-            {/* Case 4 - Sports Stadium */}
-            <article className="product-card">
-              <div className="h-48 bg-gradient-to-br from-red-700 to-red-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-4">🏟️</div>
-                  <div className="text-xl font-bold">体育场馆</div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">国际体育场馆</h3>
-                <p className="text-sm text-gray-400 mb-3">应用产品：R3系列 P4.8 租赁屏</p>
-                <p className="text-gray-400 mb-4">
-                  为大型体育场馆提供周边LED显示屏，为观众带来震撼的视觉体验和实时比赛信息。
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">项目亮点：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• 环形LED显示带</li>
-                    <li>• 高刷新率无闪烁</li>
-                    <li>• 快速安装拆卸</li>
-                  </ul>
-                </div>
-                <a href="/contact" className="text-orange-500 hover:text-orange-400 font-medium">
-                  了解详情 →
-                </a>
-              </div>
-            </article>
-
-            {/* Case 5 - Shopping Mall */}
-            <article className="product-card">
-              <div className="h-48 bg-gradient-to-br from-pink-700 to-pink-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-4">🛒</div>
-                  <div className="text-xl font-bold">购物中心</div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">大型购物中心</h3>
-                <p className="text-sm text-gray-400 mb-3">应用产品：透明LED显示屏</p>
-                <p className="text-gray-400 mb-4">
-                  在购物中心中庭安装透明LED显示屏，既保持空间通透感，又提供丰富的广告展示功能。
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">项目亮点：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• 85%高透明度</li>
-                    <li>• 创意异形设计</li>
-                    <li>• 智能内容管理</li>
-                  </ul>
-                </div>
-                <a href="/contact" className="text-orange-500 hover:text-orange-400 font-medium">
-                  了解详情 →
-                </a>
-              </div>
-            </article>
-
-            {/* Case 6 - Corporate Headquarters */}
-            <article className="product-card">
-              <div className="h-48 bg-gradient-to-br from-indigo-700 to-indigo-800 flex items-center justify-center">
-                <div className="text-white text-center">
-                  <div className="text-5xl mb-4">🏢</div>
-                  <div className="text-xl font-bold">企业总部</div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">跨国企业总部</h3>
-                <p className="text-sm text-gray-400 mb-3">应用产品：MeeUs会议一体机</p>
-                <p className="text-gray-400 mb-4">
-                  为跨国企业总部会议室配置智能LED会议一体机，提升会议效率和协作体验。
-                </p>
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-300 mb-2">项目亮点：</h4>
-                  <ul className="text-sm text-gray-400 space-y-1">
-                    <li>• 多点触控交互</li>
-                    <li>• 4K超高清显示</li>
-                    <li>• 无线投屏功能</li>
-                  </ul>
-                </div>
-                <a href="/contact" className="text-orange-500 hover:text-orange-400 font-medium">
-                  了解详情 →
-                </a>
-              </div>
-            </article>
-
+          <div className="text-center py-12">
+            <div className="text-6xl mb-4">📋</div>
+            <div className="text-xl text-gray-300 mb-2">案例功能开发中</div>
+            <div className="text-gray-400">动态内容管理功能正在完善，敬请期待</div>
           </div>
         </div>
       </section>
@@ -346,6 +200,8 @@ export default function CasesPage() {
           </div>
         </div>
       </footer>
+      
+      <BackToTop />
     </div>
   );
 }
